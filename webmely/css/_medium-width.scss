@@ -1,0 +1,71 @@
+@media screen and (max-width: 991px){
+	nav.navbar{
+		padding: 8px 16px;
+		background-color: $bg-menu;
+		.container{
+			a.navbar-brand{
+				color: $color-blue;
+				font-family: $font-logo;
+				font-size: $font-size-logo;
+			}
+			div{
+				ul{
+					li{
+						a.nav-link{
+							padding: 0.75em 0;
+						}
+					}
+				}
+			}
+		}
+	}
+	nav.navbar.menu-fixed{
+		padding: 8px 16px;
+		background-color: $bg-menu;
+		.container{
+			a.navbar-brand.logo-fixed{
+				color: $color-blue;
+				font-family: $font-logo;
+				font-size: $font-size-logo;
+			}
+		}
+	}
+	section#team{
+		div.container{
+			div.row-content {
+				div.team-item{
+					padding: 0;
+				}
+			}
+		}
+	}
+	section#about-regard{
+		div.container{
+			div.row-content {
+					div.regard{
+						border-left: none;
+						padding-left: 0;
+
+					}
+					div.regard:before{
+						content: "";
+						display: block;
+						width: 80%;
+						height: 1px;
+						margin: 0 auto 20px;
+						background-color: gray;
+					}
+			}
+		}
+	}
+	div.port-modal-bg{
+		div.modal-wrapper{
+			width: 90%;
+			.modal-title{
+				h2{
+					font-size: 2em;
+				}
+			}
+		}
+	}
+}
