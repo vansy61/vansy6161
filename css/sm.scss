@@ -1,5 +1,5 @@
 @media screen and (max-width: 768px){
-	header.container-fluid{
+header.container-fluid{
 		div.row{
 			div.text-logo{}
 			div.contact{
@@ -15,8 +15,8 @@
 				}
 			} /*end contact*/
 		} /*end row*/
-	} /*end container-fluid*/
-	section#main{
+} /*end container-fluid*/
+section#main{
 		div.container.nav{
 			>div.row{
 				div.image{
@@ -65,4 +65,12 @@
 			} /*end row*/
 		} /*end div container*/
 	} /*end section#main*/
+footer.container {
+	p{
+		text-align: center;
+	}
+} /*end footer*/
+
+
+
 }
