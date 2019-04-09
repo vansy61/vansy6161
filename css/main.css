@@ -212,7 +212,9 @@ section#main {
           section#main div.container.nav > div.row div.main-content div.row div.content-title::after {
             box-shadow: none; }
           section#main div.container.nav > div.row div.main-content div.row div.content-nav nav.main-nav ul li {
-            display: block; }
+            display: block;
+            width: 90%;
+            max-width: 300px; }
 
   /*end section#main*/ }
 @media screen and (max-width: 576px) {
@@ -235,6 +237,7 @@ section#main {
 
   /*end container-fluid*/
   section#main {
+    padding-top: 0;
     /*end div container*/ }
     section#main div.container.nav {
       /*end row*/ }
