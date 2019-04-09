@@ -160,8 +160,28 @@ header.container-fluid{
 								} /*end row*/
 								} /*end div container nav*/
 }
+.anime-zoom-in{
+		animation: zoom-in 1s forwards;
+}
+@keyframes zoom-in{
+	0%{transform: scale(1.5); opacity: 0}
+	100%{transform: scale(1); opacity: 1}
+}
+.anime-right-in{
+	animation: right-in 1s forwards;
+}
 
-
+@keyframes right-in{
+	0%{transform: translateX(100px); opacity: 0}
+	100%{transform: translateX(0px); opacity: 1}
+}
+.anime-left-in{
+	animation: left-in 1s forwards;
+}
+@keyframes left-in{
+	0%{transform: translateX(-100px); opacity: 0}
+	100%{transform: translateX(0px); opacity: 1}
+}
 @import 'lg.scss';
 @import 'md.scss';
 @import 'sm.scss';

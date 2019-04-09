@@ -1,11 +1,24 @@
 @media screen and (max-width: 576px){
 	header.container-fluid{
+		height: 60px;
 		div.row{
-			div.text-logo{}
+			height: 100%;
+			div.text-logo{
+				h1{
+					display: inline-block;
+					line-height: 60px;
+					color: $bg-color-4;
+					font-family: $font-text-logo;
+					font-size: 30px;
+					font-weight: 900;
+					transition: 0.6s
+				}
+			}
 			div.contact{
 				height: auto;
 				ul{
 					position: fixed;
+					top: 40px;
 					z-index: 5;
 					li{
 						display: block;
@@ -36,11 +49,12 @@
 					}
 				}
 				div.main-content{
+					opacity: 0;
 					div.row{
 						div.content-title{
 							h3{
 								font-size: 16px;
-								line-height: 50px;	
+								line-height: 20px;	
 							}
 						}
 						div.content-title::after{
