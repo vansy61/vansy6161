@@ -1,3 +1,261 @@
+/*color background*/
+/*color text*/
+/*font*/
+header.container-fluid {
+  height: 90px;
+  background-color: #66635B; }
+  header.container-fluid > div.row {
+    height: 100%;
+    /*end css div text-logo*/ }
+    header.container-fluid > div.row div.text-logo h1 {
+      display: inline-block;
+      margin-bottom: 0;
+      margin-left: 80px;
+      line-height: 90px;
+      color: #DCEDFF;
+      font-family: "Rock Salt", cursive;
+      font-size: 35px;
+      font-weight: 900;
+      transition: 0.6s; }
+    header.container-fluid > div.row div.contact {
+      display: table;
+      height: 100%; }
+      header.container-fluid > div.row div.contact ul {
+        display: table-cell;
+        vertical-align: middle; }
+        header.container-fluid > div.row div.contact ul li {
+          margin-right: 10px; }
+          header.container-fluid > div.row div.contact ul li a {
+            font-size: 26px;
+            color: #B4C292;
+            cursor: pointer;
+            text-decoration: none; }
+          header.container-fluid > div.row div.contact ul li a:hover {
+            color: #DCEDFF;
+            text-shadow: 0px 0px 20px #DCEDFF; }
 
+/* end css header*/
+section#main {
+  width: 100%;
+  padding: 50px 0;
+  background-color: #4C5760;
+  /*end div container nav*/ }
+  section#main div.container.nav {
+    padding: 0 0;
+    /*end row*/ }
+    section#main div.container.nav > div.row {
+      height: 100%;
+      width: 100%;
+      /*end div.image*/
+      /*end div.main-content*/ }
+      section#main div.container.nav > div.row div.image {
+        position: relative;
+        min-height: 300px; }
+        section#main div.container.nav > div.row div.image img.coffee {
+          max-width: 100px;
+          position: absolute;
+          z-index: 3;
+          top: 64%;
+          left: 67%;
+          transition: 0.6s; }
+        section#main div.container.nav > div.row div.image img.laptop {
+          max-width: 300px;
+          position: absolute;
+          z-index: 1;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          transition: 0.6s; }
+      section#main div.container.nav > div.row div.main-content {
+        /*end row*/ }
+        section#main div.container.nav > div.row div.main-content > div.row div.content-title {
+          position: relative;
+          margin-bottom: 20px;
+          border-radius: 50%; }
+          section#main div.container.nav > div.row div.main-content > div.row div.content-title h3 {
+            line-height: 70px;
+            font-size: 20px;
+            color: #DCEDFF;
+            text-shadow: 0 0 10px #DCEDFF; }
+        section#main div.container.nav > div.row div.main-content > div.row div.content-title::after {
+          display: block;
+          content: "";
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          opacity: 0.5;
+          top: 0;
+          left: 0;
+          border-radius: 50%;
+          box-shadow: 0 3px 10px black;
+          clip: rect(77.6px, 600px, 87.6px, 160px); }
+        section#main div.container.nav > div.row div.main-content > div.row div.content-nav nav ul li {
+          width: 144px;
+          height: 144px;
+          border-radius: 50%;
+          border: 1px dashed #B4C292;
+          cursor: pointer; }
+          section#main div.container.nav > div.row div.main-content > div.row div.content-nav nav ul li i {
+            font-size: 50px;
+            padding: 30px 0;
+            color: #B4C292;
+            transition: 0.6s; }
+          section#main div.container.nav > div.row div.main-content > div.row div.content-nav nav ul li span {
+            position: relative;
+            line-height: 30px;
+            display: block;
+            background: #649173;
+            background: linear-gradient(to right, #66635B, #B4C292);
+            border-radius: 10px;
+            color: #B4C292;
+            transition: 0.6s;
+            text-shadow: 0 0 2px black; }
+        section#main div.container.nav > div.row div.main-content > div.row div.content-nav nav ul li:not(:last-child) {
+          margin-right: 35px; }
+        section#main div.container.nav > div.row div.main-content > div.row div.content-nav nav ul li:hover {
+          background-color: #3a434b; }
+          section#main div.container.nav > div.row div.main-content > div.row div.content-nav nav ul li:hover i {
+            color: #DCEDFF;
+            text-shadow: 0 0 25px #DCEDFF; }
+          section#main div.container.nav > div.row div.main-content > div.row div.content-nav nav ul li:hover span {
+            color: #DCEDFF;
+            text-shadow: 0 0 5px #DCEDFF; }
+
+@media screen and (max-width: 1200px) {
+  section#main {
+    width: 100%; }
+    section#main div.container {
+      width: 100%;
+      max-width: 100%; } }
+@media screen and (max-width: 992px) {
+  header.container-fluid {
+    /*end row*/ }
+    header.container-fluid div.row div.text-logo h1 {
+      margin: 0; }
+
+  /*end header*/
+  section#main {
+    /*end div container*/ }
+    section#main div.container.nav {
+      /*end row*/ }
+      section#main div.container.nav > div.row {
+        /*end main-content*/ }
+        section#main div.container.nav > div.row div.image img.coffee {
+          max-width: 70px; }
+        section#main div.container.nav > div.row div.image img.laptop {
+          max-width: 220px; }
+        section#main div.container.nav > div.row div.main-content {
+          /*end row*/ }
+          section#main div.container.nav > div.row div.main-content div.row {
+            /* end content-nav*/ }
+            section#main div.container.nav > div.row div.main-content div.row div.content-title h3 {
+              font-size: 16px;
+              line-height: 50px; }
+            section#main div.container.nav > div.row div.main-content div.row div.content-title::after {
+              box-shadow: none; }
+            section#main div.container.nav > div.row div.main-content div.row div.content-nav {
+              /*and nav main-nav*/ }
+              section#main div.container.nav > div.row div.main-content div.row div.content-nav nav.main-nav {
+                /* end ul*/ }
+                section#main div.container.nav > div.row div.main-content div.row div.content-nav nav.main-nav ul {
+                  text-align: left;
+                  /*end li*/ }
+                  section#main div.container.nav > div.row div.main-content div.row div.content-nav nav.main-nav ul li {
+                    margin: 0 auto 20px;
+                    display: block;
+                    width: 50%;
+                    height: 50px;
+                    border-radius: 5px; }
+                    section#main div.container.nav > div.row div.main-content div.row div.content-nav nav.main-nav ul li i {
+                      font-size: 20px;
+                      line-height: 50px;
+                      padding: 0 20px; }
+                    section#main div.container.nav > div.row div.main-content div.row div.content-nav nav.main-nav ul li span {
+                      line-height: 50px;
+                      position: static;
+                      display: inline-block;
+                      background: none;
+                      text-transform: uppercase; }
+                  section#main div.container.nav > div.row div.main-content div.row div.content-nav nav.main-nav ul li:hover span {
+                    text-shadow: 0 0 16px #DCEDFF; }
+
+  /*end section#main*/ }
+@media screen and (max-width: 768px) {
+  header.container-fluid {
+    /*end row*/ }
+    header.container-fluid div.row {
+      /*end contact*/ }
+      header.container-fluid div.row div.contact ul li a {
+        font-size: 30px; }
+      header.container-fluid div.row div.contact ul li:last-child {
+        margin-right: 0; }
+
+  /*end container-fluid*/
+  section#main {
+    /*end div container*/ }
+    section#main div.container.nav {
+      /*end row*/ }
+      section#main div.container.nav > div.row {
+        /*end main-content*/ }
+        section#main div.container.nav > div.row div.image {
+          min-height: 230px; }
+          section#main div.container.nav > div.row div.image img.coffee {
+            max-width: 60px;
+            left: 59%; }
+          section#main div.container.nav > div.row div.image img.laptop {
+            max-width: 200px; }
+        section#main div.container.nav > div.row div.main-content {
+          /*end row*/ }
+          section#main div.container.nav > div.row div.main-content div.row div.content-title h3 {
+            font-size: 16px;
+            line-height: 50px; }
+          section#main div.container.nav > div.row div.main-content div.row div.content-title::after {
+            box-shadow: none; }
+          section#main div.container.nav > div.row div.main-content div.row div.content-nav nav.main-nav ul li {
+            display: block; }
+
+  /*end section#main*/ }
+@media screen and (max-width: 576px) {
+  header.container-fluid {
+    /*end row*/ }
+    header.container-fluid div.row {
+      /*end contact*/ }
+      header.container-fluid div.row div.contact {
+        height: auto; }
+        header.container-fluid div.row div.contact ul {
+          position: fixed; }
+          header.container-fluid div.row div.contact ul li {
+            display: block;
+            margin-bottom: 5px; }
+            header.container-fluid div.row div.contact ul li a {
+              font-size: 30px; }
+          header.container-fluid div.row div.contact ul li:last-child {
+            margin-right: 10px; }
+
+  /*end container-fluid*/
+  section#main {
+    /*end div container*/ }
+    section#main div.container.nav {
+      /*end row*/ }
+      section#main div.container.nav > div.row {
+        /*end main-content*/ }
+        section#main div.container.nav > div.row div.image {
+          min-height: 230px; }
+          section#main div.container.nav > div.row div.image img.coffee {
+            max-width: 60px;
+            left: 59%; }
+          section#main div.container.nav > div.row div.image img.laptop {
+            max-width: 200px; }
+        section#main div.container.nav > div.row div.main-content {
+          /*end row*/ }
+          section#main div.container.nav > div.row div.main-content div.row div.content-title h3 {
+            font-size: 16px;
+            line-height: 50px; }
+          section#main div.container.nav > div.row div.main-content div.row div.content-title::after {
+            box-shadow: none; }
+          section#main div.container.nav > div.row div.main-content div.row div.content-nav nav.main-nav ul li {
+            display: block; }
+
+  /*end section#main*/ }
 
 /*# sourceMappingURL=main.css.map */
