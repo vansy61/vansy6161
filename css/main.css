@@ -76,7 +76,8 @@ section#main {
         section#main div.container.nav > div.row div.main-content > div.row div.content-title {
           position: relative;
           margin-bottom: 20px;
-          border-radius: 50%; }
+          border-radius: 50%;
+          height: 70px; }
           section#main div.container.nav > div.row div.main-content > div.row div.content-title h3 {
             display: inline-block;
             margin-bottom: 0;
