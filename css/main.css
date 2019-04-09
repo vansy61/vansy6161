@@ -79,6 +79,7 @@ section#main {
           border-radius: 50%; }
           section#main div.container.nav > div.row div.main-content > div.row div.content-title h3 {
             display: inline-block;
+            margin-bottom: 0;
             line-height: 70px;
             font-size: 20px;
             color: #DCEDFF;
@@ -100,7 +101,7 @@ section#main {
           left: 0;
           border-radius: 50%;
           box-shadow: 0 3px 10px black;
-          clip: rect(77.6px, 600px, 87.6px, 160px); }
+          clip: rect(70px, 600px, 87.6px, 160px); }
         section#main div.container.nav > div.row div.main-content > div.row div.content-nav nav ul li {
           width: 144px;
           height: 144px;
@@ -270,8 +271,11 @@ footer.container {
           animation-delay: 0.5s;
           /*end row*/ }
           section#main div.container.nav > div.row div.main-content div.row div.content-title h3 {
+            height: 50px;
             font-size: 16px;
             line-height: 50px; }
+          section#main div.container.nav > div.row div.main-content div.row div.content-title span {
+            display: none; }
           section#main div.container.nav > div.row div.main-content div.row div.content-title::after {
             box-shadow: none; }
           section#main div.container.nav > div.row div.main-content div.row div.content-nav nav.main-nav ul li {

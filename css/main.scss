@@ -96,6 +96,7 @@ section#main{
 
 									h3{
 										display: inline-block;
+										margin-bottom: 0;
 										line-height: 70px;
 										font-size: 20px;
 										color: $bg-color-4;
@@ -120,7 +121,7 @@ section#main{
 									left: 0;
 									border-radius: 50%;
 									box-shadow: 0 3px 10px black;
-									clip: rect(77.6px, 600px, 87.6px, 160px);
+									clip: rect(70px, 600px, 87.6px, 160px);
 
 
 								}
