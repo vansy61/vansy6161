@@ -223,7 +223,8 @@ section#main {
       header.container-fluid div.row div.contact {
         height: auto; }
         header.container-fluid div.row div.contact ul {
-          position: fixed; }
+          position: fixed;
+          z-index: 5; }
           header.container-fluid div.row div.contact ul li {
             display: block;
             margin-bottom: 5px; }
