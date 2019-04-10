@@ -144,6 +144,41 @@ footer.container {
     color: #B4C292; }
 
 /*end css footer*/
+section.content {
+  width: 100%;
+  height: 100%;
+  background-color: #4C5760;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(2);
+  transition: 1s; }
+  section.content .bg-rotate {
+    position: relative;
+    width: 500px;
+    height: 1000px;
+    margin-left: -310px;
+    background-color: #368F8B;
+    transform-origin: 50% 50%;
+    transform: rotateZ(-20deg); }
+  section.content .bg-close {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #B4C292;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%); }
+
+section.content.show {
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible; }
+
 .anime-zoom-in {
   animation: zoom-in 1s forwards; }
 

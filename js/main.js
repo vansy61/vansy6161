@@ -45,5 +45,14 @@ $(document).ready(() =>{
 	}
 	//end
 
+	//handing click menu
+	{
+		//myproject
+		$(".content-nav .main-nav ul li").click(function(){
+			let a  = $(this).data("click");
+			$(a).addClass("show");
+		});
+	}
+
 
 })
