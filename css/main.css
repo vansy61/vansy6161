@@ -218,6 +218,51 @@ section.content {
             opacity: 1;
             visibility: visible;
             top: 50%; }
+  section.content .menu-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 5; }
+    section.content .menu-fixed ul li {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 1px dashed #B4C292;
+      position: relative;
+      margin-bottom: 30px;
+      cursor: pointer;
+      display: block; }
+      section.content .menu-fixed ul li i {
+        display: block;
+        font-size: 25px;
+        color: #DCEDFF;
+        line-height: 60px; }
+      section.content .menu-fixed ul li span {
+        display: inline-block;
+        font-size: 16px;
+        position: absolute;
+        top: 50%;
+        right: -250%;
+        transform: translateY(-50%);
+        color: #DCEDFF;
+        background-color: #1f6c68;
+        padding: 0 10px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.4s;
+        border-radius: 5px; }
+    section.content .menu-fixed ul li:first-child {
+      margin-left: 30px; }
+    section.content .menu-fixed ul li:nth-child(2) {
+      margin-left: 60px; }
+    section.content .menu-fixed ul li:last-child {
+      margin-left: 90px; }
+    section.content .menu-fixed ul li:hover {
+      background-color: #1f6c68; }
+      section.content .menu-fixed ul li:hover span {
+        opacity: 1;
+        visibility: visible;
+        right: -190%; }
   section.content .bg-rotate {
     position: absolute;
     width: 500px;
@@ -390,6 +435,8 @@ section.content.show {
                     opacity: 1;
                     transform: translate(0, 0);
                     margin: 0 auto 10px; }
+    section.content div.menu-fixed {
+      display: none; }
     section.content div.bg-rotate {
       display: none; }
     section.content div.bg-close {
