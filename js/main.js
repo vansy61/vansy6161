@@ -50,16 +50,18 @@ $(document).ready(() =>{
 		//myproject
 		$(".content-nav .main-nav ul li").click(function(){
 			let a  = $(this).data("click");
-			$(a).addClass("show");
 			$("html, body").addClass("overHidden");
+			$(a).addClass("show");
+			
 		});
 	}
 	//handing click close button
 	{
 		$("section.content .bg-close i").click(function(){
 			console.log("obj");
-			$(this).parent().parent().removeClass("show");
 			$("html, body").removeClass("overHidden");
+			$(this).parent().parent().removeClass("show");
+			
 		});
 	}
 
