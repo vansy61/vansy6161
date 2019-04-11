@@ -74,7 +74,23 @@ footer.container {
 		text-align: center;
 	}
 } /*end footer*/
-
+section.content{
+		div.container-fluid{
+			>div.row{
+				div.show-main{
+					>div.row{
+						div.show-card{
+							>div.row{
+								div.card{
+									max-width: 55%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+}
 
 
 }

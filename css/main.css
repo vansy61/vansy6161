@@ -182,7 +182,7 @@ section.content {
         justify-content: space-between; }
         section.content div.container-fluid > div.row .show-main div.row .show-card .row .card {
           max-width: 30%;
-          margin-bottom: 20px;
+          margin-bottom: 40px;
           padding: 0;
           border: none;
           background-color: #DCEDFF;
@@ -391,15 +391,7 @@ section.content.show {
                     transform: translate(0, 0);
                     margin: 0 auto 10px; }
     section.content div.bg-rotate {
-      position: absolute;
-      width: 60%;
-      height: 50px;
-      top: 0;
-      left: 50%;
-      background-color: #368F8B;
-      transform-origin: 50% 50%;
-      transform: rotateZ(0deg) translate(-50%, 0%);
-      transition: 1s; }
+      display: none; }
     section.content div.bg-close {
       position: fixed;
       width: 100px;
@@ -465,7 +457,9 @@ section.content.show {
   footer.container p {
     text-align: center; }
 
-  /*end footer*/ }
+  /*end footer*/
+  section.content div.container-fluid > div.row div.show-main > div.row div.show-card > div.row div.card {
+    max-width: 55%; } }
 @media screen and (max-width: 576px) {
   header.container-fluid {
     height: 60px;
@@ -521,6 +515,8 @@ section.content.show {
           section#main div.container.nav > div.row div.main-content div.row div.content-nav nav.main-nav ul li {
             display: block; }
 
-  /*end section#main*/ }
+  /*end section#main*/
+  section.content div.container-fluid > div.row div.show-main > div.row div.show-card > div.row div.card {
+    max-width: 75%; } }
 
 /*# sourceMappingURL=main.css.map */

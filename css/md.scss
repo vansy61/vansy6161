@@ -115,15 +115,7 @@
 			} /*end row*/
 		}/* end container fluid*/
 		div.bg-rotate{
-			position: absolute;
-	 		width: 60%;
-	 		height: 50px;
-	 		top: 0;
-	 		left: 50%;
-	 		background-color: $bg-color-5;
-	 		transform-origin: 50% 50%;
-	 		transform: rotateZ(0deg) translate(-50%,0%);
-	 		transition: 1s;
+			display: none;
 		}/* end bg-rotate*/
 		div.bg-close{
 			position: fixed;

@@ -81,4 +81,22 @@
 			} /*end row*/
 		} /*end div container*/
 	} /*end section#main*/
+	section.content{
+		div.container-fluid{
+			>div.row{
+				div.show-main{
+					>div.row{
+						div.show-card{
+							>div.row{
+								div.card{
+									max-width:75%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
 }
