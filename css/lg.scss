@@ -6,4 +6,21 @@
 			max-width: 100%;
 		}
 	}
+	section.content{
+		div.container-fluid{
+			>div.row{
+				div.show-main{
+					>div.row{
+						div.show-card{
+							>div.row{
+								div.card{
+									max-width: 45%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
