@@ -76,7 +76,31 @@ footer.container {
 } /*end footer*/
 section.content{
 		div.container-fluid{
-			>div.row{
+			>div.row#aboutme{
+				>div{
+					div.title-info{
+					}
+					div.basic-info{
+						div.img{
+							img{
+								width: 100px;
+								height: 100px;
+							}
+						}
+						div.text{
+							margin-top: 20px;
+							height:auto;
+							>div{
+								div{
+									font-size: 16px;
+								}
+							}
+						}
+					}
+				}
+			}
+			/*end about me*/
+			>div.row#myproject{
 				div.show-main{
 					>div.row{
 						div.show-card{
@@ -89,6 +113,7 @@ section.content{
 					}
 				}
 			}
+			/*end my project*/
 		}
 }
 

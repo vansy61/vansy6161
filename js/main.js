@@ -49,18 +49,16 @@ $(document).ready(() =>{
 	{
 		//myproject
 		$(".content-nav .main-nav ul li").click(function(){
-			let a  = $(this).data("click");
 			$("html, body").addClass("overHidden");
-			$(a).addClass("show");
+			$("section.content").addClass("show");
 			
 		});
 	}
 	//handing click close button
 	{
 		$("section.content .bg-close i").click(function(){
-			console.log("obj");
 			$("html, body").removeClass("overHidden");
-			$(this).parent().parent().removeClass("show");
+			$("section.content").removeClass("show");
 			
 		});
 	}

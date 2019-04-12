@@ -158,7 +158,7 @@ section.content {
   opacity: 0;
   visibility: hidden;
   transform: scale(2);
-  transition: 1s;
+  transition: 0.2s;
   z-index: 10;
   /*css for card*/
   /*end container fluid*/
@@ -167,20 +167,143 @@ section.content {
     width: 100%;
     height: 100%;
     overflow-y: scroll;
-    /* end row*/ }
-    section.content div.container-fluid > div.row {
+    /*end row about me*/
+    /* end row my project*/ }
+    section.content div.container-fluid > div.row#aboutme {
+      padding-top: 20px; }
+      section.content div.container-fluid > div.row#aboutme > div .title-info {
+        padding: 0 15px; }
+        section.content div.container-fluid > div.row#aboutme > div .title-info h2 {
+          width: 100%;
+          line-height: 100px;
+          color: #368F8B;
+          border-bottom: 1px solid #368F8B; }
+      section.content div.container-fluid > div.row#aboutme > div .basic-info {
+        padding: 20px 0; }
+        section.content div.container-fluid > div.row#aboutme > div .basic-info .img {
+          width: 100%;
+          padding: 0; }
+          section.content div.container-fluid > div.row#aboutme > div .basic-info .img img {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; }
+        section.content div.container-fluid > div.row#aboutme > div .basic-info .text {
+          height: 200px;
+          display: table; }
+          section.content div.container-fluid > div.row#aboutme > div .basic-info .text > div {
+            display: table-cell;
+            vertical-align: middle; }
+            section.content div.container-fluid > div.row#aboutme > div .basic-info .text > div div {
+              font-size: 20px;
+              color: #DCEDFF; }
+              section.content div.container-fluid > div.row#aboutme > div .basic-info .text > div div i {
+                padding-right: 10px; }
+      section.content div.container-fluid > div.row#aboutme > div .target-info {
+        padding: 20px 0; }
+        section.content div.container-fluid > div.row#aboutme > div .target-info div {
+          margin-top: 20px; }
+          section.content div.container-fluid > div.row#aboutme > div .target-info div p {
+            font-size: 18px;
+            color: #DCEDFF; }
+          section.content div.container-fluid > div.row#aboutme > div .target-info div p:before {
+            content: '';
+            display: block;
+            width: 50%;
+            height: 1px;
+            background-color: #368F8B;
+            margin: 0 auto 10px; }
+          section.content div.container-fluid > div.row#aboutme > div .target-info div p:after {
+            content: '';
+            display: block;
+            width: 50%;
+            height: 1px;
+            background-color: #368F8B;
+            margin: 10px auto 0; }
+      section.content div.container-fluid > div.row#aboutme > div .timeline-info {
+        position: relative;
+        margin: 20px 0; }
+        section.content div.container-fluid > div.row#aboutme > div .timeline-info div.time-line {
+          width: 100%;
+          height: 100%; }
+          section.content div.container-fluid > div.row#aboutme > div .timeline-info div.time-line div.line {
+            width: 20px;
+            height: 100%;
+            background-color: #368F8B;
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%); }
+          section.content div.container-fluid > div.row#aboutme > div .timeline-info div.time-line div.line:after {
+            content: "";
+            border: 10px solid #00000000;
+            border-bottom: 10px solid #368F8B;
+            position: absolute;
+            top: -20px;
+            left: 0; }
+          section.content div.container-fluid > div.row#aboutme > div .timeline-info div.time-line div.time ul li {
+            z-index: 11;
+            position: static;
+            display: block;
+            max-width: 70px;
+            padding: 23px 0;
+            margin: 0 auto; }
+            section.content div.container-fluid > div.row#aboutme > div .timeline-info div.time-line div.time ul li h6 {
+              line-height: 35px;
+              background-color: #368F8B;
+              margin: 0;
+              border-radius: 5px;
+              color: #B4C292; }
+        section.content div.container-fluid > div.row#aboutme > div .timeline-info div.events {
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%); }
+          section.content div.container-fluid > div.row#aboutme > div .timeline-info div.events ul li {
+            height: 80px;
+            width: 300px;
+            padding: 5px 10px;
+            background-color: #66635B;
+            border-radius: 5px;
+            position: relative;
+            color: #DCEDFF; }
+          section.content div.container-fluid > div.row#aboutme > div .timeline-info div.events ul li:nth-child(even) {
+            margin-left: 400px; }
+            section.content div.container-fluid > div.row#aboutme > div .timeline-info div.events ul li:nth-child(even):before {
+              content: "";
+              display: block;
+              position: absolute;
+              border: 10px solid #00000000;
+              border-right: 10px solid #66635B;
+              top: 50%;
+              left: -20px;
+              transform: translateY(-50%); }
+          section.content div.container-fluid > div.row#aboutme > div .timeline-info div.events ul li:nth-child(odd):before {
+            content: "";
+            display: block;
+            position: absolute;
+            border: 10px solid #00000000;
+            border-left: 10px solid #66635B;
+            top: 50%;
+            right: -20px;
+            transform: translateY(-50%); }
+    section.content div.container-fluid > div.row#myproject {
+      padding-top: 20px;
       /*end show-main*/ }
-      section.content div.container-fluid > div.row .show-main div.row .show-title {
+      section.content div.container-fluid > div.row#myproject .show-main div.row .show-title {
         height: 100px;
         color: #DCEDFF;
         margin-bottom: 20px; }
-        section.content div.container-fluid > div.row .show-main div.row .show-title h2 {
+        section.content div.container-fluid > div.row#myproject .show-main div.row .show-title h2 {
           line-height: 100px;
-          text-transform: capitalize; }
-      section.content div.container-fluid > div.row .show-main div.row .show-card .row {
+          text-transform: capitalize;
+          border-bottom: 1px solid #368F8B; }
+      section.content div.container-fluid > div.row#myproject .show-main div.row .show-card .row {
         display: flex;
         justify-content: space-between; }
-        section.content div.container-fluid > div.row .show-main div.row .show-card .row .card {
+        section.content div.container-fluid > div.row#myproject .show-main div.row .show-card .row .card {
           max-width: 30%;
           margin-bottom: 40px;
           padding: 0;
@@ -188,7 +311,7 @@ section.content {
           background-color: #DCEDFF;
           color: #66635B;
           position: relative; }
-          section.content div.container-fluid > div.row .show-main div.row .show-card .row .card div.card-block div.card-hover {
+          section.content div.container-fluid > div.row#myproject .show-main div.row .show-card .row .card div.card-block div.card-hover {
             width: 100%;
             height: 100%;
             background-color: black;
@@ -198,7 +321,7 @@ section.content {
             left: 0;
             visibility: hidden;
             transition: 0.4s; }
-          section.content div.container-fluid > div.row .show-main div.row .show-card .row .card div.card-block a {
+          section.content div.container-fluid > div.row#myproject .show-main div.row .show-card .row .card div.card-block a {
             position: absolute;
             top: 70%;
             left: 50%;
@@ -209,12 +332,12 @@ section.content {
             opacity: 0;
             visibility: hidden;
             transition: 0.4s; }
-        section.content div.container-fluid > div.row .show-main div.row .show-card .row .card:hover {
+        section.content div.container-fluid > div.row#myproject .show-main div.row .show-card .row .card:hover {
           box-shadow: 0 0 16px black; }
-          section.content div.container-fluid > div.row .show-main div.row .show-card .row .card:hover div.card-block div.card-hover {
+          section.content div.container-fluid > div.row#myproject .show-main div.row .show-card .row .card:hover div.card-block div.card-hover {
             opacity: 0.8;
             visibility: visible; }
-          section.content div.container-fluid > div.row .show-main div.row .show-card .row .card:hover div.card-block a {
+          section.content div.container-fluid > div.row#myproject .show-main div.row .show-card .row .card:hover div.card-block a {
             opacity: 1;
             visibility: visible;
             top: 50%; }
@@ -347,7 +470,7 @@ section.content.show {
       width: 100%;
       max-width: 100%; }
 
-  section.content div.container-fluid > div.row div.show-main > div.row div.show-card > div.row div.card {
+  section.content div.container-fluid > div.row#myproject div.show-main > div.row div.show-card > div.row div.card {
     max-width: 45%; } }
 @media screen and (max-width: 992px) {
   header.container-fluid {
@@ -408,25 +531,23 @@ section.content.show {
     /*end bg-close*/ }
     section.content div.container-fluid {
       /*end row*/ }
-      section.content div.container-fluid > div.row {
+      section.content div.container-fluid > div.row#myproject {
         /*end show-main*/ }
-        section.content div.container-fluid > div.row div.show-main {
+        section.content div.container-fluid > div.row#myproject div.show-main {
           /*end row*/ }
-          section.content div.container-fluid > div.row div.show-main > div.row {
+          section.content div.container-fluid > div.row#myproject div.show-main > div.row {
             /*end show-card*/ }
-            section.content div.container-fluid > div.row div.show-main > div.row div.show-title {
-              margin: 50px 0 0; }
-            section.content div.container-fluid > div.row div.show-main > div.row div.show-card {
+            section.content div.container-fluid > div.row#myproject div.show-main > div.row div.show-card {
               /*end row*/ }
-              section.content div.container-fluid > div.row div.show-main > div.row div.show-card > div.row {
+              section.content div.container-fluid > div.row#myproject div.show-main > div.row div.show-card > div.row {
                 justify-content: space-around;
                 /*end div.card*/
                 /*end div.card hover*/ }
-                section.content div.container-fluid > div.row div.show-main > div.row div.show-card > div.row div.card {
+                section.content div.container-fluid > div.row#myproject div.show-main > div.row div.show-card > div.row div.card {
                   max-width: 40%; }
-                  section.content div.container-fluid > div.row div.show-main > div.row div.show-card > div.row div.card div.card-block div.card-hover {
+                  section.content div.container-fluid > div.row#myproject div.show-main > div.row div.show-card > div.row div.card div.card-block div.card-hover {
                     display: none; }
-                  section.content div.container-fluid > div.row div.show-main > div.row div.show-card > div.row div.card div.card-block a {
+                  section.content div.container-fluid > div.row#myproject div.show-main > div.row div.show-card > div.row div.card div.card-block a {
                     position: static;
                     background-color: #66635B;
                     color: #DCEDFF;
@@ -505,8 +626,19 @@ section.content.show {
     text-align: center; }
 
   /*end footer*/
-  section.content div.container-fluid > div.row div.show-main > div.row div.show-card > div.row div.card {
-    max-width: 55%; } }
+  section.content div.container-fluid {
+    /*end about me*/
+    /*end my project*/ }
+    section.content div.container-fluid > div.row#aboutme > div div.basic-info div.img img {
+      width: 100px;
+      height: 100px; }
+    section.content div.container-fluid > div.row#aboutme > div div.basic-info div.text {
+      margin-top: 20px;
+      height: auto; }
+      section.content div.container-fluid > div.row#aboutme > div div.basic-info div.text > div div {
+        font-size: 16px; }
+    section.content div.container-fluid > div.row#myproject div.show-main > div.row div.show-card > div.row div.card {
+      max-width: 55%; } }
 @media screen and (max-width: 576px) {
   header.container-fluid {
     height: 60px;
@@ -563,7 +695,7 @@ section.content.show {
             display: block; }
 
   /*end section#main*/
-  section.content div.container-fluid > div.row div.show-main > div.row div.show-card > div.row div.card {
+  section.content div.container-fluid > div.row#mypojet div.show-main > div.row div.show-card > div.row div.card {
     max-width: 75%; } }
 
 /*# sourceMappingURL=main.css.map */

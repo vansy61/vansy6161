@@ -69,11 +69,10 @@
 	} /*end section#main*/
 	section.content{
 		div.container-fluid{
-			>div.row{
+			>div.row#myproject{
 				div.show-main{
 					>div.row{
 						div.show-title{
-							margin: 50px 0 0;
 							h2{
 
 							}
