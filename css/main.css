@@ -822,7 +822,7 @@ section.content.show {
               top: 50%;
               right: 300px;
               transform: translateY(-50%); }
-    section.content div.container-fluid > div.row#mypojet div.show-main > div.row div.show-card > div.row div.card {
-      max-width: 75%; } }
+    section.content div.container-fluid > div.row#myproject div.show-main > div.row div.show-card > div.row div.card {
+      max-width: 90%; } }
 
 /*# sourceMappingURL=main.css.map */
