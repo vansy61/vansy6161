@@ -97,6 +97,100 @@ section.content{
 							}
 						}
 					}
+					/*end basic info*/
+					.target-info{
+						padding: 10px 0;
+						div{
+							margin-top: 20px;
+							p{
+								font-size: 16px;
+								color: $bg-color-4;
+							}
+						}
+					}
+					.timeline-info{
+						position: relative;
+						width: 380px;
+						margin: 20px auto;
+				
+						div.time-line{
+							
+							height: 100%;
+							div.line{
+								width: 20px;
+								height: 100%;
+								background-color: $bg-color-5;
+								z-index: -1;
+								position: absolute;
+								top: 0;
+								left: 35px;
+				
+							}	
+							div.time{
+									
+								ul{
+									text-align: left;
+									li{
+										z-index: 11;
+										position: static;
+										display: block;
+										max-width:70px;
+										padding: 28px 0;
+										margin: 0 0;
+
+										h6{
+											line-height: 35px;
+											background-color: $bg-color-5;
+											margin: 0;
+											border-radius: 5px;
+											color: $bg-color-2;
+										}
+									}
+							}
+
+							}
+							/*end time*/
+						}
+						/*end time-line*/
+						div.events{
+							height: 100%;
+							position: absolute;
+							top: 0;
+							left: 0;
+							transform: translateX(0);
+							ul{
+								li{
+									height: 80px;
+									width: 300px;
+									padding: 5px 10px;
+									margin: 10px 0;
+									background-color: $bg-color-1;
+									border-radius: 5px;
+									position: relative;
+									color: $bg-color-4;
+									
+
+
+								}
+								li:nth-child(even){
+									margin-left: 80px;
+									&:before{
+									}
+								}
+								li:nth-child(odd){
+									margin-left: 80px;
+									&:before{
+										border-right: 10px solid $bg-color-1;
+										border-left: 10px solid #00000000;
+										top: 50%;
+										right:300px;
+										transform: translateY(-50%);
+									}
+								}
+							}
+						}
+						/*end events*/
+					}
 				}
 			}
 			/*end about me*/

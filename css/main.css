@@ -629,14 +629,80 @@ section.content.show {
   section.content div.container-fluid {
     /*end about me*/
     /*end my project*/ }
-    section.content div.container-fluid > div.row#aboutme > div div.basic-info div.img img {
-      width: 100px;
-      height: 100px; }
-    section.content div.container-fluid > div.row#aboutme > div div.basic-info div.text {
-      margin-top: 20px;
-      height: auto; }
-      section.content div.container-fluid > div.row#aboutme > div div.basic-info div.text > div div {
-        font-size: 16px; }
+    section.content div.container-fluid > div.row#aboutme > div {
+      /*end basic info*/ }
+      section.content div.container-fluid > div.row#aboutme > div div.basic-info div.img img {
+        width: 100px;
+        height: 100px; }
+      section.content div.container-fluid > div.row#aboutme > div div.basic-info div.text {
+        margin-top: 20px;
+        height: auto; }
+        section.content div.container-fluid > div.row#aboutme > div div.basic-info div.text > div div {
+          font-size: 16px; }
+      section.content div.container-fluid > div.row#aboutme > div .target-info {
+        padding: 10px 0; }
+        section.content div.container-fluid > div.row#aboutme > div .target-info div {
+          margin-top: 20px; }
+          section.content div.container-fluid > div.row#aboutme > div .target-info div p {
+            font-size: 16px;
+            color: #DCEDFF; }
+      section.content div.container-fluid > div.row#aboutme > div .timeline-info {
+        position: relative;
+        width: 380px;
+        margin: 20px auto;
+        /*end time-line*/
+        /*end events*/ }
+        section.content div.container-fluid > div.row#aboutme > div .timeline-info div.time-line {
+          height: 100%;
+          /*end time*/ }
+          section.content div.container-fluid > div.row#aboutme > div .timeline-info div.time-line div.line {
+            width: 20px;
+            height: 100%;
+            background-color: #368F8B;
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 35px; }
+          section.content div.container-fluid > div.row#aboutme > div .timeline-info div.time-line div.time ul {
+            text-align: left; }
+            section.content div.container-fluid > div.row#aboutme > div .timeline-info div.time-line div.time ul li {
+              z-index: 11;
+              position: static;
+              display: block;
+              max-width: 70px;
+              padding: 28px 0;
+              margin: 0 0; }
+              section.content div.container-fluid > div.row#aboutme > div .timeline-info div.time-line div.time ul li h6 {
+                line-height: 35px;
+                background-color: #368F8B;
+                margin: 0;
+                border-radius: 5px;
+                color: #B4C292; }
+        section.content div.container-fluid > div.row#aboutme > div .timeline-info div.events {
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transform: translateX(0); }
+          section.content div.container-fluid > div.row#aboutme > div .timeline-info div.events ul li {
+            height: 80px;
+            width: 300px;
+            padding: 5px 10px;
+            margin: 10px 0;
+            background-color: #66635B;
+            border-radius: 5px;
+            position: relative;
+            color: #DCEDFF; }
+          section.content div.container-fluid > div.row#aboutme > div .timeline-info div.events ul li:nth-child(even) {
+            margin-left: 80px; }
+          section.content div.container-fluid > div.row#aboutme > div .timeline-info div.events ul li:nth-child(odd) {
+            margin-left: 80px; }
+            section.content div.container-fluid > div.row#aboutme > div .timeline-info div.events ul li:nth-child(odd):before {
+              border-right: 10px solid #66635B;
+              border-left: 10px solid #00000000;
+              top: 50%;
+              right: 300px;
+              transform: translateY(-50%); }
     section.content div.container-fluid > div.row#myproject div.show-main > div.row div.show-card > div.row div.card {
       max-width: 55%; } }
 @media screen and (max-width: 576px) {
@@ -695,7 +761,68 @@ section.content.show {
             display: block; }
 
   /*end section#main*/
-  section.content div.container-fluid > div.row#mypojet div.show-main > div.row div.show-card > div.row div.card {
-    max-width: 75%; } }
+  section.content div.container-fluid {
+    /*end about me*/ }
+    section.content div.container-fluid > div.row#aboutme > div .timeline-info {
+      position: relative;
+      width: 100%;
+      margin: 20px auto;
+      /*end time-line*/
+      /*end events*/ }
+      section.content div.container-fluid > div.row#aboutme > div .timeline-info div.time-line {
+        height: 100%;
+        /*end time*/ }
+        section.content div.container-fluid > div.row#aboutme > div .timeline-info div.time-line div.line {
+          width: 20px;
+          height: 100%;
+          background-color: #368F8B;
+          z-index: -1;
+          position: absolute;
+          top: 0;
+          left: 35px; }
+        section.content div.container-fluid > div.row#aboutme > div .timeline-info div.time-line div.time ul {
+          text-align: left; }
+          section.content div.container-fluid > div.row#aboutme > div .timeline-info div.time-line div.time ul li {
+            z-index: 11;
+            position: static;
+            display: block;
+            max-width: 70px;
+            padding: 28px 0;
+            margin: 0 0; }
+            section.content div.container-fluid > div.row#aboutme > div .timeline-info div.time-line div.time ul li h6 {
+              line-height: 35px;
+              background-color: #368F8B;
+              margin: 0;
+              border-radius: 5px;
+              color: #B4C292; }
+      section.content div.container-fluid > div.row#aboutme > div .timeline-info div.events {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(0); }
+        section.content div.container-fluid > div.row#aboutme > div .timeline-info div.events ul {
+          width: 100%; }
+          section.content div.container-fluid > div.row#aboutme > div .timeline-info div.events ul li {
+            height: 100px;
+            padding: 5px 10px;
+            margin: 10px 0;
+            background-color: #66635B;
+            border-radius: 5px;
+            position: relative;
+            color: #DCEDFF; }
+          section.content div.container-fluid > div.row#aboutme > div .timeline-info div.events ul li:nth-child(even) {
+            margin-left: 80px; }
+          section.content div.container-fluid > div.row#aboutme > div .timeline-info div.events ul li:nth-child(odd) {
+            margin-left: 80px; }
+            section.content div.container-fluid > div.row#aboutme > div .timeline-info div.events ul li:nth-child(odd):before {
+              border-right: 10px solid #66635B;
+              border-left: 10px solid #00000000;
+              top: 50%;
+              right: 300px;
+              transform: translateY(-50%); }
+    section.content div.container-fluid > div.row#mypojet div.show-main > div.row div.show-card > div.row div.card {
+      max-width: 75%; } }
 
 /*# sourceMappingURL=main.css.map */
