@@ -553,6 +553,12 @@ section.content{
  					visibility: hidden;
  					transition: 0.4s;
  					border-radius: 5px;
+ 					
+ 				}
+ 				span.act-menu{
+					opacity: 1;
+					visibility: visible;
+					right: -190%
  				}
  			}
  			li:first-child{
@@ -566,11 +572,7 @@ section.content{
  			}
  			li:hover{
  				background-color: #1f6c68;
- 				span{
-					opacity: 1;
-					visibility: visible;
-					right: -190%
- 				}
+ 				
  			}
  		}
  	}

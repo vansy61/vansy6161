@@ -426,6 +426,10 @@ section.content {
         visibility: hidden;
         transition: 0.4s;
         border-radius: 5px; }
+      section.content .menu-fixed ul li span.act-menu {
+        opacity: 1;
+        visibility: visible;
+        right: -190%; }
     section.content .menu-fixed ul li:first-child {
       margin-left: 30px; }
     section.content .menu-fixed ul li:nth-child(2) {
@@ -434,10 +438,6 @@ section.content {
       margin-left: 90px; }
     section.content .menu-fixed ul li:hover {
       background-color: #1f6c68; }
-      section.content .menu-fixed ul li:hover span {
-        opacity: 1;
-        visibility: visible;
-        right: -190%; }
   section.content .bg-rotate {
     position: absolute;
     width: 500px;

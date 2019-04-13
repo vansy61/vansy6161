@@ -1,15 +1,18 @@
 $(document).ready(() =>{
-	// handing load page
+	// handing animation load page
 	$("header .row .text-logo h1").addClass("anime-zoom-in");
 	$("#main .container .row .image").addClass("anime-left-in");
 	$("#main .container .row .main-content").addClass("anime-right-in");
 	//end
 
-	//handing animate for text
+	//handing animate write text
 	{
+		//array text
 		let textArr = ["Tôi là trần văn sỷ, 21 tuổi.", "Tôi đang học lập trình web theo hướng mern stack.", "Vui lòng chọn menu dưới để hiểu hơn về tôi.", "Hoặc liên hệ với tôi qua các cách ở menu button trên."];
+		//selector place write
 		let compo = $(".main-content .row .content-title h3")
-		let count = 0; // variable count place text will show
+		let count = 0; // variable count text index in arr will show
+
 		function writeText(i){
 			let textWrite = textArr[i];
 			if(textWrite.length > compo.text().length){
@@ -47,7 +50,7 @@ $(document).ready(() =>{
 
 	//handing click menu
 	{
-		//myproject
+		//click menu main
 		$(".content-nav .main-nav ul li").click(function(){
 			$("html, body").addClass("overHidden");
 			$("section.content").addClass("show");
@@ -57,10 +60,14 @@ $(document).ready(() =>{
 			arr[2] = $("#myskill").outerHeight() + arr[1];
 			let vitri = $(this).index();
 			$("#prot").animate({scrollTop: arr[vitri]},500);
-		
+			
+			$(".menu-fixed ul li span").removeClass("act-menu");
+		    $(`.menu-fixed ul li i[data-idl="${$(this).data("idl")}"]`).next().addClass("act-menu");
+			
 			
 			
 		});
+		//click menu fixed
 		$(".menu-fixed ul li").click(function(){
 			let arr =[];
 			arr[0] = 0;
@@ -68,8 +75,33 @@ $(document).ready(() =>{
 			arr[2] = $("#myskill").outerHeight() + arr[1];
 			let vitri = $(this).index();
 			$("#prot").animate({scrollTop: arr[vitri]},500);
+			$(".menu-fixed ul li span").removeClass("act-menu");
+		    $(this).children().last().addClass("act-menu");
 
 
+		});
+	}
+	//handing scroll section contnet
+	{
+		$("#prot").scroll(function(){
+			let arr =[];
+			arr[0] = $("#aboutme").outerHeight() -20;
+			arr[1] = $("#myskill").outerHeight() + arr[0] -20;
+			console.log($(this).scrollTop());
+			if($(this).scrollTop() < arr[0]){
+				$(".menu-fixed ul li span").removeClass("act-menu");
+		    	$(".menu-fixed ul li span").eq(0).addClass("act-menu");
+			}
+			else if((arr[0] <= $(this).scrollTop()) && ($(this).scrollTop() < arr[1]) ){
+				$(".menu-fixed ul li span").removeClass("act-menu");
+		    	$(".menu-fixed ul li span").eq(1).addClass("act-menu");
+		    	console.log(2);
+			}
+			else {
+				$(".menu-fixed ul li span").removeClass("act-menu");
+		    	$(".menu-fixed ul li span").eq(2).addClass("act-menu");
+		    	console.log(3);
+			}
 		});
 	}
 	//handing click close button
