@@ -51,14 +51,25 @@ $(document).ready(() =>{
 		$(".content-nav .main-nav ul li").click(function(){
 			$("html, body").addClass("overHidden");
 			$("section.content").addClass("show");
-			setTimeout(()=>{
-				let a = $(this).data("idl");
-			let place = $(a).offset().top;
-			$("#prot").animate({scrollTop: place},200);
-			},1000)
-			//$("#prot").animate({scrollTop: place}, 200);
+			let arr =[];
+			arr[0] = 0;
+			arr[1] = $("#aboutme").outerHeight();
+			arr[2] = $("#myskill").outerHeight() + arr[1];
+			let vitri = $(this).index();
+			$("#prot").animate({scrollTop: arr[vitri]},200);
+		
 			
 			
+		});
+		$(".menu-fixed ul li").click(function(){
+			let arr =[];
+			arr[0] = 0;
+			arr[1] = $("#aboutme").outerHeight();
+			arr[2] = $("#myskill").outerHeight() + arr[1];
+			let vitri = $(this).index();
+			$("#prot").animate({scrollTop: arr[vitri]},200);
+
+
 		});
 	}
 	//handing click close button
