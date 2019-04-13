@@ -56,7 +56,7 @@ $(document).ready(() =>{
 			arr[1] = $("#aboutme").outerHeight();
 			arr[2] = $("#myskill").outerHeight() + arr[1];
 			let vitri = $(this).index();
-			$("#prot").animate({scrollTop: arr[vitri]},200);
+			$("#prot").animate({scrollTop: arr[vitri]},500);
 		
 			
 			
@@ -67,7 +67,7 @@ $(document).ready(() =>{
 			arr[1] = $("#aboutme").outerHeight();
 			arr[2] = $("#myskill").outerHeight() + arr[1];
 			let vitri = $(this).index();
-			$("#prot").animate({scrollTop: arr[vitri]},200);
+			$("#prot").animate({scrollTop: arr[vitri]},500);
 
 
 		});
