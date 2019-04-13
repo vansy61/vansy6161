@@ -49,17 +49,18 @@
 					<div class="content-nav col-12 text-center">
 						<nav class="main-nav" id="navagation">
 							<ul class="list-inline" id="list-ul">
-								<li class="list-inline-item" >
+								<li class="list-inline-item" data-idl="#aboutme" >
 									<i class="fas fa-address-card"></i>
 									<span>About Me</span>
 								</li>
-								<li class="list-inline-item" >
-									<i class="fas fa-tasks"></i>
-									<span>My Project</span>
-								</li>
-								<li class="list-inline-item" >
+								
+								<li class="list-inline-item" data-idl="#myskill" >
 									<i class="fas fa-pencil-alt"></i>
 									<span>My Skill</span>
+								</li>
+								<li class="list-inline-item" data-idl="#myproject" >
+									<i class="fas fa-tasks"></i>
+									<span>My Project</span>
 								</li>
 								
 							</ul>
@@ -79,7 +80,7 @@
 	
 	
 	<section class="content" >
-		<div class="container-fluid">
+		<div class="container-fluid" id="prot">
 
 			<div class="row" id="aboutme">
 				<div class="col-lg-8 offset-lg-3">
@@ -116,7 +117,7 @@
 					<div class="row target-info">
 						<div class="col-sm-8 offset-sm-2  text-center">
 							<p >Hiện tại tôi đang tìm một vị trí thực tập, học việc font-end để học hỏi, trao dồi kỹ năng và bổ sung kiến thức mới, đồng thời sau khi hoàn thành khóa học mySQL & PHP mong muốn có thể trở thành nhân viên chính thức. <br />
-							Xa hơn tôi muốn trở thành một full stack web developer, công việc ổn định, có sự thăng tiến.</p>  
+							Xa hơn tôi muốn trở thành một full stack web developer, công việc ổn định.</p>  
 						</div>
 					</div>
 					<!-- end target info -->
@@ -155,6 +156,79 @@
 					<!-- end timeline info -->
 				</div>
 			</div> <!-- end row about me -->
+
+			<div class="row" id="myskill">
+				<div class="col-lg-8 offset-lg-3">
+					<div class="row skill-title text-center">
+						<h2>My Skill</h2>
+					</div>
+					<div class="skill-content row">
+						<ul class="list-unstyled">
+							<li class="row">
+								<h4 class="col-sm-3 col-12 text-center">HTML</h4>
+								<div class="col-sm-9 col-12">
+									<div class="toastr" style="left: 90%">90%</div>
+									<div class="progress " >
+										
+										<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 90%" ></div>
+									</div>
+								</div>
+							</li>
+							<li class="row">
+								<h4 class="col-sm-3 col-12 text-center">CSS</h4>
+								<div class="col-sm-9 col-12">
+									<div class="toastr" style="left: 85%">85%</div>
+									<div class="progress " >
+										
+										<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 85%" ></div>
+									</div>
+								</div>
+							</li>
+							<li class="row">
+								<h4 class="col-sm-3 col-12 text-center">BOOTSTRAP 4</h4>
+								<div class="col-sm-9 col-12">
+									<div class="toastr" style="left: 70%">70%</div>
+									<div class="progress " >
+										
+										<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 70%" ></div>
+									</div>
+								</div>
+							</li>
+							<li class="row">
+								<h4 class="col-sm-3 col-12 text-center" >JAVASCRIPT</h4>
+								<div class="col-sm-9 col-12">
+									<div class="toastr" style="left: 50%">50%</div>
+									<div class="progress " >
+										
+										<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" ></div>
+									</div>
+								</div>
+							</li>
+							<li class="row">
+								<h4 class="col-sm-3 col-12  text-center">JQUERY</h4>
+								<div class="col-sm-9 col-12">
+									<div class="toastr" style="left: 70%">70%</div>
+									<div class="progress " >
+										
+										<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 70%" ></div>
+									</div>
+								</div>
+							</li>
+							<li class="row">
+								<h4 class="col-sm-3 col-12 text-center">REACTJS</h4>
+								<div class="col-sm-9 col-12">
+									<div class="toastr" style="left: 30%">30%</div>
+									<div class="progress " >
+										
+										<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 30%" ></div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
 
 
 			<div class="row" id="myproject">
@@ -280,9 +354,9 @@
 						</div> <!-- end column cart -->
 					</div> <!-- end row -->
 				</div> <!-- end column -->
-			</div> <!-- end row myproject -->
-			
+			</div> <!-- end row myproject -->	
 		</div> <!-- end container -->
+
 		<div class="menu-fixed">
 			<ul class="list-inline">
 				<li class="list-inline-item text-center">
@@ -309,7 +383,7 @@
 
 
 	<!-- link jquery && link js for bootstrap -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 

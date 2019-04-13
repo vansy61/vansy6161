@@ -51,6 +51,13 @@ $(document).ready(() =>{
 		$(".content-nav .main-nav ul li").click(function(){
 			$("html, body").addClass("overHidden");
 			$("section.content").addClass("show");
+			setTimeout(()=>{
+				let a = $(this).data("idl");
+			let place = $(a).offset().top;
+			$("#prot").animate({scrollTop: place},200);
+			},1000)
+			//$("#prot").animate({scrollTop: place}, 200);
+			
 			
 		});
 	}

@@ -291,6 +291,56 @@ section.content {
             transform: translateY(-50%); }
         section.content div.container-fluid > div.row#aboutme > div .timeline-info div.events-mobile {
           display: none; }
+    section.content div.container-fluid > div.row#myskill {
+      padding: 50px 0; }
+      section.content div.container-fluid > div.row#myskill > div .skill-title {
+        padding: 0 15px; }
+        section.content div.container-fluid > div.row#myskill > div .skill-title h2 {
+          width: 100%;
+          line-height: 100px;
+          color: #368F8B;
+          border-bottom: 1px solid #368F8B; }
+      section.content div.container-fluid > div.row#myskill > div .skill-content ul {
+        margin: 20px auto 0;
+        width: 100%; }
+        section.content div.container-fluid > div.row#myskill > div .skill-content ul li {
+          width: 80%;
+          margin: 0 auto;
+          padding: 10px 0; }
+          section.content div.container-fluid > div.row#myskill > div .skill-content ul li h4 {
+            height: 50px;
+            line-height: 50px;
+            color: #DCEDFF;
+            margin-bottom: 0;
+            font-size: 1rem; }
+          section.content div.container-fluid > div.row#myskill > div .skill-content ul li > div {
+            width: 100%;
+            position: relative;
+            padding: 0; }
+            section.content div.container-fluid > div.row#myskill > div .skill-content ul li > div > div {
+              max-width: 100%;
+              height: 20px;
+              padding: 0;
+              margin: 15px 0; }
+            section.content div.container-fluid > div.row#myskill > div .skill-content ul li > div .toastr {
+              position: absolute;
+              top: -15px;
+              transform: translateX(-50%);
+              background-color: #368F8B;
+              z-index: 20;
+              line-height: 20px;
+              padding: 0 5px;
+              margin: 0;
+              border-radius: 5px;
+              color: #DCEDFF; }
+              section.content div.container-fluid > div.row#myskill > div .skill-content ul li > div .toastr:after {
+                content: "";
+                border: 8px solid #00000000;
+                border-top: 8px solid #368F8B;
+                position: absolute;
+                bottom: -16px;
+                left: 50%;
+                transform: translateX(-50%); }
     section.content div.container-fluid > div.row#myproject {
       padding-top: 20px;
       /*end show-main*/ }
@@ -630,6 +680,7 @@ section.content.show {
   /*end footer*/
   section.content div.container-fluid {
     /*end about me*/
+    /*end my skill*/
     /*end my project*/ }
     section.content div.container-fluid > div.row#aboutme > div {
       /*end basic info*/ }
@@ -705,6 +756,43 @@ section.content.show {
               top: 50%;
               right: 300px;
               transform: translateY(-50%); }
+    section.content div.container-fluid > div.row#myskill > div .skill-content ul li {
+      width: 100%;
+      padding: 10px 10px; }
+      section.content div.container-fluid > div.row#myskill > div .skill-content ul li h4 {
+        height: 50px;
+        line-height: 50px;
+        color: #DCEDFF;
+        margin-bottom: 0;
+        font-size: 1rem; }
+      section.content div.container-fluid > div.row#myskill > div .skill-content ul li > div {
+        width: 100%;
+        position: relative;
+        padding: 0; }
+        section.content div.container-fluid > div.row#myskill > div .skill-content ul li > div > div {
+          max-width: 100%;
+          height: 20px;
+          padding: 0;
+          margin: 15px 0; }
+        section.content div.container-fluid > div.row#myskill > div .skill-content ul li > div .toastr {
+          position: absolute;
+          top: -15px;
+          transform: translateX(-50%);
+          background-color: #368F8B;
+          z-index: 20;
+          line-height: 20px;
+          padding: 0 5px;
+          margin: 0;
+          border-radius: 5px;
+          color: #DCEDFF; }
+          section.content div.container-fluid > div.row#myskill > div .skill-content ul li > div .toastr:after {
+            content: "";
+            border: 8px solid #00000000;
+            border-top: 8px solid #368F8B;
+            position: absolute;
+            bottom: -16px;
+            left: 50%;
+            transform: translateX(-50%); }
     section.content div.container-fluid > div.row#myproject div.show-main > div.row div.show-card > div.row div.card {
       max-width: 55%; } }
 @media screen and (max-width: 576px) {
