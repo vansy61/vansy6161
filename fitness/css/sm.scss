@@ -91,4 +91,22 @@
 		} /*end container*/
 	}
 		/*end section with in*/
+	section.features{
+		padding: 30px 0;
+		div.container{
+			>div.row{
+				div.feature-content{
+					padding: 50px 0;
+					h3{
+						font-size: 36px;
+					}
+					p{
+						font-size: 18px;
+					}
+				}
+			} /* end row*/
+		} /*end container*/
+	}
+	/*end features*/
+
 }
