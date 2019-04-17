@@ -1,0 +1,458 @@
+html, body {
+  overflow-x: hidden; }
+
+header {
+  height: 65px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  /*end container*/ }
+  header .container {
+    height: 100%;
+    /* end nav*/ }
+    header .container nav.navbar {
+      height: 100%;
+      /* end menu logo */
+      /* end button */
+      /* end main menu*/ }
+      header .container nav.navbar .main-menu {
+        /*end ul */ }
+        header .container nav.navbar .main-menu ul {
+          /* end li*/ }
+          header .container nav.navbar .main-menu ul li {
+            margin: 0 15px;
+            box-sizing: border-box;
+            padding: 10px;
+            height: 38px; }
+            header .container nav.navbar .main-menu ul li a {
+              color: #000;
+              font-family: "Dosis", sans-serif;
+              font-family: 400;
+              font-size: 11pt;
+              text-transform: uppercase;
+              line-height: 14pt;
+              padding: 0; }
+            header .container nav.navbar .main-menu ul li:hover {
+              border-bottom: 2px solid #e74c3c; }
+          header .container nav.navbar .main-menu ul li.dropdown > a::after {
+            content: "\f078";
+            font-weight: 900;
+            border: none;
+            font-family: "Font Awesome 5 Free";
+            font-size: 11pt;
+            margin-left: 8px;
+            line-height: 14pt;
+            vertical-align: 0; }
+          header .container nav.navbar .main-menu ul li.dropdown div.dropdown-menu {
+            margin-top: 20px;
+            padding: 10px 20px; }
+            header .container nav.navbar .main-menu ul li.dropdown div.dropdown-menu a {
+              line-height: 28px; }
+
+/* end header*/
+.main-slide {
+  width: 100%;
+  height: 100%;
+  margin-top: 65px; }
+
+section.about-company div.container {
+  /*end ab-counter*/
+  /*end ab-title*/
+  /*ab-video*/ }
+  section.about-company div.container .ab-counter {
+    position: relative;
+    top: -100px;
+    height: 288px;
+    background-color: #fff;
+    z-index: 8;
+    box-shadow: 0 0 16px 2px #d5cccc; }
+    section.about-company div.container .ab-counter > div.row {
+      height: 100%;
+      display: table;
+      padding: 0;
+      margin: 0; }
+      section.about-company div.container .ab-counter > div.row > div {
+        display: table-cell;
+        vertical-align: middle; }
+      section.about-company div.container .ab-counter > div.row > div.col-4 {
+        width: 30%; }
+      section.about-company div.container .ab-counter > div.row > div.col-8 h4 {
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: 700;
+        font-size: 18px; }
+      section.about-company div.container .ab-counter > div.row > div.col-8 a {
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #e74c3c; }
+    section.about-company div.container .ab-counter > div.cases {
+      box-shadow: 0 0 16px 2px #d5cccc; }
+  section.about-company div.container .ab-title > div.col-title {
+    padding: 0;
+    display: table;
+    height: 150.4px; }
+    section.about-company div.container .ab-title > div.col-title h2 {
+      display: table-cell;
+      vertical-align: middle;
+      font-family: "Roboto Condensed", sans-serif;
+      font-weight: 400;
+      font-size: 34px;
+      color: #e74c3c; }
+    section.about-company div.container .ab-title > div.col-title p {
+      display: table-cell;
+      vertical-align: middle;
+      font-family: "Roboto Condensed", sans-serif;
+      font-weight: 400;
+      font-size: 24px;
+      color: #000; }
+  section.about-company div.container .ab-video {
+    position: relative;
+    margin: 80px 0; }
+    section.about-company div.container .ab-video .video-title {
+      background-color: #e74c3c;
+      position: absolute;
+      bottom: 5%;
+      right: 20%; }
+
+/*end section about company*/
+section.get-start {
+  background-color: #e74c3c;
+  padding: 125px 0; }
+  section.get-start div.container div.gs-title h2 {
+    font-size: 46px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+    color: #fff; }
+  section.get-start div.container button.gs-button {
+    margin: 80px auto 0;
+    display: block;
+    font-size: 46px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+    color: #e74c3c;
+    background-color: #fff;
+    border: none; }
+
+section.as-seen {
+  /*end container*/ }
+  section.as-seen div.container {
+    /*end row*/ }
+    section.as-seen div.container div.row {
+      /*end div column*/ }
+      section.as-seen div.container div.row > div p {
+        padding: 100px 0;
+        font-size: 24px;
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: 400;
+        color: #000;
+        line-height: 34px; }
+      section.as-seen div.container div.row > div img.list-logo {
+        margin-top: 50px; }
+
+/*end section as-seen*/
+section.as-tab {
+  padding: 178px 0;
+  /*end container */ }
+  section.as-tab div.container {
+    padding: 0;
+    /*end row*/ }
+    section.as-tab div.container div.row {
+      margin: 0;
+      padding: 50px 0;
+      border-bottom: 1px solid #e7e7e7; }
+      section.as-tab div.container div.row > div p {
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        color: #000; }
+
+/*end section as-tab*/
+section.within {
+  background-color: #e74c3c;
+  padding: 160px 0;
+  /*end container*/ }
+  section.within div.container div.within-title h4 {
+    font-size: 36px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+    color: #ffe5e5;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 50px;
+    margin: 0; }
+  section.within div.container div.within-title h2 {
+    padding: 80px 0;
+    font-size: 90px;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #ffe5e5;
+    text-align: center;
+    text-transform: uppercase; }
+  section.within div.container div.within-content {
+    /* end tab-btn */ }
+    section.within div.container div.within-content div.within-tab-btn ul {
+      background-color: #e94436;
+      padding: 20px 0;
+      box-shadow: 0 0 20px 0px #80808066;
+      margin-bottom: 100px; }
+      section.within div.container div.within-content div.within-tab-btn ul li {
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ffe5e5;
+        padding: 20px 55px;
+        cursor: pointer; }
+      section.within div.container div.within-content div.within-tab-btn ul li:nth-child(2) {
+        border-left: 1px solid #cf3c2f;
+        border-right: 1px solid #cf3c2f; }
+      section.within div.container div.within-content div.within-tab-btn ul li.active {
+        color: #000; }
+    section.within div.container div.within-content div.within-tab-ct {
+      position: relative; }
+      section.within div.container div.within-content div.within-tab-ct > div.tab-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden; }
+        section.within div.container div.within-content div.within-tab-ct > div.tab-child > div p {
+          font-family: "Roboto Condensed", sans-serif;
+          font-size: 18px;
+          font-weight: 400;
+          color: #fff; }
+      section.within div.container div.within-content div.within-tab-ct > div.tab-child:first-child {
+        position: relative;
+        top: 0;
+        left: 0; }
+        section.within div.container div.within-content div.within-tab-ct > div.tab-child:first-child > div p {
+          font-family: "Roboto Condensed", sans-serif;
+          font-size: 18px;
+          font-weight: 400;
+          color: #fff; }
+      section.within div.container div.within-content div.within-tab-ct > div.tab-child.active {
+        opacity: 1;
+        visibility: visible;
+        z-index: 10;
+        animation: right-in 1s forwards; }
+
+/*animation right in*/
+@keyframes right-in {
+  0% {
+    transform: translateX(100%);
+    opacity: 0; }
+  100% {
+    transform: translateX(0%);
+    opacity: 1; } }
+/*end section with in*/
+@media screen and (max-width: 1200px) {
+  header {
+    /* end container */ }
+    header div.container nav.navbar div.main-menu {
+      background-color: #fff; }
+      header div.container nav.navbar div.main-menu ul li {
+        height: auto;
+        text-align: center; }
+        header div.container nav.navbar div.main-menu ul li > div.dropdown-menu {
+          position: static;
+          text-align: center;
+          width: 50%;
+          margin: 0 auto; }
+        header div.container nav.navbar div.main-menu ul li:hover {
+          border: none; }
+
+  /* end header*/
+  section.about-company div.container {
+    /*end ab-counter*/ }
+
+  /*end about company*/
+  section.get-start {
+    padding: 90px 0; }
+    section.get-start div.container div.gs-title h2 {
+      font-size: 36px; }
+    section.get-start div.container button.gs-button {
+      margin: 60px auto 0;
+      font-size: 36px; }
+
+  /*end get start*/
+  section.within {
+    background-color: #e74c3c;
+    padding: 100px 0;
+    /*end container*/ }
+    section.within div.container div.within-title h4 {
+      font-size: 30px;
+      font-family: "Roboto Condensed", sans-serif;
+      font-weight: 700;
+      color: #ffe5e5;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 50px;
+      margin: 0; }
+    section.within div.container div.within-title h2 {
+      padding: 60px 0;
+      font-size: 70px;
+      font-family: "Roboto Condensed", sans-serif;
+      color: #ffe5e5;
+      text-align: center;
+      text-transform: uppercase; }
+    section.within div.container div.within-content {
+      /* end tab-btn */ }
+      section.within div.container div.within-content div.within-tab-btn ul {
+        padding: 18px 0;
+        margin-bottom: 40px; }
+        section.within div.container div.within-content div.within-tab-btn ul li {
+          font-family: "Roboto Condensed", sans-serif;
+          font-size: 22px;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: #ffe5e5;
+          padding: 10px 55px; }
+        section.within div.container div.within-content div.within-tab-btn ul li:nth-child(2) {
+          border-left: 1px solid #cf3c2f;
+          border-right: 1px solid #cf3c2f; }
+        section.within div.container div.within-content div.within-tab-btn ul li.active {
+          color: #000; }
+
+  /*end section with in*/ }
+@media screen and (max-width: 992px) {
+  section.about-company div.container {
+    /*end ab-counter*/ }
+    section.about-company div.container .ab-counter {
+      top: 0;
+      height: auto;
+      margin-top: 20px; }
+      section.about-company div.container .ab-counter > div.row {
+        height: auto;
+        min-height: 100px; }
+        section.about-company div.container .ab-counter > div.row > div.col-4 {
+          width: 30%;
+          text-align: center; }
+        section.about-company div.container .ab-counter > div.row > div.col-8 {
+          text-align: center; }
+      section.about-company div.container .ab-counter > div.cases {
+        box-shadow: none;
+        border-top: 1px solid #8080802e;
+        border-bottom: 1px solid #8080802e; }
+    section.about-company div.container .ab-title > div.col-title h2 {
+      font-size: 24px;
+      text-align: center; }
+    section.about-company div.container .ab-title > div.col-title p {
+      font-size: 18px;
+      text-align: center; }
+    section.about-company div.container .ab-title > div.col-title:nth-child(2) {
+      display: none; }
+
+  /*end about company*/
+  section.get-start {
+    padding: 50px 0; }
+    section.get-start div.container div.gs-title h2 {
+      font-size: 24px; }
+    section.get-start div.container button.gs-button {
+      margin: 30px auto 0;
+      font-size: 24px; }
+
+  /*end get start*/
+  section.within {
+    /*end container*/ }
+    section.within div.container div.within-content {
+      /* end tab-btn */ }
+      section.within div.container div.within-content div.within-tab-btn ul {
+        padding: 14px 0;
+        margin-bottom: 40px; }
+        section.within div.container div.within-content div.within-tab-btn ul li {
+          font-family: "Roboto Condensed", sans-serif;
+          font-size: 16px;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: #ffe5e5;
+          padding: 8px 0; }
+        section.within div.container div.within-content div.within-tab-btn ul li:nth-child(2) {
+          border-left: 1px solid #cf3c2f;
+          border-right: 1px solid #cf3c2f; }
+        section.within div.container div.within-content div.within-tab-btn ul li.active {
+          color: #000; } }
+@media screen and (max-width: 768px) {
+  header.container-fluid {
+    padding: 0;
+    /*end container*/ }
+    header.container-fluid div.container {
+      width: 100%;
+      padding: 0;
+      /*end nav*/ }
+      header.container-fluid div.container nav.navbar div.main-menu ul {
+        width: 100%; }
+        header.container-fluid div.container nav.navbar div.main-menu ul li {
+          margin: 0;
+          padding-right: 0;
+          padding-left: 0; }
+          header.container-fluid div.container nav.navbar div.main-menu ul li > div.dropdown-menu {
+            width: 80%;
+            font-size: 7pt; }
+
+  /* end header*/
+  section.as-seen {
+    /*end container*/ }
+    section.as-seen div.container {
+      /*end row*/ }
+      section.as-seen div.container div.row {
+        /*end div column*/ }
+        section.as-seen div.container div.row > div p {
+          padding: 50px 0;
+          font-size: 18px;
+          font-family: "Roboto Condensed", sans-serif;
+          font-weight: 400;
+          color: #000;
+          line-height: 26px; }
+        section.as-seen div.container div.row > div img.list-logo {
+          margin-top: 25px; }
+
+  /*end section as-seen*/
+  section.as-tab {
+    padding: 70px 0;
+    /*end container */ }
+    section.as-tab div.container {
+      padding: 0;
+      /*end row*/ }
+      section.as-tab div.container div.row {
+        margin: 0; }
+        section.as-tab div.container div.row > div img {
+          max-width: 50px;
+          padding: 5px 0; }
+        section.as-tab div.container div.row > div p {
+          font-family: "Roboto Condensed", sans-serif;
+          font-size: 18px;
+          font-weight: 400;
+          color: #000; }
+
+  /*end section as-tab*/
+  section.within {
+    /*end container*/ }
+    section.within div.container div.within-title h4 {
+      font-size: 24px;
+      line-height: 30px; }
+    section.within div.container div.within-title h2 {
+      padding: 35px 0;
+      font-size: 46px; }
+
+  /*end section with in*/ }
+@media screen and (max-width: 576px) {
+  header {
+    height: 50px; }
+    header div.container nav.navbar a img.img-fluid {
+      max-height: 25px; }
+
+  /*end header*/
+  div.main-slide {
+    margin-top: 50px; }
+
+  section.about-company {
+    /*end container*/ }
+    section.about-company div.container {
+      padding: 0 0; }
+      section.about-company div.container .ab-video {
+        width: 100%; }
+
+  /*end section about-company*/ }
+
+/*# sourceMappingURL=main.css.map */
