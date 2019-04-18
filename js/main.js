@@ -87,7 +87,6 @@ $(document).ready(() =>{
 			let arr =[];
 			arr[0] = $("#aboutme").outerHeight() -20;
 			arr[1] = $("#myskill").outerHeight() + arr[0] -20;
-			console.log($(this).scrollTop());
 			if($(this).scrollTop() < arr[0]){
 				$(".menu-fixed ul li span").removeClass("act-menu");
 		    	$(".menu-fixed ul li span").eq(0).addClass("act-menu");
@@ -95,12 +94,10 @@ $(document).ready(() =>{
 			else if((arr[0] <= $(this).scrollTop()) && ($(this).scrollTop() < arr[1]) ){
 				$(".menu-fixed ul li span").removeClass("act-menu");
 		    	$(".menu-fixed ul li span").eq(1).addClass("act-menu");
-		    	console.log(2);
 			}
 			else {
 				$(".menu-fixed ul li span").removeClass("act-menu");
 		    	$(".menu-fixed ul li span").eq(2).addClass("act-menu");
-		    	console.log(3);
 			}
 		});
 	}
