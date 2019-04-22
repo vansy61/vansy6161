@@ -1,8 +1,595 @@
-h3.title {
-  color: blue; }
+/*variable color*/
+/*variable font*/
+html::-webkit-scrollbar {
+  display: none; }
 
+html, body {
+  width: 100%;
+  height: 100%;
+  /*css for not responsive*/
+  /*css for load page*/
+  /*end css for load page*/
+  /*css for header*/
+  /*end css for header*/
+  /*css for box menu*/
+  /*end css for box menu*/
+  /*css for contact box*/
+  /*end css for contact box*/ }
+  html div.not-responsive, body div.not-responsive {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #363232;
+    top: 0;
+    left: 0;
+    color: #efecec;
+    z-index: 1000000000;
+    font-size: 70px;
+    opacity: 0;
+    visibility: hidden; }
+    html div.not-responsive h1, body div.not-responsive h1 {
+      margin-top: 50px; }
+  html .load-page, body .load-page {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    /*end content load*/
+    /*end close load*/ }
+    html .load-page .content-load, body .load-page .content-load {
+      width: 60%;
+      max-width: 300px;
+      margin: 100px auto 0;
+      position: relative; }
+      html .load-page .content-load svg, body .load-page .content-load svg {
+        position: absolute;
+        fill: none;
+        stroke: #efecec;
+        stroke-width: 3px; }
+      html .load-page .content-load img, body .load-page .content-load img {
+        opacity: 0; }
+      html .load-page .content-load h3.load-process, body .load-page .content-load h3.load-process {
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        color: #efecec; }
+    html .load-page .close-load, body .load-page .close-load {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      z-index: -1; }
+      html .load-page .close-load > div, body .load-page .close-load > div {
+        width: 50%;
+        height: 100%;
+        background: #43485f; }
+  html header, body header {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("../image/bg23.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table;
+    /*header menu*/
+    /*end header menu*/
+    /*header-title*/
+    /*end header-title*/
+    /*scroll now*/ }
+    html header nav, body header nav {
+      width: 100%;
+      height: 70px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 20;
+      /*end row*/ }
+      html header nav > div.row, body header nav > div.row {
+        height: 100%;
+        padding: 10px 0 10px;
+        /*end logo*/
+        /*end menu*/
+        /*end contact*/ }
+        html header nav > div.row .logo, body header nav > div.row .logo {
+          height: 50px;
+          position: relative; }
+          html header nav > div.row .logo img, body header nav > div.row .logo img {
+            display: inline-block;
+            max-width: 40px; }
+          html header nav > div.row .logo h6, body header nav > div.row .logo h6 {
+            display: inline-block;
+            line-height: 50px;
+            margin: 0;
+            font-family: "Kaushan Script", cursive;
+            font-size: 25px;
+            color: #2e8ef5;
+            font-weight: 400;
+            transition: 0.4s; }
+          html header nav > div.row .logo h6.text-logo.hidden, body header nav > div.row .logo h6.text-logo.hidden {
+            opacity: 0;
+            visibility: hidden; }
+          html header nav > div.row .logo h6.menu-title, body header nav > div.row .logo h6.menu-title {
+            padding-top: 5px;
+            color: #efecec;
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            position: absolute;
+            top: -100px;
+            left: 55%;
+            transform: translateX(-50%);
+            transition: 0.4s;
+            cursor: pointer; }
+            html header nav > div.row .logo h6.menu-title:after, body header nav > div.row .logo h6.menu-title:after {
+              content: "";
+              display: block;
+              width: 100%;
+              height: 3px;
+              background-color: #efecec;
+              position: absolute;
+              opacity: 0;
+              visibility: hidden;
+              transition: 0.4s; }
+            html header nav > div.row .logo h6.menu-title:hover:after, body header nav > div.row .logo h6.menu-title:hover:after {
+              opacity: 1;
+              visibility: visible;
+              transform: translateY(-10px); }
+          html header nav > div.row .logo h6.menu-title.show, body header nav > div.row .logo h6.menu-title.show {
+            top: 0; }
+        html header nav > div.row .main-menu, body header nav > div.row .main-menu {
+          transition: 0.4s; }
+          html header nav > div.row .main-menu ul, body header nav > div.row .main-menu ul {
+            margin: 0; }
+            html header nav > div.row .main-menu ul li, body header nav > div.row .main-menu ul li {
+              line-height: 50px;
+              font-size: 18px;
+              color: #efecec;
+              font-weight: 900;
+              padding: 0 20px;
+              margin: 0;
+              cursor: pointer;
+              position: relative; }
+              html header nav > div.row .main-menu ul li:after, body header nav > div.row .main-menu ul li:after {
+                content: "";
+                width: 100%;
+                height: 4px;
+                display: block;
+                position: absolute;
+                left: 0;
+                opacity: 0;
+                visibility: hidden;
+                bottom: -10px;
+                background-color: #efecec;
+                transition: 0.2s; }
+              html header nav > div.row .main-menu ul li:hover:after, body header nav > div.row .main-menu ul li:hover:after {
+                opacity: 1;
+                visibility: visible;
+                bottom: 2px; }
+        html header nav > div.row .main-menu.hidden, body header nav > div.row .main-menu.hidden {
+          visibility: hidden;
+          opacity: 0; }
+        html header nav > div.row .contact, body header nav > div.row .contact {
+          padding: 10px 0;
+          transition: 0.4s; }
+          html header nav > div.row .contact button.btn, body header nav > div.row .contact button.btn {
+            height: 100%;
+            background-color: transparent;
+            border: 2px solid #efecec;
+            color: #efecec;
+            position: relative;
+            overflow: hidden;
+            font-family: "Roboto", sans-serif;
+            font-weight: 600; }
+            html header nav > div.row .contact button.btn:before, body header nav > div.row .contact button.btn:before {
+              content: "";
+              display: block;
+              width: 0;
+              height: 50px;
+              top: -10px;
+              left: -10px;
+              background: #efecec;
+              position: absolute;
+              transition: 0.3s;
+              z-index: -1; }
+            html header nav > div.row .contact button.btn:hover, body header nav > div.row .contact button.btn:hover {
+              color: #363232; }
+            html header nav > div.row .contact button.btn:hover:before, body header nav > div.row .contact button.btn:hover:before {
+              width: 120px; }
+        html header nav > div.row .contact.hidden, body header nav > div.row .contact.hidden {
+          visibility: hidden;
+          opacity: 0; }
+    html header div.header-title, body header div.header-title {
+      width: 100%;
+      display: table-cell;
+      vertical-align: middle; }
+      html header div.header-title div.row, body header div.header-title div.row {
+        margin: 0;
+        /*end css for center title*/
+        /*end css for svg header*/ }
+        html header div.header-title div.row div.center-title, body header div.header-title div.row div.center-title {
+          z-index: 2;
+          color: #efecec; }
+          html header div.header-title div.row div.center-title h4, body header div.header-title div.row div.center-title h4 {
+            font-family: "Roboto", sans-serif;
+            font-size: 50px;
+            font-weight: 700;
+            padding-bottom: 25px;
+            opacity: 0; }
+          html header div.header-title div.row div.center-title h2, body header div.header-title div.row div.center-title h2 {
+            font-family: "Roboto", sans-serif;
+            font-size: 65px;
+            font-weight: 900;
+            opacity: 0; }
+        html header div.header-title div.row div.anime-svg-header, body header div.header-title div.row div.anime-svg-header {
+          z-index: 0; }
+          html header div.header-title div.row div.anime-svg-header svg#anime-svg, body header div.header-title div.row div.anime-svg-header svg#anime-svg {
+            overflow: visible; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-1, html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-16, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-1, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-16 {
+              fill: #fefefe; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-1, html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-10, html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-17, html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-18, html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-19, html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-2, html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-3, html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-4, html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-6, html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-7, html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-8, html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-9, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-1, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-10, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-17, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-18, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-19, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-2, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-3, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-4, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-6, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-7, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-8, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-9 {
+              fill-rule: evenodd; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-2, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-2 {
+              fill: #34465c; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-3, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-3 {
+              fill: #34404f; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-4, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-4 {
+              fill: #6e7f8f; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-5, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-5 {
+              fill: #ffe8ae; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-11, html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-6, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-11, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-6 {
+              fill: #fff; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-7, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-7 {
+              fill: #353f49; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-14, html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-8, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-14, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-8 {
+              fill: #f77b55; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-9, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-9 {
+              fill: #76d0de; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-10, html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-13, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-10, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-13 {
+              fill: #ffdb79; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-12, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-12 {
+              fill: #ccc; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-15, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-15 {
+              fill: #08c6a2; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-17, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-17 {
+              fill: #f16858; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-18, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-18 {
+              fill: #c02729; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-19, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-19 {
+              fill: #d0d2d4; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-20, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-20 {
+              fill: #7c7c7c; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-21, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-21 {
+              fill: #ffdf3c; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-22, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-22 {
+              fill: #ff8948; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-23, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-23 {
+              fill: #0096af; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-24, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-24 {
+              fill: #047d89; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-25, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-25 {
+              fill: #036166; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-26, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-26 {
+              fill: #ff8d07; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-27, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-27 {
+              fill: #ffb50f; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-28, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-28 {
+              fill: #ffd66e; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-29, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-29 {
+              fill: #ff4f54; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-30, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-30 {
+              fill: #ea4753; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-31, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-31 {
+              fill: #d83a4e; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-32, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-32 {
+              opacity: 0.1; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-33, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-33 {
+              fill: #53a2d3; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-34, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-34 {
+              fill: #bcbec0; }
+            html header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-35, body header div.header-title div.row div.anime-svg-header svg#anime-svg .cls-35 {
+              fill: #e6e7e8; }
+    html header div.scroll-now, body header div.scroll-now {
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 40px;
+      color: #efecec; }
+      html header div.scroll-now > i, body header div.scroll-now > i {
+        animation-name: anime-scroll-now;
+        animation-direction: alternate;
+        animation-duration: 2s;
+        animation-iteration-count: infinite; }
+  html section, body section {
+    width: 100%;
+    height: 100px;
+    background-color: gray; }
+  html div.menu-box, body div.menu-box {
+    width: 100%;
+    height: 100%;
+    background-color: #202322;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 30;
+    overflow: hidden;
+    transition: 0.4s;
+    opacity: 0;
+    visibility: hidden;
+    /* end menu box-title*/
+    /*end menu box list*/
+    /*end menu-box-close*/ }
+    html div.menu-box div.menu-box-title, body div.menu-box div.menu-box-title {
+      width: 100%;
+      text-align: center;
+      margin: 30px 0; }
+      html div.menu-box div.menu-box-title h4, body div.menu-box div.menu-box-title h4 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-size: 70px;
+        color: #efecec; }
+    html div.menu-box div.menu-box-list, body div.menu-box div.menu-box-list {
+      width: 100%;
+      margin: 0 auto;
+      color: white;
+      /* end ul*/ }
+      html div.menu-box div.menu-box-list ul, body div.menu-box div.menu-box-list ul {
+        display: block;
+        width: 40%;
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        /* end li*/ }
+        html div.menu-box div.menu-box-list ul li, body div.menu-box div.menu-box-list ul li {
+          padding: 10px 100px;
+          /* end h6*/ }
+          html div.menu-box div.menu-box-list ul li h6, body div.menu-box div.menu-box-list ul li h6 {
+            font-family: "Roboto", sans-serif;
+            font-size: 35px;
+            font-weight: 700;
+            color: #efecec;
+            text-align: center;
+            position: relative;
+            margin: 0;
+            cursor: pointer; }
+            html div.menu-box div.menu-box-list ul li h6:after, html div.menu-box div.menu-box-list ul li h6:before, body div.menu-box div.menu-box-list ul li h6:after, body div.menu-box div.menu-box-list ul li h6:before {
+              content: "";
+              display: block;
+              width: 3px;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              background-color: #efecec;
+              opacity: 0;
+              visibility: hidden;
+              transition: 0.3s; }
+            html div.menu-box div.menu-box-list ul li h6:after, body div.menu-box div.menu-box-list ul li h6:after {
+              left: 10px; }
+            html div.menu-box div.menu-box-list ul li h6:before, body div.menu-box div.menu-box-list ul li h6:before {
+              right: 10px; }
+            html div.menu-box div.menu-box-list ul li h6:hover:after, body div.menu-box div.menu-box-list ul li h6:hover:after {
+              left: 40px;
+              opacity: 1;
+              visibility: visible; }
+            html div.menu-box div.menu-box-list ul li h6:hover:before, body div.menu-box div.menu-box-list ul li h6:hover:before {
+              right: 40px;
+              opacity: 1;
+              visibility: visible; }
+    html div.menu-box div.menu-box-close, body div.menu-box div.menu-box-close {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 30px;
+      right: 100px;
+      cursor: pointer; }
+      html div.menu-box div.menu-box-close:after, html div.menu-box div.menu-box-close:before, body div.menu-box div.menu-box-close:after, body div.menu-box div.menu-box-close:before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 8px;
+        position: absolute;
+        top: 21px;
+        left: 0;
+        background-color: #efecec;
+        border-radius: 3px;
+        transition: 0.2s; }
+      html div.menu-box div.menu-box-close:after, body div.menu-box div.menu-box-close:after {
+        transform: rotate(45deg); }
+      html div.menu-box div.menu-box-close:before, body div.menu-box div.menu-box-close:before {
+        transform: rotate(-45deg); }
+      html div.menu-box div.menu-box-close:hover:after, body div.menu-box div.menu-box-close:hover:after {
+        transform: rotate(0); }
+      html div.menu-box div.menu-box-close:hover:before, body div.menu-box div.menu-box-close:hover:before {
+        transform: rotate(0); }
+    html div.menu-box div.menu-box-anime, body div.menu-box div.menu-box-anime {
+      margin-top: 80px;
+      width: 100%;
+      height: 60px;
+      position: relative;
+      overflow: hidden; }
+      html div.menu-box div.menu-box-anime img, body div.menu-box div.menu-box-anime img {
+        height: 60px;
+        position: absolute;
+        right: 0;
+        transform: translateX(100%); }
+      html div.menu-box div.menu-box-anime img.anime-menu-box, body div.menu-box div.menu-box-anime img.anime-menu-box {
+        animation: anime-box-menu 40s linear; }
+  html div.contact-box, body div.contact-box {
+    width: 100%;
+    height: 0%;
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.4s; }
+    html div.contact-box .bg-black, body div.contact-box .bg-black {
+      width: 100%;
+      height: 100%;
+      background-color: #0000008f;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1; }
+    html div.contact-box .form-contact, body div.contact-box .form-contact {
+      width: 30%;
+      height: auto;
+      max-width: 400px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #efecec;
+      z-index: 2;
+      padding: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 0 10px 1px #2e8ef5;
+      overflow: hidden;
+      /* end contact input */
+      /* end contact button*/ }
+      html div.contact-box .form-contact .contact-title, body div.contact-box .form-contact .contact-title {
+        color: #363232;
+        text-align: center; }
+        html div.contact-box .form-contact .contact-title h3, body div.contact-box .form-contact .contact-title h3 {
+          font-family: "Roboto", sans-serif;
+          font-size: 45px;
+          font-weight: 700; }
+        html div.contact-box .form-contact .contact-title p, body div.contact-box .form-contact .contact-title p {
+          font-family: "Roboto", sans-serif;
+          font-style: italic;
+          font-size: 20px; }
+      html div.contact-box .form-contact .contact-input, body div.contact-box .form-contact .contact-input {
+        /* end form*/ }
+        html div.contact-box .form-contact .contact-input form, body div.contact-box .form-contact .contact-input form {
+          /*content before and after*/
+          /*when user checked input: placeholder to title*/
+          /*affect when user input wrong value*/ }
+          html div.contact-box .form-contact .contact-input form div, body div.contact-box .form-contact .contact-input form div {
+            width: 80%;
+            margin: 0 auto 40px;
+            position: relative; }
+            html div.contact-box .form-contact .contact-input form div input, html div.contact-box .form-contact .contact-input form div textarea, body div.contact-box .form-contact .contact-input form div input, body div.contact-box .form-contact .contact-input form div textarea {
+              color: #363232;
+              display: block;
+              width: 100%;
+              height: 50px;
+              padding: 0 10px 0px;
+              background-color: transparent;
+              border-radius: 5px;
+              outline: none;
+              border: 2px solid #363232; }
+            html div.contact-box .form-contact .contact-input form div input.name:before, body div.contact-box .form-contact .contact-input form div input.name:before {
+              content: "Enter Your Name";
+              background-color: blue;
+              display: block;
+              width: 10px;
+              height: 20px; }
+            html div.contact-box .form-contact .contact-input form div textarea, body div.contact-box .form-contact .contact-input form div textarea {
+              height: 100px;
+              padding-top: 10px; }
+            html div.contact-box .form-contact .contact-input form div:before, body div.contact-box .form-contact .contact-input form div:before {
+              position: absolute;
+              top: 50%;
+              left: 10px;
+              padding: 0 10px;
+              transform: translateY(-50%);
+              z-index: -1;
+              transition: 0.3s;
+              font-size: 15px;
+              font-family: "Roboto", sans-serif; }
+            html div.contact-box .form-contact .contact-input form div:after, body div.contact-box .form-contact .contact-input form div:after {
+              position: absolute;
+              bottom: 0;
+              transform: translateY(100%);
+              left: 80px;
+              color: red;
+              visibility: hidden;
+              opacity: 0;
+              transition: 0.3s; }
+          html div.contact-box .form-contact .contact-input form div.name:before, body div.contact-box .form-contact .contact-input form div.name:before {
+            content: "Enter Your Name"; }
+          html div.contact-box .form-contact .contact-input form div.name:after, body div.contact-box .form-contact .contact-input form div.name:after {
+            content: "Please enter your name!"; }
+          html div.contact-box .form-contact .contact-input form div.phone:before, body div.contact-box .form-contact .contact-input form div.phone:before {
+            content: "Enter Your Phone"; }
+          html div.contact-box .form-contact .contact-input form div.phone:after, body div.contact-box .form-contact .contact-input form div.phone:after {
+            content: "Please enter your phone!"; }
+          html div.contact-box .form-contact .contact-input form div.email:before, body div.contact-box .form-contact .contact-input form div.email:before {
+            content: "Enter Your Email"; }
+          html div.contact-box .form-contact .contact-input form div.email:after, body div.contact-box .form-contact .contact-input form div.email:after {
+            content: "Please enter your email!"; }
+          html div.contact-box .form-contact .contact-input form div.message:before, body div.contact-box .form-contact .contact-input form div.message:before {
+            content: "Enter Your Message";
+            top: 20%; }
+          html div.contact-box .form-contact .contact-input form div.message:after, body div.contact-box .form-contact .contact-input form div.message:after {
+            content: "Please enter your message!"; }
+          html div.contact-box .form-contact .contact-input form div.checked:before, body div.contact-box .form-contact .contact-input form div.checked:before {
+            top: 0;
+            z-index: 5;
+            background-color: #efecec;
+            font-size: 18px;
+            font-weight: 700; }
+          html div.contact-box .form-contact .contact-input form div.check:after, body div.contact-box .form-contact .contact-input form div.check:after {
+            visibility: visible;
+            opacity: 1;
+            left: 20px; }
+      html div.contact-box .form-contact .contact-button button, body div.contact-box .form-contact .contact-button button {
+        margin: 0 auto;
+        display: block;
+        width: 50%;
+        text-transform: uppercase;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700; }
+      html div.contact-box .form-contact .submit-done, body div.contact-box .form-contact .submit-done {
+        width: 100%;
+        height: 100%;
+        background-color: #efecec;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        border-radius: 10px;
+        z-index: 10;
+        transition: 0.3s; }
+        html div.contact-box .form-contact .submit-done > div, body div.contact-box .form-contact .submit-done > div {
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%); }
+          html div.contact-box .form-contact .submit-done > div h4, body div.contact-box .form-contact .submit-done > div h4 {
+            padding: 0 10px;
+            font-family: "Roboto", sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+            color: #363232; }
+          html div.contact-box .form-contact .submit-done > div i, body div.contact-box .form-contact .submit-done > div i {
+            display: block;
+            font-size: 150px;
+            color: #28a745;
+            padding: 30px 0; }
+
+/*animation for button scroll now*/
+@keyframes anime-scroll-now {
+  0% {
+    transform: translateY(20px); }
+  100% {
+    transform: translateY(-20px); } }
+/*animation for plane of box menu*/
+@keyframes anime-box-menu {
+  0% {
+    transform: translateX(100%); }
+  100% {
+    transform: translateX(-600%); } }
+@media screen and (max-width: 1200px) {
+  div.not-responsive#not-show {
+    opacity: 1;
+    visibility: visible; } }
 @media screen and (max-width: 576px) {
-  h3.title {
-    color: red; } }
+  div.not-responsive#not-show {
+    display: block; }
+    div.not-responsive#not-show > div h1 {
+      font-size: 40px; } }
 
 /*# sourceMappingURL=main.css.map */

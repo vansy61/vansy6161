@@ -1,8 +1,770 @@
-h3.title{
-	color: blue;
+/*variable color*/
+$cl-black: #363232;
+$cl-bg: #202322;
+$cl-logo: #2e8ef5;
+$cl-white: #efecec;
+/*variable font*/
+$fnt-robo: 'Roboto', sans-serif;
+$fnt-kau: 'Kaushan Script', cursive;
+html::-webkit-scrollbar { 
+    display: none; 
+}
+html, body{
+	width: 100%;
+	height: 100%;
+	/*css for not responsive*/
+	div.not-responsive{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background-color: $cl-black;
+		top: 0;
+		left: 0;
+		color:$cl-white;
+		z-index: 1000000000;
+		font-size: 70px;
+		opacity: 0;
+		visibility: hidden;
+		h1{
+			margin-top: 50px;
+		}
+	}
+	/*css for load page*/
+	.load-page{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 10000;
+		.content-load{
+			width: 60%;
+			max-width: 300px;
+			margin: 100px auto 0;
+			position: relative;
+			svg{
+				position: absolute;
+				fill: none;
+				stroke: $cl-white;
+				stroke-width: 3px; 
+			}
+			img{
+				opacity: 0;
+			}
+			h3.load-process{
+				text-align: center;
+				font-family: $fnt-robo;
+				font-weight: 900;
+				color:$cl-white;
+			}
+		}
+		/*end content load*/
+		.close-load{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: flex;
+			z-index: -1;
+			>div{
+				width: 50%;
+				height: 100%;
+				background: #43485f;
+			}
+			
+		}
+		/*end close load*/
+	}
+	/*end css for load page*/
+
+	/*css for header*/
+	header{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background-image: url("../image/bg23.svg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: table;
+		/*header menu*/
+		nav{
+			width: 100%;
+			height: 70px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 20;
+			>div.row{
+				height: 100%;
+				padding: 10px 0 10px;
+				.logo{
+					height: 50px;
+					position: relative;
+					img{
+						display: inline-block;
+						max-width: 40px;
+					}
+					h6{
+						display: inline-block;
+						line-height: 50px;
+						margin: 0;
+						font-family: $fnt-kau;
+						font-size: 25px;
+						color: $cl-logo;
+						font-weight: 400;
+						transition: 0.4s;
+					}
+					h6.text-logo.hidden{
+						opacity: 0;
+						visibility: hidden;
+					}
+					h6.menu-title{
+						padding-top: 5px;
+						color: $cl-white;
+						font-family: $fnt-robo;
+						font-weight: 700;
+						position: absolute;
+						top: -100px;
+						left: 55%;
+						transform: translateX(-50%);
+						transition: 0.4s;
+						cursor: pointer;
+						&:after{
+							content: "";
+							display: block;
+							width: 100%;
+							height: 3px;
+							background-color: $cl-white;
+							position: absolute;
+							opacity: 0;
+							visibility: hidden;
+							transition: 0.4s;
+						}
+						&:hover:after{
+							opacity: 1;
+							visibility: visible;
+							transform: translateY(-10px);
+						}
+					}
+					h6.menu-title.show{
+						top: 0;
+					}
+				}
+				/*end logo*/
+				.main-menu{
+					transition: 0.4s;
+					ul{
+						margin: 0;
+						li{
+							line-height: 50px;
+							font-size: 18px;
+							color: $cl-white;
+							font-weight: 900;
+							padding: 0 20px;
+							margin: 0;
+							cursor: pointer;
+							position: relative;
+							&:after{
+								content: "";
+								width: 100%; 
+								height: 4px;
+								display: block;
+								position: absolute;
+								left: 0;
+								opacity: 0;
+								visibility: hidden;
+								bottom: -10px;
+								background-color: $cl-white;
+								transition: 0.2s;
+							}
+							&:hover:after{
+								opacity: 1;
+								visibility: visible;
+								bottom: 2px;
+								
+							}
+						}
+					}
+				}
+				.main-menu.hidden{
+					visibility: hidden;
+					opacity: 0;
+				}
+				/*end menu*/
+				.contact{
+					padding: 10px 0;
+					transition: 0.4s;
+					button.btn{
+					height: 100%;
+					background-color: transparent;
+					border: 2px solid $cl-white;
+					color: $cl-white;
+					position: relative;
+					overflow: hidden;
+					font-family: $fnt-robo;
+					font-weight: 600;
+					&:before{
+						content: "";
+						display: block;
+						width: 0;
+						height: 50px;
+						top: -10px;
+						left: -10px;
+						background: $cl-white;
+						position: absolute;
+						transition: 0.3s;
+						z-index: -1;
+						}
+					&:hover{
+						color: $cl-black;
+					}
+					&:hover:before{
+						width: 120px;
+						}
+					}
+				}
+				.contact.hidden{
+					visibility: hidden;
+					opacity: 0;
+				}
+				/*end contact*/
+			}
+			/*end row*/
+		}
+		/*end header menu*/
+		/*header-title*/
+		div.header-title{
+			width: 100%;
+			display: table-cell;
+			vertical-align: middle;
+			div.row{
+				margin:0;
+				div.center-title{
+					z-index: 2;
+					color: $cl-white;
+					h4{
+						font-family: $fnt-robo;
+						font-size: 50px;
+						font-weight: 700;
+						padding-bottom: 25px;
+						opacity: 0;
+					}
+					h2{
+						font-family: $fnt-robo;
+						font-size: 65px;
+						font-weight: 900;
+						opacity: 0;
+					}
+				}
+				/*end css for center title*/
+				div.anime-svg-header{
+					z-index: 0;
+					svg#anime-svg{
+						overflow: visible;
+
+								.cls-1, .cls-16 {
+									fill: #fefefe;
+								}
+
+								.cls-1, .cls-10, .cls-17, .cls-18, .cls-19, .cls-2, .cls-3, .cls-4, .cls-6, .cls-7, .cls-8, .cls-9 {
+									fill-rule: evenodd;
+								}
+
+								.cls-2 {
+									fill: #34465c;
+								}
+
+								.cls-3 {
+									fill: #34404f;
+								}
+
+								.cls-4 {
+									fill: #6e7f8f;
+								}
+
+								.cls-5 {
+									fill: #ffe8ae;
+								}
+
+								.cls-11, .cls-6 {
+									fill: #fff;
+								}
+
+								.cls-7 {
+									fill: #353f49;
+								}
+
+								.cls-14, .cls-8 {
+									fill: #f77b55;
+								}
+
+								.cls-9 {
+									fill: #76d0de;
+								}
+
+								.cls-10, .cls-13 {
+									fill: #ffdb79;
+								}
+
+								.cls-12 {
+									fill: #ccc;
+								}
+
+								.cls-15 {
+									fill: #08c6a2;
+								}
+
+								.cls-17 {
+									fill: #f16858;
+								}
+
+								.cls-18 {
+									fill: #c02729;
+								}
+
+								.cls-19 {
+									fill: #d0d2d4;
+								}
+
+								.cls-20 {
+									fill: #7c7c7c;
+								}
+
+								.cls-21 {
+									fill: #ffdf3c;
+								}
+
+								.cls-22 {
+									fill: #ff8948;
+								}
+
+								.cls-23 {
+									fill: #0096af;
+								}
+
+								.cls-24 {
+									fill: #047d89;
+								}
+
+								.cls-25 {
+									fill: #036166;
+								}
+
+								.cls-26 {
+									fill: #ff8d07;
+								}
+
+								.cls-27 {
+									fill: #ffb50f;
+								}
+
+								.cls-28 {
+									fill: #ffd66e;
+								}
+
+								.cls-29 {
+									fill: #ff4f54;
+								}
+
+								.cls-30 {
+									fill: #ea4753;
+								}
+
+								.cls-31 {
+									fill: #d83a4e;
+								}
+
+								.cls-32 {
+									opacity: 0.1;
+								}
+
+								.cls-33 {
+									fill: #53a2d3;
+								}
+
+								.cls-34 {
+									fill: #bcbec0;
+								}
+
+								.cls-35 {
+									fill: #e6e7e8;
+								}
+					}
+				}
+				/*end css for svg header*/
+			}
+		}
+		/*end header-title*/
+		/*scroll now*/
+		div.scroll-now{
+			position: absolute;
+			bottom: 10%;
+			left: 50%;
+			transform: translateX(-50%);
+			font-size: 40px;
+			color: $cl-white;
+			>i{
+				animation-name: anime-scroll-now;
+				animation-direction: alternate;
+				animation-duration: 2s;
+				animation-iteration-count: infinite;
+			}
+		}
+	}
+	/*end css for header*/
+	section{
+		width: 100%;
+		height: 100px;
+		background-color: gray;
+	}
+
+	
+	/*css for box menu*/
+	div.menu-box{
+		width: 100%;
+		height: 100%;
+		background-color:$cl-bg;
+		position: fixed;
+		top:0;
+		left: 0;
+		z-index: 30;
+		overflow: hidden;
+		transition: 0.4s;
+		opacity: 0;
+		visibility: hidden;
+		div.menu-box-title{
+			width: 100%;
+			text-align: center;
+			margin: 30px 0;
+			h4{
+				font-family: $fnt-robo;
+				font-weight: 900;
+				font-size: 70px;
+				color: $cl-white;
+			}
+		} /* end menu box-title*/
+
+		div.menu-box-list{
+			width: 100%;
+			margin: 0 auto;
+			color: white;
+			ul{
+				display: block;
+				width: 40%;
+				list-style: none;
+				padding: 0;
+				margin: 0 auto;
+				li{
+					padding: 10px 100px;
+					h6{
+						font-family: $fnt-robo;
+						font-size: 35px;
+						font-weight: 700;
+						color: $cl-white;
+						text-align: center;
+						position: relative;
+						margin: 0;
+						cursor: pointer;
+						&:after, &:before{
+							content: "";
+							display: block;
+							width: 3px;
+							height: 100%;
+							position: absolute;
+							top: 0;
+							background-color: $cl-white;
+							opacity: 0;
+							visibility: hidden;
+							transition: 0.3s;					
+						}
+						&:after{
+							left: 10px;
+						}
+						&:before{
+							right: 10px;
+						}
+						&:hover:after{
+							left: 40px;
+							opacity: 1;
+							visibility: visible;
+						}
+						&:hover:before{
+							right: 40px;
+							opacity: 1;
+							visibility: visible;
+						}
+					} /* end h6*/
+				} /* end li*/
+			} /* end ul*/
+		} /*end menu box list*/
+
+		div.menu-box-close{
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			top: 30px;
+			right: 100px;
+			cursor: pointer;
+			&:after, &:before{
+				content: "";
+				display: block;
+				width: 100%;
+				height: 8px;
+				position: absolute;
+				top: 21px;
+				left: 0;
+				background-color: $cl-white;
+				border-radius: 3px;
+				transition: 0.2s;
+			}
+			&:after{
+				transform: rotate(45deg);
+			}
+			&:before{
+				transform: rotate(-45deg);
+			}
+			&:hover:after{
+				transform: rotate(0);
+			}
+			&:hover:before{
+				transform: rotate(0);
+			}
+		} /*end menu-box-close*/
+
+		div.menu-box-anime{
+			margin-top: 80px;
+			width: 100%;
+			height: 60px;
+			position: relative;
+			overflow: hidden;
+
+			img{
+				height: 60px;
+				position: absolute;
+				right: 0;
+				transform: translateX(100%);
+			}
+			img.anime-menu-box{
+				animation: anime-box-menu 40s linear;
+
+			}
+		}
+	}
+	/*end css for box menu*/
+
+	/*css for contact box*/
+	div.contact-box{
+		width: 100%;
+		height: 0%;
+		position: fixed;
+		z-index: 30;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+		transition: 0.4s;
+		.bg-black{
+			width: 100%;
+			height: 100%;
+			background-color: #0000008f;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+		.form-contact{
+			width: 30%;
+			height: auto;
+			max-width: 400px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: $cl-white;
+			z-index: 2;
+			padding: 20px 0;
+			border-radius: 10px;
+			box-shadow: 0 0 10px 1px $cl-logo;
+			overflow: hidden;
+			.contact-title{
+				color: $cl-black;
+				text-align: center;
+				h3{
+					font-family: $fnt-robo;
+					font-size: 45px;
+					font-weight: 700;
+				}
+				p{
+					font-family: $fnt-robo;
+					font-style: italic;
+					font-size: 20px;
+				}
+			}
+			.contact-input{
+				form{
+					div{
+						width: 80%;
+						margin: 0 auto 40px;
+						position: relative;
+						input, textarea{
+							color: $cl-black;
+							display: block;
+							width: 100%;
+							height: 50px;
+							padding: 0 10px 0px;
+							background-color: transparent;
+							border-radius: 5px;
+							outline: none;
+							border:2px solid $cl-black;
+						}
+						input.name{
+							&:before{
+								content:"Enter Your Name";
+								background-color: blue;
+								display: block;
+								width: 10px;
+								height: 20px;
+							}
+						}
+						textarea{
+						height: 100px; 
+						padding-top: 10px;
+						}
+						&:before{
+							position: absolute;
+							top: 50%;
+							left: 10px;
+							padding: 0 10px;
+							transform: translateY(-50%);
+							z-index: -1;
+							transition: 0.3s;
+							font-size: 15px;
+							font-family: $fnt-robo;
+						}
+						&:after{
+							position: absolute;
+							bottom: 0;
+							transform: translateY(100%);
+							left: 80px;
+							color: red;
+							visibility: hidden;
+							opacity: 0;
+							transition: 0.3s;
+
+						}
+					}
+					/*content before and after*/
+					div.name{
+						&:before{
+							content:"Enter Your Name";
+						}
+						&:after{
+							content: "Please enter your name!"
+						}
+					}
+					div.phone{
+						&:before{
+							content:"Enter Your Phone";
+						}
+						&:after{
+							content: "Please enter your phone!"
+						}
+					}
+					div.email{
+						&:before{
+							content:"Enter Your Email";
+						}
+						&:after{
+							content: "Please enter your email!"
+						}
+					}
+					div.message{
+						&:before{
+							content: "Enter Your Message";
+							top: 20%;
+						}
+						&:after{
+							content: "Please enter your message!"
+						}
+					}
+					/*when user checked input: placeholder to title*/
+					div.checked{
+						&:before{
+							top:0;
+							z-index: 5;
+							background-color: $cl-white;
+							font-size: 18px;
+							font-weight: 700;
+						}
+					}
+					/*affect when user input wrong value*/
+					div.check{
+						&:after{
+							visibility: visible;
+							opacity: 1;
+							left: 20px;
+						}
+					}
+	
+				} /* end form*/
+			} /* end contact input */
+			.contact-button{
+				button{
+					margin: 0 auto;
+					display: block;
+					width: 50%;
+					text-transform: uppercase;
+					font-family: $fnt-robo;
+					font-weight: 700;
+				}
+			}/* end contact button*/
+			.submit-done{
+				width: 100%;
+				height: 100%;
+				background-color:$cl-white;
+				position: absolute;
+				top: -100%;
+				left: 0;
+				border-radius: 10px;
+				z-index: 10;
+				transition: 0.3s;
+
+				>div{
+					width: 100%;
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					h4{
+						padding: 0 10px;
+						font-family: $fnt-robo;
+						font-size: 30px;
+						font-weight: 700;
+						color: $cl-black;
+					}
+					i{
+						display: block;
+						font-size: 150px;
+						color: #28a745;
+						padding: 30px 0;
+					}
+				}
+			}
+		}
+	}
+	/*end css for contact box*/
+
+}
+
+/*animation for button scroll now*/
+@keyframes anime-scroll-now{
+	0%{transform: translateY(20px);}
+	100%{transform: translateY(-20px);}
+}
+/*animation for plane of box menu*/
+@keyframes anime-box-menu{
+	0%{transform: translateX(100%);}
+	100%{transform: translateX(-600%);}
+
 }
 @import 'lg.scss';
-@import 'md.scss';
-@import 'sm.scss';
-@import 'mobile.scss';
 
