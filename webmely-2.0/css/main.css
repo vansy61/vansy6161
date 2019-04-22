@@ -14,7 +14,11 @@ html, body {
   /*css for box menu*/
   /*end css for box menu*/
   /*css for contact box*/
-  /*end css for contact box*/ }
+  /*end css for contact box*/
+  /*css for services*/
+  /*end css for services*/
+  /*css for portfolio*/
+  /*end css for portfolio*/ }
   html div.not-responsive, body div.not-responsive {
     position: fixed;
     width: 100%;
@@ -303,10 +307,6 @@ html, body {
         animation-direction: alternate;
         animation-duration: 2s;
         animation-iteration-count: infinite; }
-  html section, body section {
-    width: 100%;
-    height: 100px;
-    background-color: gray; }
   html div.menu-box, body div.menu-box {
     width: 100%;
     height: 100%;
@@ -569,6 +569,104 @@ html, body {
             font-size: 150px;
             color: #28a745;
             padding: 30px 0; }
+  html section#services, body section#services {
+    overflow: hidden;
+    padding: 100px 0;
+    background-color: #3c4c68;
+    position: relative;
+    /* end bg-svg*/
+    /* end container*/ }
+    html section#services div.bg-svg, body section#services div.bg-svg {
+      overflow: visible;
+      position: absolute;
+      top: -5px;
+      left: -5%;
+      height: 100%;
+      width: 110%; }
+      html section#services div.bg-svg svg, body section#services div.bg-svg svg {
+        overflow: visible; }
+        html section#services div.bg-svg svg path, body section#services div.bg-svg svg path {
+          transform: scaleY(3); }
+    html section#services div.container .services-title, body section#services div.container .services-title {
+      padding: 20px 0; }
+      html section#services div.container .services-title h3, body section#services div.container .services-title h3 {
+        font-family: "Roboto", sans-serif;
+        color: #efecec;
+        font-size: 45px;
+        font-weight: 700; }
+      html section#services div.container .services-title p, body section#services div.container .services-title p {
+        font-family: "Roboto", sans-serif;
+        font-style: italic; }
+    html section#services div.container .services-main, body section#services div.container .services-main {
+      padding: 25px 0; }
+      html section#services div.container .services-main .services-img img, body section#services div.container .services-main .services-img img {
+        position: relative;
+        left: -100px;
+        opacity: 0;
+        transition: 0.5s; }
+      html section#services div.container .services-main .services-img img.child-2, body section#services div.container .services-main .services-img img.child-2 {
+        left: auto;
+        right: -100px; }
+      html section#services div.container .services-main .services-content > div, body section#services div.container .services-main .services-content > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+        position: relative;
+        right: -100px;
+        opacity: 0;
+        transition: 0.5s; }
+        html section#services div.container .services-main .services-content > div h4, html section#services div.container .services-main .services-content > div p, body section#services div.container .services-main .services-content > div h4, body section#services div.container .services-main .services-content > div p {
+          width: 100%;
+          color: #efecec; }
+        html section#services div.container .services-main .services-content > div h4, body section#services div.container .services-main .services-content > div h4 {
+          font-family: "Roboto", sans-serif;
+          font-size: 30px;
+          font-weight: 700; }
+        html section#services div.container .services-main .services-content > div p, body section#services div.container .services-main .services-content > div p {
+          font-family: "Roboto", sans-serif;
+          font-size: 16px;
+          font-weight: 400; }
+      html section#services div.container .services-main .services-content > div.child-2, body section#services div.container .services-main .services-content > div.child-2 {
+        right: auto;
+        left: -100px; }
+  html section#portfolio, body section#portfolio {
+    background-color: #3c4c68;
+    position: relative; }
+    html section#portfolio .portfolio-svg-bg, body section#portfolio .portfolio-svg-bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%; }
+      html section#portfolio .portfolio-svg-bg img, body section#portfolio .portfolio-svg-bg img {
+        width: 100%;
+        height: 100%; }
+    html section#portfolio .container .portfolio-title, body section#portfolio .container .portfolio-title {
+      padding: 20px 0; }
+      html section#portfolio .container .portfolio-title h3, body section#portfolio .container .portfolio-title h3 {
+        font-family: "Roboto", sans-serif;
+        color: #efecec;
+        font-size: 45px;
+        font-weight: 700; }
+      html section#portfolio .container .portfolio-title p, body section#portfolio .container .portfolio-title p {
+        font-family: "Roboto", sans-serif;
+        font-style: italic; }
+    html section#portfolio .container .portfolio-filter, body section#portfolio .container .portfolio-filter {
+      padding-bottom: 20px; }
+      html section#portfolio .container .portfolio-filter button, body section#portfolio .container .portfolio-filter button {
+        text-transform: capitalize;
+        margin: 0 5px;
+        cursor: pointer; }
+    html section#portfolio .container .portfolio-content .po-item, body section#portfolio .container .portfolio-content .po-item {
+      padding: 30px 20px;
+      margin: 20px 0; }
+      html section#portfolio .container .portfolio-content .po-item .op-item-name, body section#portfolio .container .portfolio-content .po-item .op-item-name {
+        padding: 10px 0;
+        text-align: center;
+        background-color: #6c757d;
+        color: #efecec; }
 
 /*animation for button scroll now*/
 @keyframes anime-scroll-now {

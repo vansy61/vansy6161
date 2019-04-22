@@ -413,11 +413,6 @@ html, body{
 		}
 	}
 	/*end css for header*/
-	section{
-		width: 100%;
-		height: 100px;
-		background-color: gray;
-	}
 
 	
 	/*css for box menu*/
@@ -753,6 +748,144 @@ html, body{
 	}
 	/*end css for contact box*/
 
+	/*css for services*/
+	section#services{
+		overflow: hidden;
+		padding: 100px 0;
+		background-color: #3c4c68;
+		position: relative;	
+		div.bg-svg{
+			overflow: visible;
+			position: absolute;
+			top: -5px;
+			left: -5%;
+			height: 100%;
+			width: 110%;
+			svg{
+				overflow: visible;
+				path{
+					transform: scaleY(3);
+				}
+			}
+
+		} /* end bg-svg*/
+		div.container{
+			.services-title{
+				padding: 20px 0;
+				h3{
+					font-family: $fnt-robo;
+					color: $cl-white;
+					font-size: 45px;
+					font-weight: 700;
+				}
+				p{
+					font-family: $fnt-robo;
+					font-style: italic;
+				}
+			}
+			.services-main{
+				padding: 25px 0;
+				.services-img{
+					img{
+						position: relative;
+						left: -100px;
+						opacity: 0;
+						transition: 0.5s;
+					}
+					img.child-2{
+						left: auto;
+						right: -100px;
+					}
+				}
+				.services-content{
+					>div{
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						height: 100%;
+						flex-direction: column;
+						position: relative;
+						right: -100px;
+						opacity: 0;
+						transition: 0.5s;
+						h4, p{
+							width: 100%;
+							color: $cl-white;
+						}
+						h4{
+							font-family: $fnt-robo;
+							font-size: 30px;
+							font-weight: 700;
+						}
+						p{
+							font-family: $fnt-robo;
+							font-size: 16px;
+							font-weight: 400;
+						}
+					}
+					>div.child-2{
+						right: auto;
+						left: -100px;
+					}
+				}
+			}
+		} /* end container*/
+	}
+	/*end css for services*/
+	
+	/*css for portfolio*/
+	section#portfolio{
+		background-color: #3c4c68;
+		position: relative;
+		.portfolio-svg-bg{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			img{
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.container{
+			.portfolio-title{
+				padding: 20px 0;
+				h3{
+					font-family: $fnt-robo;
+					color: $cl-white;
+					font-size: 45px;
+					font-weight: 700;
+				}
+				p{
+					font-family: $fnt-robo;
+					font-style: italic;
+				}
+			}
+			.portfolio-filter{
+				padding-bottom: 20px;
+				button{
+					text-transform: capitalize;
+					margin: 0 5px;
+					cursor: pointer;
+				}
+			}
+			.portfolio-content{
+				.po-item{
+					padding: 30px 20px;
+					margin: 20px 0;
+					.op-item-img{}
+					.op-item-name{
+						padding: 10px 0;
+						text-align: center;
+						background-color: #6c757d;
+						color: $cl-white;
+					}
+				}
+			}
+		}
+	}
+	/*end css for portfolio*/
 }
 
 /*animation for button scroll now*/

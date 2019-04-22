@@ -21,6 +21,7 @@ $(document).ready(() =>{
 			easing: "easeOutQuint"
 		})
 		// end animation show image
+		
 		.add({
 			targets: ".load-page .content-load svg path",
 			opacity: 0,
@@ -103,34 +104,56 @@ $(document).ready(() =>{
 	// js for when scroll
 	{
 		// hidden list menu, contact and  show title menu
-		let status = "noactive";
+		let statusChangeMenu = "noactive";
 		function changeMenu(){
 			let aa =$("html, body").scrollTop();
 			
 			if(aa >= 100)
 			{
-				if(status!= "active"){
+				if(statusChangeMenu!= "active"){
 				$("nav .row .main-menu").addClass("hidden"); 
 				$("nav .row .contact").addClass("hidden");
 				$("nav .row .logo h6.text-logo").addClass("hidden");
 				$("nav .row .logo h6.menu-title").addClass("show");
 
-				status = "active";
+				statusChangeMenu = "active";
 				}	
 			}
 			if(aa < 100)
 			{
-				if( aa != "noactive"){
+				if( statusChangeMenu != "noactive"){
 				$("nav .row .main-menu").removeClass("hidden"); 
 				$("nav .row .contact").removeClass("hidden");
 				$("nav .row .logo h6.text-logo").removeClass("hidden");
 				$("nav .row .logo h6.menu-title").removeClass("show");
-				status = "no-active";
+				statusChangeMenu = "no-active";
 				}
 			}
 		};
+		// end function change menu
+		let statusLoadServices = "noactive";
+		function loadPageServices(el,place,...status){
+			let offsetBody = $("html, body").scrollTop();
+			let offsetElement = el.offset().top;			
+			if (offsetBody > (offsetElement-500)) {
+				el.css(place,"0");
+				el.css("opacity","1");
+				if(status.length){
+					statusLoadServices = "active";
+				}
+			}
+		}
+		//end function loadPageServices
 		$(window).scroll(function(){
 			changeMenu();
+			if(statusLoadServices == "noactive"){
+				loadPageServices($(".services-main .services-img img").eq(0),"left");
+				loadPageServices($(".services-main .services-img img").eq(1),"right");
+				loadPageServices($(".services-main .services-img img").eq(2),"left");
+				loadPageServices($(".services-main .services-content >div").eq(0),"right");
+				loadPageServices($(".services-main .services-content >div").eq(1),"left");
+				loadPageServices($(".services-main .services-content >div").eq(2),"right",1);
+			}
 		})
 	}
 	// js click button menu
@@ -228,6 +251,25 @@ $(document).ready(() =>{
 			$(".contact-box").css("height","0%");
 		});
 	}
+	// js for services
+	{
+		let myElement = document.getElementById("servicesScroll");
+		let elementWatcher = scrollMonitor.create( myElement );
+		elementWatcher.enterViewport(function() {
+			anime({
+			targets: "#services .bg-svg svg path",
+			scaleY: [3, 1],
+			duration: 3000,
+			easing: "linear"
+			})
+			elementWatcher.destroy();
+		});
+		
+	}
 	//function call when load page or reload page
 		changeMenu();//in js for when scroll 
+
+
+	
+
 })
