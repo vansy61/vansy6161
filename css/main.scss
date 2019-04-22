@@ -468,6 +468,10 @@ section.content{
 								position: relative;
  								.img{}
  								div.card-block{
+ 									p{
+ 										min-height: 96px;
+
+ 									}
  									div.card-hover{
  										width: 100%;
  										height: 100%;
