@@ -23,6 +23,7 @@ header {
           /* end li*/ }
           header .container nav.navbar .main-menu ul li {
             margin: 0 15px;
+            -webkit-box-sizing: border-box;
             box-sizing: border-box;
             padding: 10px;
             height: 38px; }
@@ -67,6 +68,7 @@ section.about-company div.container {
     height: 288px;
     background-color: #fff;
     z-index: 8;
+    -webkit-box-shadow: 0 0 16px 2px #d5cccc;
     box-shadow: 0 0 16px 2px #d5cccc; }
     section.about-company div.container .ab-counter > div.row {
       height: 100%;
@@ -88,6 +90,7 @@ section.about-company div.container {
         font-size: 14px;
         color: #e74c3c; }
     section.about-company div.container .ab-counter > div.cases {
+      -webkit-box-shadow: 0 0 16px 2px #d5cccc;
       box-shadow: 0 0 16px 2px #d5cccc; }
   section.about-company div.container .ab-title > div.col-title {
     padding: 0;
@@ -194,6 +197,7 @@ section.within {
     section.within div.container div.within-content div.within-tab-btn ul {
       background-color: #e94436;
       padding: 20px 0;
+      -webkit-box-shadow: 0 0 20px 0px #80808066;
       box-shadow: 0 0 20px 0px #80808066;
       margin-bottom: 100px; }
       section.within div.container div.within-content div.within-tab-btn ul li {
@@ -235,6 +239,7 @@ section.within {
         opacity: 1;
         visibility: visible;
         z-index: 10;
+        -webkit-animation: right-in 1s forwards;
         animation: right-in 1s forwards; }
 
 /*end within*/
@@ -288,11 +293,22 @@ footer.container-fluid {
 
 /*end footer*/
 /*animation right in*/
-@keyframes right-in {
+@-webkit-keyframes right-in {
   0% {
+    -webkit-transform: translateX(100%);
     transform: translateX(100%);
     opacity: 0; }
   100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    opacity: 1; } }
+@keyframes right-in {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0%);
     transform: translateX(0%);
     opacity: 1; } }
 /*end section with in*/
@@ -381,6 +397,7 @@ footer.container-fluid {
         section.about-company div.container .ab-counter > div.row > div.col-8 {
           text-align: center; }
       section.about-company div.container .ab-counter > div.cases {
+        -webkit-box-shadow: none;
         box-shadow: none;
         border-top: 1px solid #8080802e;
         border-bottom: 1px solid #8080802e; }

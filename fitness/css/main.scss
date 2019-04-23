@@ -25,7 +25,8 @@ header {
 				ul{
 					li{
 						margin: 0 15px;
-						box-sizing: border-box;
+						-webkit-box-sizing: border-box;
+						        box-sizing: border-box;
 						padding: 10px;
 						height: 38px;
 						a{
@@ -84,7 +85,8 @@ section.about-company{
 				height: 288px;
 				background-color: $cl-white;
 				z-index: 8;
-				box-shadow: 0 0 16px 2px #d5cccc;
+				-webkit-box-shadow: 0 0 16px 2px #d5cccc;
+				        box-shadow: 0 0 16px 2px #d5cccc;
 				>div.row{
 					height: 100%;
 					display: table;
@@ -112,7 +114,8 @@ section.about-company{
 					}
 				}
 				>div.cases{
-					box-shadow: 0 0 16px 2px #d5cccc;
+					-webkit-box-shadow: 0 0 16px 2px #d5cccc;
+					        box-shadow: 0 0 16px 2px #d5cccc;
 				}
 			}
 			/*end ab-counter*/
@@ -251,7 +254,8 @@ section.within{
 				ul{
 					background-color: #e94436;
 					padding: 20px 0;
-					box-shadow: 0 0 20px 0px #80808066;
+					-webkit-box-shadow: 0 0 20px 0px #80808066;
+					        box-shadow: 0 0 20px 0px #80808066;
 					margin-bottom: 100px;
 					li{
 						font-family: $fn-robo;
@@ -308,7 +312,8 @@ section.within{
 					opacity: 1;
 					visibility: visible;
 					z-index: 10;
-					animation: right-in 1s forwards;
+					-webkit-animation: right-in 1s forwards;
+					        animation: right-in 1s forwards;
 				}
 			}
 
@@ -388,9 +393,13 @@ footer.container-fluid{
 }
 /*end footer*/
 /*animation right in*/
+@-webkit-keyframes right-in{
+	0%{-webkit-transform: translateX(100%);transform: translateX(100%); opacity: 0}
+	100%{-webkit-transform: translateX(0%);transform: translateX(0%); opacity: 1}
+}
 @keyframes right-in{
-	0%{transform: translateX(100%); opacity: 0}
-	100%{transform: translateX(0%); opacity: 1}
+	0%{-webkit-transform: translateX(100%);transform: translateX(100%); opacity: 0}
+	100%{-webkit-transform: translateX(0%);transform: translateX(0%); opacity: 1}
 }
 /*end section with in*/
 @import 'lg.scss';

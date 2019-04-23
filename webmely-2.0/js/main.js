@@ -143,16 +143,19 @@ $(document).ready(() =>{
 				}
 			}
 		}
+		function callServices(){
+			loadPageServices($(".services-main .services-img img").eq(0),"left");
+			loadPageServices($(".services-main .services-img img").eq(1),"right");
+			loadPageServices($(".services-main .services-img img").eq(2),"left");
+			loadPageServices($(".services-main .services-content >div").eq(0),"right");
+			loadPageServices($(".services-main .services-content >div").eq(1),"left");
+			loadPageServices($(".services-main .services-content >div").eq(2),"right",1);
+		}
 		//end function loadPageServices
 		$(window).scroll(function(){
 			changeMenu();
 			if(statusLoadServices == "noactive"){
-				loadPageServices($(".services-main .services-img img").eq(0),"left");
-				loadPageServices($(".services-main .services-img img").eq(1),"right");
-				loadPageServices($(".services-main .services-img img").eq(2),"left");
-				loadPageServices($(".services-main .services-content >div").eq(0),"right");
-				loadPageServices($(".services-main .services-content >div").eq(1),"left");
-				loadPageServices($(".services-main .services-content >div").eq(2),"right",1);
+				callServices();
 			}
 		})
 	}
@@ -177,8 +180,12 @@ $(document).ready(() =>{
 			$(".contact-box").css("height","100%");
 		});
 		//click contact us in box menu
-		$(".menu-box .menu-box-list ul li").eq(4).click(() =>{
+		$("#contact").click(() =>{
 			closeMenuBox();
+			$(".contact-box").css("height","100%");
+		});
+		//click contact us in footer
+		$("footer .footer-contact button").click(() =>{
 			$(".contact-box").css("height","100%");
 		});
 		//checked input
@@ -263,12 +270,62 @@ $(document).ready(() =>{
 			easing: "linear"
 			})
 			elementWatcher.destroy();
+		});	
+	}
+	// js for portfolio
+	{
+		function viewProject(index){
+			$("#portfolio-view").css({"opacity":"1","visibility":"visible"});
+			$("#portfolio-view .port-view-frame").eq(index).css({"opacity":"1","visibility":"visible","width":"82%"});
+
+		};
+		$("#portfolio .portfolio-content .po-item").click(function(){
+			let clickIndex = $(this).index();
+			viewProject(clickIndex);
 		});
-		
+		$("#portfolio-view .close-view").click(function(){
+			$("#portfolio-view").css({"opacity":"0","visibility":"hidden"});
+			$(this).parent().css({"opacity":"0","visibility":"hidden","width":"0"});
+		});
+	}
+	//js for button view/hide team list
+	{
+		$("#team .team-content .team-list").slideUp();
+		let statusTeamList ="hide";
+		$(".team-content .team-intro .team-intro-center button").click(function(){
+			if(statusTeamList=="hide"){
+				$("#team .team-content .team-list").slideDown();
+				$(this).text("Hide our team");
+				statusTeamList ="view";
+			}
+			else{
+				$("#team .team-content .team-list").slideUp();
+				$(this).text("view our team");
+				statusTeamList ="hide";
+			}
+		})
+	}
+	//js for scroll page
+	{
+		function scrollPage(dataScroll){
+			let offsetScroll = $(dataScroll).offset().top;
+			console.log(offsetScroll);
+			$("html, body").animate({scrollTop: offsetScroll});
+
+		};
+		$(".menu-box .menu-box-list ul li[data-scroll]").click(function(){
+			let dataScroll = $(this).data("scroll");
+			closeMenuBox();
+			scrollPage(dataScroll);
+		});
+		$("header .main-menu ul li[data-scroll]").click(function(){
+			let dataScroll = $(this).data("scroll");
+			scrollPage(dataScroll);
+		});
 	}
 	//function call when load page or reload page
 		changeMenu();//in js for when scroll 
-
+		callServices(); //in js for when scroll
 
 	
 

@@ -20,7 +20,10 @@
       max-width: 200px;
       left: 50%;
       top: 50%;
+      -webkit-transform: translate(-50%, -90%);
+      -ms-transform: translate(-50%, -90%);
       transform: translate(-50%, -90%);
+      -webkit-filter: drop-shadow(0 0 10px white);
       filter: drop-shadow(0 0 10px white); }
     .load .loading div {
       width: 30px;
@@ -31,20 +34,34 @@
       position: absolute;
       top: 60%;
       left: 50%;
+      -webkit-transition: 8s;
+      -o-transition: 8s;
       transition: 8s;
+      -webkit-animation: spin 7s linear infinite;
       animation: spin 7s linear infinite; }
 
 body.over-hid {
   overflow: hidden; }
 
-@keyframes spin {
+@-webkit-keyframes spin {
   0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
     transform: translate(-50%, -50%) rotate(0deg); }
   100% {
+    -webkit-transform: translate(-50%, -50%) rotate(3600deg);
+    transform: translate(-50%, -50%) rotate(3600deg); } }
+@keyframes spin {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg); }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(3600deg);
     transform: translate(-50%, -50%) rotate(3600deg); } }
 /*css for navigation*/
 nav.navbar {
   padding: 25px 16px;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s; }
   nav.navbar .container a.navbar-brand {
     color: #2e8ef5;
@@ -164,20 +181,27 @@ section#services {
   section#services .container .row-item > div {
     margin-bottom: 20px; }
     section#services .container .row-item > div .services-item {
+      -webkit-box-shadow: 0 0px 40px 1px rgba(188, 193, 198, 0.26);
       box-shadow: 0 0px 40px 1px rgba(188, 193, 198, 0.26);
       height: 100%;
       padding-top: 20px;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
       transition: 0.3s; }
       section#services .container .row-item > div .services-item .services-icon {
         width: 80px;
         height: 80px;
         border: 1px solid #f1f1f1;
         border-radius: 999px;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
         transition: 0.3s; }
         section#services .container .row-item > div .services-item .services-icon i {
           font-size: 40px;
           line-height: 80px;
           color: #2e8ef5;
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
           transition: 0.3s; }
       section#services .container .row-item > div .services-item .services-content h4 {
         font-size: 1.5rem;
@@ -187,6 +211,7 @@ section#services {
         font-weight: 400;
         font-size: 1rem; }
     section#services .container .row-item > div .services-item:hover {
+      -webkit-box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.13);
       box-shadow: 0 10px 22px 10px rgba(27, 38, 49, 0.13); }
       section#services .container .row-item > div .services-item:hover .services-icon {
         background-color: #2e8ef5; }
@@ -226,11 +251,15 @@ section#portfolio {
         background-color: #2e8ef5;
         top: 80%;
         left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         color: white;
         opacity: 0;
         visibility: hidden;
         z-index: 3;
+        -webkit-transition: 0.8s;
+        -o-transition: 0.8s;
         transition: 0.8s; }
       section#portfolio .container .row-port-item div.port-item > a div.port-item-hover {
         width: 100%;
@@ -241,9 +270,13 @@ section#portfolio {
         left: 0;
         opacity: 0;
         visibility: hidden;
+        -webkit-transition: 0.8s;
+        -o-transition: 0.8s;
         transition: 0.8s;
         z-index: 2; }
       section#portfolio .container .row-port-item div.port-item > a img {
+        -webkit-transition: 0.8s;
+        -o-transition: 0.8s;
         transition: 0.8s; }
     section#portfolio .container .row-port-item div.port-item > a:hover div.port-item-hover {
       opacity: 0.5;
@@ -253,6 +286,8 @@ section#portfolio {
       visibility: visible;
       top: 50%; }
     section#portfolio .container .row-port-item div.port-item > a:hover img {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
       transform: scale(1.1); }
     section#portfolio .container .row-port-item div.port-item .port-item-title {
       background-color: white;
@@ -289,12 +324,16 @@ section#team {
         position: absolute;
         left: 50%;
         top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         border-radius: 999px;
         border-top: 7px solid #2e8ef5;
         border-bottom: 7px solid #2e8ef5;
         border-left: 7px solid white;
         border-right: 7px solid white;
+        -webkit-transition: 0.6s;
+        -o-transition: 0.6s;
         transition: 0.6s;
         z-index: 2; }
       section#team .container div.row-content .team-item .team-item-img > img {
@@ -303,6 +342,8 @@ section#team {
         position: absolute;
         left: 50%;
         top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         border-radius: 999px;
         z-index: 1; }
@@ -310,9 +351,13 @@ section#team {
         position: absolute;
         bottom: -20px;
         left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
         transform: translateX(-50%);
         z-index: 3;
         cursor: pointer;
+        -webkit-transition: 0.6s;
+        -o-transition: 0.6s;
         transition: 0.6s;
         opacity: 0;
         visibility: hidden; }
@@ -320,6 +365,8 @@ section#team {
           max-width: 28px;
           max-height: 28px; }
     section#team .container div.row-content .team-item .team-item-img:hover .team-item-img--bd {
+      -webkit-transform: translate(-50%, -50%) rotate(90deg);
+      -ms-transform: translate(-50%, -50%) rotate(90deg);
       transform: translate(-50%, -50%) rotate(90deg); }
     section#team .container div.row-content .team-item .team-item-img:hover a {
       bottom: 20px;
@@ -405,6 +452,12 @@ section#contact {
         height: auto;
         padding: 20px;
         color: #212529; }
+      section#contact .container > div.contact-content > div.input-info form div.form-group input.col-12.form-control::-webkit-input-placeholder {
+        text-transform: uppercase; }
+      section#contact .container > div.contact-content > div.input-info form div.form-group input.col-12.form-control:-ms-input-placeholder {
+        text-transform: uppercase; }
+      section#contact .container > div.contact-content > div.input-info form div.form-group input.col-12.form-control::-ms-input-placeholder {
+        text-transform: uppercase; }
       section#contact .container > div.contact-content > div.input-info form div.form-group input.col-12.form-control::placeholder {
         text-transform: uppercase; }
       section#contact .container > div.contact-content > div.input-info form div.form-group .warring {
@@ -414,6 +467,8 @@ section#contact {
         top: 0px;
         left: 20px;
         line-height: 25px;
+        -webkit-transition: 0.4s;
+        -o-transition: 0.4s;
         transition: 0.4s;
         opacity: 0;
         visibility: hidden;
@@ -438,6 +493,12 @@ section#contact {
           height: 100%;
           min-height: 236px;
           max-height: 248px; }
+        section#contact .container > div.contact-content > div.input-mess form div.form-group textarea::-webkit-input-placeholder {
+          text-transform: uppercase; }
+        section#contact .container > div.contact-content > div.input-mess form div.form-group textarea:-ms-input-placeholder {
+          text-transform: uppercase; }
+        section#contact .container > div.contact-content > div.input-mess form div.form-group textarea::-ms-input-placeholder {
+          text-transform: uppercase; }
         section#contact .container > div.contact-content > div.input-mess form div.form-group textarea::placeholder {
           text-transform: uppercase; }
         section#contact .container > div.contact-content > div.input-mess form div.form-group .warring {
@@ -448,6 +509,8 @@ section#contact {
           top: 0px;
           left: 10px;
           line-height: 25px;
+          -webkit-transition: 0.4s;
+          -o-transition: 0.4s;
           transition: 0.4s;
           opacity: 0;
           visibility: hidden; }
@@ -484,6 +547,8 @@ div.port-modal-bg {
     padding: 25px 0;
     position: relative;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     background-color: white;
     border-radius: 5px; }
@@ -573,9 +638,13 @@ div.port-modal-bg.active {
         position: absolute;
         bottom: 20px;
         left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
         transform: translateX(-50%);
         z-index: 3;
         cursor: pointer;
+        -webkit-transition: 0.6s;
+        -o-transition: 0.6s;
         transition: 0.6s;
         opacity: 1;
         visibility: visible; }

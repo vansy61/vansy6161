@@ -66,10 +66,9 @@
 				</div>
 				<div class="col-8 main-menu">
 					<ul class="list-inline text-center">
-						<li  class="list-inline-item">SERVICES</li>
-						<li class="list-inline-item">POTFOLIO</li>
-						<li class="list-inline-item">ABOUT</li>
-						<li class="list-inline-item">TEAM</li>
+						<li data-scroll="#services"  class="list-inline-item">SERVICES</li>
+						<li data-scroll="#portfolio" class="list-inline-item">POTFOLIO</li>
+						<li data-scroll="#team" class="list-inline-item">TEAM</li>
 					</ul>
 				</div>
 				<div class="col-2 contact text-center">
@@ -273,11 +272,10 @@
 			</div>
 			<div class="menu-box-list">
 				<ul>
-					<li><h6>SERVICES</h6></li>
-					<li><h6>PORFOLIO</h6></li>
-					<li><h6>TEAM</h6></li>
-					<li><h6>ABOUT</h6></li>
-					<li><h6>CONTACT US</h6></li>
+					<li data-scroll="#services"><h6>SERVICES</h6></li>
+					<li data-scroll="#portfolio"><h6>PORFOLIO</h6></li>
+					<li data-scroll="#team"><h6>TEAM</h6></li>
+					<li id="contact"><h6>CONTACT US</h6></li>
 				</ul>
 			</div>
 			<div class="menu-box-close">	
@@ -398,27 +396,417 @@
 				<h3>Recent Project</h3>
 				<p class="text-muted">We're proud of our works.</p>
 			</div>
-			<div class="portfolio-filter text-center ">
-				<button class="btn btn-success">all</button>
-				<button class="btn btn-success">mobile app</button>
-				<button class="btn btn-success">web</button>
-				<button class="btn btn-success">other</button>
-			</div>
 			<div class="portfolio-content row">
 				<div class="po-item col-4">
-					<div class="op-item-img">
+					<div class="op-item-img" >
+						<img class="img-fluid" src="image/ed87a38159.png" alt="" />
+						<div class="po-item-hover">
+							<div class="po-item-view">
+								<i class="far fa-eye"></i>
+							</div>
+						</div>
+					</div>
+					<div class="op-item-name">
+						<h4>Drug Dictionary</h4>
+						<p>Mobile Application</p>
+					</div>	
+				</div><!--  end an item -->
+				<div class="po-item col-4">
+					<div class="op-item-img " >
 						<img class="img-fluid" src="image/xchecklist400.png" alt="" />
+						<div class="po-item-hover">
+							<div class="po-item-view">
+								<i class="far fa-eye"></i>
+							</div>
+						</div>
 					</div>
 					<div class="op-item-name">
 						<h4>X-Checklist</h4>
 						<p>Website Development</p>
-					</div>
+					</div>	
 				</div><!--  end an item -->
+				<div class="po-item col-4">
+					<div class="op-item-img">
+						<img class="img-fluid" src="image/0d43be1519.png" alt="" />
+						<div class="po-item-hover">
+							<div class="po-item-view">
+								<i class="far fa-eye"></i>
+							</div>
+						</div>
+					</div>
+					<div class="op-item-name">
+						<h4>VidEmpire.com</h4>
+						<p>Website Development</p>
+					</div>	
+				</div><!--  end an item -->
+				<div class="po-item col-4">
+					<div class="op-item-img">
+						<img class="img-fluid" src="image/572ee44266.png" alt="" />
+						<div class="po-item-hover">
+							<div class="po-item-view">
+								<i class="far fa-eye"></i>
+							</div>
+						</div>
+					</div>
+					<div class="op-item-name">
+						<h4>PromoTrek.com</h4>
+						<p>Mobile Marketing platform</p>
+					</div>	
+				</div><!--  end an item -->
+				<div class="po-item col-4">
+					<div class="op-item-img">
+						<img class="img-fluid" src="image/b9b9ffc2a1.png" alt="" />
+						<div class="po-item-hover">
+							<div class="po-item-view">
+								<i class="far fa-eye"></i>
+							</div>
+						</div>
+					</div>
+					<div class="op-item-name">
+						<h4>Unconcept.com</h4>
+						<p>Create documents in a better way</p>
+					</div>	
+				</div><!--  end an item -->
+				<div class="po-item col-4">
+					<div class="op-item-img">
+						<img class="img-fluid" src="image/skin-editer-400.300.png" alt="" />
+						<div class="po-item-hover">
+							<div class="po-item-view">
+								<i class="far fa-eye"></i>
+							</div>
+						</div>
+					</div>
+					<div class="op-item-name">
+						<h4>MC Skin Editor</h4>
+						<p>Mobile Application</p>
+					</div>	
+				</div><!--  end an item -->
+
 			</div><!--  end row -->
 		</div> <!-- end container -->
 	</section>
 	<!-- end portfolio -->
 
+	<!-- portfolio view -->
+	<section id="portfolio-view">
+		<div class="port-view-frame">
+			<div class="port-view-media text-center">
+				<img src="image/ed87a38159.png" alt="">
+			</div>
+			<div class="port-view-content">
+				<h3>Drug Dictionary</h3>
+				<p>
+				A Mobile application that allows students and doctors to search for information about medical drugs faster. Had over 100k download from google play alone.</p>
+				<p>Date: January 2017 <br/> Client: Explore <br/> Category: Mobile App Development</p>
+				<button class="btn-lg btn btn-primary">Launch Web</button>
+			</div>
+			<div class="close-view text-center">
+				<i class="fas fa-times"></i>
+			</div>
+		</div>
+		<!-- end frame -->
+		<div class="port-view-frame">
+			<div class="port-view-media text-center">
+				<img src="image/xchecklist400.png" alt="">
+			</div>
+			<div class="port-view-content">
+				<h3>XCHECKLIST</h3>
+				<p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+				<p>Date: January 2017 <br/> Client: Southwest <br/> Category: Website Design</p>
+				<button class="btn-lg btn btn-primary">Launch Web</button>
+			</div>
+			<div class="close-view text-center">
+				<i class="fas fa-times"></i>
+			</div>
+		</div>
+		<!-- end frame -->
+		<div class="port-view-frame">
+			<div class="port-view-media text-center">
+				<img src="image/0d43be1519.png" alt="">
+			</div>
+			<div class="port-view-content">
+				<h3>VidEmpire.com</h3>
+				<p>A Web-based platform that allows users to create professional videos in minutes with minimal efforts.</p>
+				<p>Date: January 2017 <br/> Client: Webmely<br/> Category: Website Development</p>
+				<button class="btn-lg btn btn-primary">Launch Web</button>
+			</div>
+			<div class="close-view text-center">
+				<i class="fas fa-times"></i>
+			</div>
+		</div>
+		<!-- end frame -->
+		<div class="port-view-frame">
+			<div class="port-view-media text-center">
+				<img src="image/572ee44266.png" alt="">
+			</div>
+			<div class="port-view-content">
+				<h3>PromoTrek.com</h3>
+				<p>Convert your app store listing to a website with a few clicks</p>
+				<p>Date: January 2017 <br/> Client: Threads<br/> Category: Website Development</p>
+				<button class="btn-lg btn btn-primary">Launch Web</button>
+			</div>
+			<div class="close-view text-center">
+				<i class="fas fa-times"></i>
+			</div>
+		</div>
+		<!-- end frame -->
+		<div class="port-view-frame">
+			<div class="port-view-media text-center">
+				<img src="image/b9b9ffc2a1.png" alt="">
+			</div>
+			<div class="port-view-content">
+				<h3>Unconcept.com</h3>
+				<p>Idea visualization web application</p>
+				<p>Date: January 2017 <br/> Url:unconcept.com<br/> Category: Website Development</p>
+				<button class="btn-lg btn btn-primary">Launch Web</button>
+			</div>
+			<div class="close-view text-center">
+				<i class="fas fa-times"></i>
+			</div>
+		</div>
+		<!-- end frame -->
+		<div class="port-view-frame">
+			<div class="port-view-media text-center">
+				<img src="image/skin-editer-400.300.png" alt="">
+			</div>
+			<div class="port-view-content">
+				<h3>Minecraft Skin Edito</h3>
+				<p>A Mobile application that allows minecraft players to design their own skin. Had over 100k download on google play</p>
+				<p>Date: January 2017 <br/> Client: Lines<br/> Category: Mobile Development</p>
+				<button class="btn-lg btn btn-primary">Launch Web</button>
+			</div>
+			<div class="close-view text-center">
+				<i class="fas fa-times"></i>
+			</div>
+		</div>
+		<!-- end frame -->
+	</section>
+	<!-- end portfolio view -->
+
+	
+	<!-- team -->
+	<section id="team">
+		<div class="container">
+			<div class="team-title text-center">
+				<h3>Get To Know Our Team</h3>
+				<p class="text-muted">Lorem ipsum dolor sit amet</p>
+			</div>
+		</div>
+		<div class="team-content">
+			<div class="team-intro row">
+				<div class="team-intro-left col-3">
+					<div class="left-img">
+						<img src="image/bg-team.svg" alt="">
+					</div>
+					<div class="row">
+						<div class="col-7 offset-2">
+							<img  src="image/nguyenbach.png" alt="">
+							<img src="image/dinhanh.png" alt="">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-7 offset-5">
+							<img  src="image/xuantai.png" alt="">
+						
+							<img src="image/vuquoc.jpg" alt="">
+						</div>
+					</div>
+					
+				</div>
+				<div class="team-intro-center col-6 text-center">
+					<p class="text-center">Our development team comprises of carefully selected developers through strict technical screening. All members of our team hold Bachelors and have 2+ years of experience in website / mobile app development, database management,... We offer a wide range of Ruby on Rails development services & have extensive experience in Ruby on Rails development for web & mobile applications. ... We build powerful solutions by adopting the most popular technologies such as Ruby on Rails, Node.js, Html5, Angularjs, Mysql, NoSql and more.</p>
+					<button class="btn btn-lg btn-primary">view our team</button>
+				</div>
+				<div class="team-intro-right col-3">
+					<img class="img-fluid" src="image/team-work.svg" alt="">
+				</div>
+			</div>
+			<div class="team-list">
+					<div class="container">
+						<ul class="row">
+							<li class="col-3">
+								<div class="team-item-img">
+									<img class="img-fluid" src="image/dinhanh.png" alt="">
+									<div class="team-item-hover">
+										<ul>
+											<li><a href="#" class="fab fa-facebook"></a></li>
+											<li><a href="#" class="fab fa-twitter-square"></a></li>
+											<li><a href="#" class="fab fa-github-square"></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="team-item-title text-center">
+									<h5>Tra Dinh Anh</h5>
+									<p>General Manager</p>
+								</div>
+							</li><!--  end an item -->
+							<li class="col-3">
+								<div class="team-item-img">
+									<img class="img-fluid" src="image/nguyenbach.png" alt="">
+									<div class="team-item-hover">
+										<ul>
+											<li><a href="#" class="fab fa-facebook"></a></li>
+											<li><a href="#" class="fab fa-twitter-square"></a></li>
+											<li><a href="#" class="fab fa-github-square"></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="team-item-title text-center">
+									<h5>Tran Nguyen Bach</h5>
+									<p>Lead Developer</p>
+								</div>
+							</li><!--  end an item -->
+							<li class="col-3">
+								<div class="team-item-img">
+									<img class="img-fluid" src="image/vuquoc.jpg" alt="">
+									<div class="team-item-hover">
+										<ul>
+											<li><a href="#" class="fab fa-facebook"></a></li>
+											<li><a href="#" class="fab fa-twitter-square"></a></li>
+											<li><a href="#" class="fab fa-github-square"></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="team-item-title text-center">
+									<h5>Le Van Vu Quoc</h5>
+									<p>Full-Stack Developer</p>
+								</div>
+							</li><!--  end an item -->
+							<li class="col-3">
+								<div class="team-item-img">
+									<img class="img-fluid" src="image/xuantai.png" alt="">
+									<div class="team-item-hover">
+										<ul>
+											<li><a href="#" class="fab fa-facebook"></a></li>
+											<li><a href="#" class="fab fa-twitter-square"></a></li>
+											<li><a href="#" class="fab fa-github-square"></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="team-item-title text-center">
+									<h5>Nguyen Xuan Tai</h5>
+									<p>Developer</p>
+								</div>
+							</li><!--  end an item -->
+							<li class="col-3">
+								<div class="team-item-img">
+									<img class="img-fluid" src="image/nguyenbach.png" alt="">
+									<div class="team-item-hover">
+										<ul>
+											<li><a href="#" class="fab fa-facebook"></a></li>
+											<li><a href="#" class="fab fa-twitter-square"></a></li>
+											<li><a href="#" class="fab fa-github-square"></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="team-item-title text-center">
+									<h5>Tran Nguyen Bach</h5>
+									<p>Lead Developer</p>
+								</div>
+							</li><!--  end an item -->
+							<li class="col-3">
+								<div class="team-item-img">
+									<img class="img-fluid" src="image/dinhanh.png" alt="">
+									<div class="team-item-hover">
+										<ul>
+											<li><a href="#" class="fab fa-facebook"></a></li>
+											<li><a href="#" class="fab fa-twitter-square"></a></li>
+											<li><a href="#" class="fab fa-github-square"></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="team-item-title text-center">
+									<h5>Tra Dinh Anh</h5>
+									<p>General Manager</p>
+								</div>
+							</li><!--  end an item -->
+								<li class="col-3">
+								<div class="team-item-img">
+									<img class="img-fluid" src="image/xuantai.png" alt="">
+									<div class="team-item-hover">
+										<ul>
+											<li><a href="#" class="fab fa-facebook"></a></li>
+											<li><a href="#" class="fab fa-twitter-square"></a></li>
+											<li><a href="#" class="fab fa-github-square"></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="team-item-title text-center">
+									<h5>Nguyen Xuan Tai</h5>
+									<p>Developer</p>
+								</div>
+							</li><!--  end an item -->
+							<li class="col-3">
+								<div class="team-item-img">
+									<img class="img-fluid" src="image/dinhanh.png" alt="">
+									<div class="team-item-hover">
+										<ul>
+											<li><a href="#" class="fab fa-facebook"></a></li>
+											<li><a href="#" class="fab fa-twitter-square"></a></li>
+											<li><a href="#" class="fab fa-github-square"></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="team-item-title text-center">
+									<h5>Tra Dinh Anh</h5>
+									<p>General Manager</p>
+								</div>
+							</li><!--  end an item -->
+							<li class="col-3">
+								<div class="team-item-img">
+									<img class="img-fluid" src="image/nguyenbach.png" alt="">
+									<div class="team-item-hover">
+										<ul>
+											<li><a href="#" class="fab fa-facebook"></a></li>
+											<li><a href="#" class="fab fa-twitter-square"></a></li>
+											<li><a href="#" class="fab fa-github-square"></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="team-item-title text-center">
+									<h5>Tran Nguyen Bach</h5>
+									<p>Lead Developer</p>
+								</div>
+							</li><!--  end an item -->
+							<li class="col-3">
+								<div class="team-item-img">
+									<img class="img-fluid" src="image/vuquoc.jpg" alt="">
+									<div class="team-item-hover">
+										<ul>
+											<li><a href="#" class="fab fa-facebook"></a></li>
+											<li><a href="#" class="fab fa-twitter-square"></a></li>
+											<li><a href="#" class="fab fa-github-square"></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="team-item-title text-center">
+									<h5>Le Van Vu Quoc</h5>
+									<p>Full-Stack Developer</p>
+								</div>
+							</li><!--  end an item -->
+							
+						</ul> <!-- end ul -->
+					</div> <!-- end container -->
+			</div>
+			
+		</div> <!-- end team content -->
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="footer-contact col-12 text-center">
+					<button class="footer-btn">Contact Us Now</button>
+				</div>
+				<div class="footer-logo col-12 text-center">
+					<img class="img-fluid" src="image/logo.png" alt="" />
+					<p>&copy; webmely 2019</p>
+				</div>
+				
+			</div>
+		</div>
+		
+	</footer>
+	<!-- end team -->
 
 	
 
