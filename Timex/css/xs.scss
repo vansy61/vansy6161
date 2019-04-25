@@ -1,0 +1,31 @@
+@media screen and (max-width: 576px){
+	main{
+		header.row{
+			.header-right{
+				display: block;
+				.cart{
+					margin: 0;
+					padding: 10px 0;
+					text-align: center;
+				}
+				.info{
+					padding: 10px 0;
+					text-align: center;
+					.account{
+						padding-right: 22px;
+						border-right: 2px solid gray;
+						a{
+							color: black;
+							font-weight: 700;
+						}
+					}
+					.search{
+						i{
+							display: none;
+						}
+					}
+				}
+			} /*end header right*/
+		}/* end header*/
+	}/* end main*/
+}

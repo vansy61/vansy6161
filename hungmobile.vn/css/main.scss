@@ -1,0 +1,120 @@
+$cl-black: #282828;
+$cl-white: #fff;
+$cl-bg-red: #cd0000;
+$cl-red: red;
+$fnt-robo: 'Roboto', sans-serif;
+*{
+	margin: 0;
+	padding: 0;
+	font-family: $fnt-robo;
+}
+header{
+	div.header-top{
+		width: 100%;
+		height: 37px;
+		background-color: $cl-black; 
+		.container{
+			width: 85%;
+			height: 100%;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			.hd-t-content-left{
+				h4{
+					display: inline-block;
+					color: $cl-white;
+					font-size: 11pt;
+					line-height: 37px;
+					font-weight: 400;
+					i{
+						margin-right: 3px;
+					}
+				}
+				select{
+					width: 150px;
+					height: 30px;
+					background-color: $cl-black;
+					padding: 0 20px 0 25px;
+					color: $cl-red;
+					font-size: 11pt;
+					border: 1px solid gray;
+				}
+			}
+			.hd-t-content-center{
+				h4{
+					display: inline-block;
+					color: $cl-white;
+					font-size: 11pt;
+					line-height: 37px;
+					font-weight: 400;
+					i{
+						margin-right: 3px;
+					}
+				}
+				a{
+					text-decoration: none;
+					color: $cl-red;
+					padding: 0 5px;
+					&:nth-child(2){
+						padding-right: 10px;
+						border-right: 1px solid red;
+					}
+				}
+			}
+			.hd-t-content-right{
+				a{
+					color: #c3c3c3;
+					text-decoration: none;
+					line-height: 37px;
+					padding-left: 15px;
+					font-size: 11pt;
+					i{
+						padding-right: 3px;
+					}
+				}
+			}
+		}/* end header top content*/
+	} /*end header top*/
+	div.header-bottom{
+		width: 100%;
+		height: 67px;
+		background-color: $cl-bg-red;
+		.container{
+			width: 85%;
+			height: 100%;
+			margin: 0 auto;
+			display: flex;
+			.hd-b-left{
+				width: 40%;
+				height: 100%;
+				display: flex;
+				background-color: $cl-white;
+				div.hd-b-left-logo{
+					display: inline-block;
+					height: 100%;
+					img{
+						width: 207px;
+						height: 47px;
+						margin-top: 10px;
+						padding: 0 15px;
+					}
+				}
+				div.hd-b-left-search{
+					display: inline-block;
+					height: 100%;
+				}
+			}
+			.hd-b-right{
+				width: 60%;
+				height: 100%;
+			}
+		}
+	}
+} /*end header*/
+
+
+
+@import 'lg.scss';
+@import 'md.scss';
+@import 'sm.scss';
+@import 'xs.scss';
