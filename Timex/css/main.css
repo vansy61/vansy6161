@@ -14,13 +14,17 @@ div.load-page {
   left: 0;
   background-color: white;
   z-index: 10000;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s; }
   div.load-page svg {
     max-width: 500px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
     div.load-page svg .cls-1 {
       fill: none;
       stroke: #000;
@@ -57,11 +61,15 @@ div.fixed-left {
         cursor: pointer; }
         div.fixed-left nav ul li i {
           margin-left: -10px;
-          transform: translateX(-50px);
+          -webkit-transform: translateX(-50px);
+              -ms-transform: translateX(-50px);
+                  transform: translateX(-50px);
           font-size: 20px;
           color: #333636;
           opacity: 0;
           visibility: hidden;
+          -webkit-transition: 0.4s;
+          -o-transition: 0.4s;
           transition: 0.4s; }
         div.fixed-left nav ul li a {
           color: #333636;
@@ -69,7 +77,9 @@ div.fixed-left {
           font-weight: 700;
           font-size: 20px; }
         div.fixed-left nav ul li:hover i {
-          transform: translateX(-20px);
+          -webkit-transform: translateX(-20px);
+              -ms-transform: translateX(-20px);
+                  transform: translateX(-20px);
           opacity: 1;
           visibility: visible; }
   div.fixed-left div.contact {
@@ -91,7 +101,8 @@ div.fixed-left {
         text-decoration: none;
         color: #538ee7; }
       div.fixed-left div.contact ul li:hover {
-        box-shadow: 0 0 10px 2px #5f5454; }
+        -webkit-box-shadow: 0 0 10px 2px #5f5454;
+                box-shadow: 0 0 10px 2px #5f5454; }
 
 /*end fixed left*/
 main {
@@ -114,9 +125,15 @@ main {
           color: #538ee7;
           font-size: 1.1rem; }
     main header.row .header-right {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
-      align-items: center; }
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
       main header.row .header-right .cart {
         cursor: pointer; }
         main header.row .header-right .cart .cart-number {
@@ -127,6 +144,8 @@ main {
           background-color: #538ee7;
           color: white;
           position: relative;
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
           transition: 0.3s; }
           main header.row .header-right .cart .cart-number:before {
             content: "\f07a";
@@ -138,6 +157,8 @@ main {
             font-weight: 900;
             display: block;
             position: absolute;
+            -webkit-transition: 0.4s;
+            -o-transition: 0.4s;
             transition: 0.4s;
             opacity: 0;
             visibility: hidden; }
@@ -164,16 +185,22 @@ main {
           top: -20px;
           right: 25px;
           overflow: hidden;
+          -webkit-transition: 0.4s;
+          -o-transition: 0.4s;
           transition: 0.4s;
           opacity: 0;
           visibility: hidden; }
           main header.row .header-right .info .search form input {
             border-radius: 5px;
             border: none;
+            -webkit-transition: 0.4s;
+            -o-transition: 0.4s;
             transition: 0.4s;
             border: 1px solid black;
             padding: 0 5px; }
         main header.row .header-right .info .search i {
+          -webkit-transition: 0.4s;
+          -o-transition: 0.4s;
           transition: 0.4s;
           cursor: pointer;
           font-size: 20px; }
@@ -182,7 +209,9 @@ main {
           opacity: 1;
           visibility: visible; }
         main header.row .header-right .info .search:hover i {
-          transform: rotate(90deg); }
+          -webkit-transform: rotate(90deg);
+              -ms-transform: rotate(90deg);
+                  transform: rotate(90deg); }
   main section.explore {
     margin: 70px 0; }
     main section.explore .ex-main {
@@ -195,9 +224,15 @@ main {
           main section.explore .ex-main .ex-main-title h1 span {
             font-weight: 700; }
         main section.explore .ex-main .ex-main-title div.ex-view {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
-          justify-content: flex-end;
-          align-items: flex-end; }
+          -webkit-box-pack: end;
+              -ms-flex-pack: end;
+                  justify-content: flex-end;
+          -webkit-box-align: end;
+              -ms-flex-align: end;
+                  align-items: flex-end; }
           main section.explore .ex-main .ex-main-title div.ex-view a {
             color: #333636;
             text-decoration: underline;
@@ -217,9 +252,13 @@ main {
           text-transform: uppercase; }
           main section.explore .ex-main .ex-main-content .ex-main-item button.btn i {
             padding-left: 10px;
+            -webkit-transition: 0.4s;
+            -o-transition: 0.4s;
             transition: 0.4s; }
           main section.explore .ex-main .ex-main-content .ex-main-item button.btn:hover i {
-            transform: translateX(10px); }
+            -webkit-transform: translateX(10px);
+                -ms-transform: translateX(10px);
+                    transform: translateX(10px); }
     main section.explore .ex-sub {
       position: relative; }
       main section.explore .ex-sub p {
@@ -227,7 +266,9 @@ main {
         position: absolute;
         top: 50%;
         right: -30px;
-        transform: translateY(-50%) rotate(90deg); }
+        -webkit-transform: translateY(-50%) rotate(90deg);
+            -ms-transform: translateY(-50%) rotate(90deg);
+                transform: translateY(-50%) rotate(90deg); }
 
 /* end main*/
 /*end div fixed left*/
@@ -239,9 +280,13 @@ main {
     font-size: 14px; }
     section.explore .ex-main .ex-main-content .ex-main-item button.btn i {
       padding-left: 10px;
+      -webkit-transition: 0.4s;
+      -o-transition: 0.4s;
       transition: 0.4s; }
     section.explore .ex-main .ex-main-content .ex-main-item button.btn:hover i {
-      transform: translateX(10px); }
+      -webkit-transform: translateX(10px);
+          -ms-transform: translateX(10px);
+              transform: translateX(10px); }
 
   /*end section explore*/ }
 @media screen and (max-width: 992px) {
@@ -249,9 +294,15 @@ main {
     width: 100%;
     height: 80px;
     margin-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     div.fixed-left div.logo a h2 {
       color: #333636;
       font-size: 40px;
@@ -289,7 +340,9 @@ main {
       margin-top: 80px;
       /*end header right*/ }
       main header.row .header-right {
-        justify-content: center; }
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
         main header.row .header-right .cart {
           margin-right: 20px; }
           main header.row .header-right .cart .cart-number {
@@ -313,6 +366,8 @@ main {
           main header.row .header-right .info .search form {
             position: static;
             overflow: hidden;
+            -webkit-transition: 0.4s;
+            -o-transition: 0.4s;
             transition: 0.4s;
             opacity: 1;
             visibility: visible; }
@@ -321,7 +376,8 @@ main {
 @media screen and (max-width: 768px) {
   div.fixed-left {
     height: auto;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding-top: 20px;
     padding-bottom: 20px;
     /*end nav*/ }
@@ -385,5 +441,3 @@ main {
       padding: 8px 20px !important; }
 
   /* end main*/ }
-
-/*# sourceMappingURL=main.css.map */
