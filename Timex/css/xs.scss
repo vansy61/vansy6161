@@ -27,5 +27,20 @@
 				}
 			} /*end header right*/
 		}/* end header*/
+		section.explore{
+			.ex-main{
+				.ex-main-content{
+					.ex-main-item{
+						h4{
+							font-size: 18px;
+
+						}
+						button.btn{
+							padding: 8px 20px !important;
+						}
+					}
+				}
+			}
+		}/* end section*/
 	}/* end main*/
 }
