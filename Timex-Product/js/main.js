@@ -17,6 +17,7 @@ $(document).ready(() => {
 	$(window).scroll(() =>{
 		let place = $("html, body").scrollTop();
 		let size = $("html, body").innerWidth();
+		console.log(size);
 		if(place > 50 && size > 992){
 			$("header.row").addClass("fixed");
 		}

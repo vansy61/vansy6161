@@ -1,0 +1,47 @@
+@media screen and (max-width: 768px){
+	div.fixed-left{
+		height:auto;
+		flex-wrap: wrap;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		button{
+			display: block;
+			margin-right: 50px;
+			background-color: transparent;
+			border: none;
+			i{
+				font-size: 30px;
+			}
+		}
+		nav{
+			display: none;
+			width: 100%;
+
+			ul{
+				display: block;
+				padding-bottom: 20px;
+				li{
+					display: block;
+					text-align: center;
+					padding: 3px 0;
+					a{
+						color: $cl-black;
+						text-decoration: none;
+						font-weight: 700;
+						font-size: 20px;
+						&:hover{
+							color: $cl-purple-blue;
+						}
+					}
+					&:hover{
+						a{
+							border: none;
+						}
+					}
+
+				} /*end li*/
+			} /*end ul*/
+		} /*end nav*/
+	} /*end div fixed left*/
+
+} /*end media*/
