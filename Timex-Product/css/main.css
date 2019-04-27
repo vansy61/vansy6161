@@ -98,8 +98,9 @@ main {
   width: 80%;
   margin-left: 20%;
   /* end header*/
+  /* end title*/
   /*end section explore*/
-  /*end section explore*/
+  /*end section description*/
   /*end section slide*/ }
   main header.row {
     padding-top: 50px;
@@ -194,159 +195,260 @@ main {
     z-index: 20;
     background-color: white;
     box-shadow: 9px 0px 10px 1px gray; }
-  main section.explore {
-    margin: 70px 0;
-    /* end ex-main*/ }
-    main section.explore .ex-main {
-      /*end ex main title*/ }
-      main section.explore .ex-main .ex-main-title {
-        padding: 20px 0; }
-        main section.explore .ex-main .ex-main-title h1 {
-          font-weight: 300;
-          margin-bottom: 0; }
-          main section.explore .ex-main .ex-main-title h1 span {
-            font-weight: 700; }
-        main section.explore .ex-main .ex-main-title div.ex-view {
-          display: flex;
-          justify-content: flex-end;
-          align-items: flex-end; }
-          main section.explore .ex-main .ex-main-title div.ex-view a {
-            color: #333636;
-            text-decoration: underline;
-            height: 20px; }
-            main section.explore .ex-main .ex-main-title div.ex-view a:hover {
-              color: #221ef9; }
-      main section.explore .ex-main .ex-main-content .ex-main-item {
-        padding-top: 15px; }
-        main section.explore .ex-main .ex-main-content .ex-main-item h4 {
-          margin: 0;
-          padding: 15px 0; }
-        main section.explore .ex-main .ex-main-content .ex-main-item button.btn {
-          font-weight: 700;
-          padding: 10px 30px;
-          color: #221ef9;
-          border: 1px solid black;
-          text-transform: uppercase; }
-          main section.explore .ex-main .ex-main-content .ex-main-item button.btn i {
+  main section.title {
+    margin: 0;
+    margin-top: 100px;
+    /* end title main*/ }
+    main section.title .title-main {
+      border-bottom: 1px solid gray; }
+      main section.title .title-main > h2.row {
+        margin: 0; }
+      main section.title .title-main div.row.price {
+        margin: 0; }
+        main section.title .title-main div.row.price h2 {
+          padding: 0;
+          font-weight: 900; }
+        main section.title .title-main div.row.price > div {
+          padding: 0; }
+          main section.title .title-main div.row.price > div span.new-price {
+            font-size: 25px;
+            color: #221ef9;
+            padding-right: 10px; }
+          main section.title .title-main div.row.price > div span.text-muted {
+            text-decoration: line-through;
+            font-size: 25px; }
+          main section.title .title-main div.row.price > div button.btn {
+            margin-left: 10px;
+            font-weight: 700;
+            padding: 7px 10px;
+            color: #221ef9;
+            border: 1px solid black;
+            text-transform: uppercase; }
+            main section.title .title-main div.row.price > div button.btn i {
+              padding-left: 40px;
+              transition: 0.4s; }
+            main section.title .title-main div.row.price > div button.btn:hover i {
+              transform: scale(1.3); }
+      main section.title .title-main div.row.race {
+        margin: 0;
+        padding: 30px 0; }
+        main section.title .title-main div.row.race > div {
+          padding: 0; }
+          main section.title .title-main div.row.race > div span.id {
+            padding-right: 10px; }
+            main section.title .title-main div.row.race > div span.id p {
+              font-weight: 700; }
+          main section.title .title-main div.row.race > div span.star {
             padding-left: 10px;
-            transition: 0.4s; }
-          main section.explore .ex-main .ex-main-content .ex-main-item button.btn:hover i {
-            transform: translateX(10px); }
-    main section.explore .ex-sub {
+            border-left: 1px solid gray; }
+            main section.title .title-main div.row.race > div span.star i {
+              color: #221ef9; }
+          main section.title .title-main div.row.race > div p span {
+            color: green;
+            font-weight: 700; }
+  main section.image {
+    margin: 70px 0; }
+    main section.image .img-main {
+      background-color: #3e453e;
+      padding: 50px 0; }
+      main section.image .img-main > div.row {
+        margin: 0; }
+        main section.image .img-main > div.row > div.row.thum {
+          margin: 0; }
+          main section.image .img-main > div.row > div.row.thum img {
+            min-width: 150px;
+            max-height: 100px;
+            margin: 10px auto;
+            background-color: #cccccc;
+            overflow: hidden; }
+          main section.image .img-main > div.row > div.row.thum img:hover {
+            border: 3px solid #221ef9; }
+          main section.image .img-main > div.row > div.row.thum img.active {
+            border: 3px solid #221ef9; }
+        main section.image .img-main > div.row > div.view img {
+          border-radius: 50%; }
+    main section.image .img-sub {
       position: relative; }
-      main section.explore .ex-sub p {
+      main section.image .img-sub p {
         width: 150px;
         position: absolute;
         top: 50%;
         right: -30px;
         transform: translateY(-50%) rotate(90deg); }
-  main section.colections {
-    margin: 70px 0;
-    /* end ex-main*/ }
-    main section.colections .colec-main {
-      /*end ex main title*/
-      /*end colec main content*/ }
-      main section.colections .colec-main .colec-main-title {
-        padding: 20px 0; }
-        main section.colections .colec-main .colec-main-title h1 {
-          font-weight: 300;
-          margin-bottom: 0; }
-          main section.colections .colec-main .colec-main-title h1 span {
+  main section.description {
+    margin: 0;
+    /* end des main*/ }
+    main section.description .des-main {
+      padding: 0;
+      /*end row*/ }
+      main section.description .des-main > div.row {
+        margin: 0;
+        /*end left*/
+        /*end right*/ }
+        main section.description .des-main > div.row > div.left {
+          padding: 0; }
+          main section.description .des-main > div.row > div.left > div.row {
+            padding: 0;
+            margin: 0; }
+            main section.description .des-main > div.row > div.left > div.row > div.img {
+              padding: 0; }
+            main section.description .des-main > div.row > div.left > div.row > div.content {
+              padding: 0;
+              display: flex;
+              justify-content: center;
+              align-items: center; }
+        main section.description .des-main > div.row > div.right {
+          padding: 0 0 0 100px; }
+          main section.description .des-main > div.row > div.right .link a {
+            display: block;
+            color: black;
+            padding: 7px 0;
             font-weight: 700; }
-        main section.colections .colec-main .colec-main-title div.colec-view {
-          display: flex;
-          justify-content: flex-end;
-          align-items: flex-end; }
-          main section.colections .colec-main .colec-main-title div.colec-view a {
-            color: #333636;
-            text-decoration: underline;
-            height: 20px; }
-            main section.colections .colec-main .colec-main-title div.colec-view a:hover {
-              color: #221ef9; }
-      main section.colections .colec-main .colec-main-content {
-        /*end colec main view*/ }
-        main section.colections .colec-main .colec-main-content .colec-main-list {
-          display: flex;
-          width: 100%;
-          margin-left: 5px; }
-          main section.colections .colec-main .colec-main-content .colec-main-list > div {
-            width: 25%;
-            border: 2px solid black;
-            padding: 10px 10px;
-            margin-left: -2px;
-            position: relative;
-            text-align: center;
-            font-weight: 700;
-            cursor: pointer; }
-            main section.colections .colec-main .colec-main-content .colec-main-list > div:hover {
-              border-color: #221ef9;
-              color: #221ef9;
-              z-index: 3; }
-          main section.colections .colec-main .colec-main-content .colec-main-list > div.active {
-            border-color: #221ef9;
+          main section.description .des-main > div.row > div.right .link a:first-child {
             color: #221ef9;
-            z-index: 3; }
-        main section.colections .colec-main .colec-main-content .colec-main-view {
-          margin: 40px 0;
-          position: relative;
-          /*end item*/ }
-          main section.colections .colec-main .colec-main-content .colec-main-view .colec-main-view-item {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            opacity: 0;
-            visibility: hidden;
-            transition: 0.4s;
-            /*end row*/ }
-            main section.colections .colec-main .colec-main-content .colec-main-view .colec-main-view-item img {
-              width: 100%; }
-            main section.colections .colec-main .colec-main-content .colec-main-view .colec-main-view-item > div.row {
-              margin: 40px 0; }
-              main section.colections .colec-main .colec-main-content .colec-main-view .colec-main-view-item > div.row h3 {
-                padding: 0;
-                margin: 0; }
-              main section.colections .colec-main .colec-main-content .colec-main-view .colec-main-view-item > div.row p {
-                margin: 0; }
-              main section.colections .colec-main .colec-main-content .colec-main-view .colec-main-view-item > div.row > div button {
-                font-weight: 700;
-                padding: 10px 30px;
-                color: #221ef9;
-                border: 1px solid black;
-                text-transform: uppercase; }
-                main section.colections .colec-main .colec-main-content .colec-main-view .colec-main-view-item > div.row > div button i {
-                  padding-left: 10px;
-                  transition: 0.4s; }
-                main section.colections .colec-main .colec-main-content .colec-main-view .colec-main-view-item > div.row > div button:hover i {
-                  transform: translateX(10px); }
-          main section.colections .colec-main .colec-main-content .colec-main-view .colec-main-view-item:first-child {
-            position: static; }
-          main section.colections .colec-main .colec-main-content .colec-main-view .colec-main-view-item.active {
-            opacity: 1;
-            visibility: visible; }
-        main section.colections .colec-main .colec-main-content .colec-main-number span:first-child {
-          color: #221ef9;
-          font-size: 20px;
-          font-weight: 900; }
-        main section.colections .colec-main .colec-main-content .colec-main-number span:nth-child(2) {
-          display: inline-block;
-          width: 30px;
-          background-color: black;
-          height: 3px;
-          margin: 0 10px 5px 10px; }
-        main section.colections .colec-main .colec-main-content .colec-main-number span:last-child {
-          font-size: 20px;
-          font-weight: 900; }
-    main section.colections .colec-sub {
+            text-decoration: underline; }
+          main section.description .des-main > div.row > div.right .info {
+            padding: 50px 0; }
+            main section.description .des-main > div.row > div.right .info .price {
+              font-size: 30px;
+              font-weight: 700;
+              color: #221ef9;
+              margin-bottom: 0; }
+            main section.description .des-main > div.row > div.right .info p.text-muted {
+              font-weight: 400;
+              font-size: 25px;
+              text-decoration: line-through; }
+            main section.description .des-main > div.row > div.right .info .star i {
+              color: #221ef9; }
+            main section.description .des-main > div.row > div.right .info button.btn {
+              margin: 20px 0;
+              font-weight: 700;
+              padding: 7px 10px;
+              color: #221ef9;
+              border: 1px solid black;
+              text-transform: uppercase; }
+              main section.description .des-main > div.row > div.right .info button.btn i {
+                padding-left: 40px;
+                transition: 0.4s; }
+              main section.description .des-main > div.row > div.right .info button.btn:hover i {
+                transform: scale(1.3); }
+            main section.description .des-main > div.row > div.right .info p span {
+              color: green;
+              font-weight: 700; }
+          main section.description .des-main > div.row > div.right .back a {
+            color: black;
+            text-decoration: underline; }
+    main section.description .des-sub {
       position: relative; }
-      main section.colections .colec-sub p {
-        width: 150px;
+      main section.description .des-sub p {
+        width: 175px;
+        position: absolute;
+        top: 50%;
+        right: -30px;
+        transform: translateY(-50%) rotate(90deg); }
+  main section.specification {
+    margin: 70px 0; }
+    main section.specification .spec-main {
+      padding: 0; }
+      main section.specification .spec-main > div.row {
+        margin: 0; }
+        main section.specification .spec-main > div.row > div.left {
+          padding: 0;
+          margin: 0; }
+          main section.specification .spec-main > div.row > div.left .title {
+            margin: 0;
+            padding: 20px 0; }
+          main section.specification .spec-main > div.row > div.left .content {
+            margin: 0;
+            padding: 20px 0;
+            border-bottom: 1px solid gray; }
+            main section.specification .spec-main > div.row > div.left .content > div {
+              padding: 0; }
+          main section.specification .spec-main > div.row > div.left .file {
+            margin: 50px 0 0; }
+            main section.specification .spec-main > div.row > div.left .file .file-item {
+              display: flex;
+              margin-right: 20px;
+              cursor: pointer; }
+              main section.specification .spec-main > div.row > div.left .file .file-item i {
+                font-size: 45px;
+                color: #221ef9; }
+              main section.specification .spec-main > div.row > div.left .file .file-item span p {
+                margin-bottom: 0;
+                padding-left: 10px; }
+    main section.specification .spec-sub {
+      position: relative; }
+      main section.specification .spec-sub p {
+        width: 175px;
+        position: absolute;
+        top: 50%;
+        right: -30px;
+        transform: translateY(-50%) rotate(90deg); }
+  main section.review {
+    margin: 0;
+    /*end re main*/ }
+    main section.review .re-main {
+      padding: 0;
+      /*end row*/ }
+      main section.review .re-main > div.row {
+        margin: 0; }
+        main section.review .re-main > div.row > div {
+          padding: 0; }
+          main section.review .re-main > div.row > div .re-item {
+            padding-bottom: 30px;
+            border-bottom: 1px solid gray; }
+            main section.review .re-main > div.row > div .re-item .re-item-head {
+              margin: 20px 0; }
+              main section.review .re-main > div.row > div .re-item .re-item-head .head-name {
+                display: flex;
+                padding: 0; }
+                main section.review .re-main > div.row > div .re-item .re-item-head .head-name p.name {
+                  padding-right: 10px;
+                  margin-bottom: 0; }
+                main section.review .re-main > div.row > div .re-item .re-item-head .head-name i {
+                  margin-top: 5px; }
+                main section.review .re-main > div.row > div .re-item .re-item-head .head-name p.time {
+                  padding-left: 10px;
+                  margin-bottom: 0; }
+              main section.review .re-main > div.row > div .re-item .re-item-head .star {
+                padding: 0; }
+                main section.review .re-main > div.row > div .re-item .re-item-head .star i {
+                  color: #221ef9; }
+          main section.review .re-main > div.row > div .more div.row {
+            margin: 60px 0 0; }
+            main section.review .re-main > div.row > div .more div.row button.btn {
+              font-weight: 700;
+              padding: 7px 10px;
+              color: #221ef9;
+              border: 1px solid black;
+              text-transform: uppercase; }
+              main section.review .re-main > div.row > div .more div.row button.btn i {
+                padding-left: 40px;
+                transition: 0.4s; }
+              main section.review .re-main > div.row > div .more div.row button.btn:hover i {
+                transform: scale(1.3); }
+            main section.review .re-main > div.row > div .more div.row a {
+              padding: 0;
+              color: black;
+              text-decoration: underline;
+              font-weight: 700;
+              line-height: 40px; }
+    main section.review .re-sub {
+      position: relative; }
+      main section.review .re-sub p {
+        width: 175px;
         position: absolute;
         top: 50%;
         right: -30px;
         transform: translateY(-50%) rotate(90deg); }
   main section.slide {
     margin: 70px 0; }
+    main section.slide .slide-title {
+      margin-bottom: 20px; }
+      main section.slide .slide-title a {
+        color: black;
+        text-decoration: underline;
+        line-height: 40px; }
     main section.slide .slide-main {
       position: relative;
       overflow: hidden; }
@@ -416,10 +518,12 @@ main {
         position: absolute;
         top: 28%;
         left: 10px;
-        display: none; }
+        display: none;
+        cursor: pointer; }
         main section.slide .slide-main .sl-prev i {
           font-size: 30px; }
       main section.slide .slide-main .sl-next {
+        cursor: pointer;
         display: inline-block;
         position: absolute;
         top: 28%;
@@ -434,74 +538,98 @@ main {
         top: 50%;
         right: -30px;
         transform: translateY(-50%) rotate(90deg); }
-  main section.weekender {
-    margin: 70px 0 0; }
-    main section.weekender .wk-main {
-      background-image: url(https://via.placeholder.com/950x350);
-      margin: 0;
-      background-repeat: no-repeat;
-      background-size: cover; }
-      main section.weekender .wk-main .wk-main-content {
-        padding: 100px 0; }
-        main section.weekender .wk-main .wk-main-content h3 {
-          font-weight: 700;
-          font-size: 35px; }
-        main section.weekender .wk-main .wk-main-content p span {
-          font-weight: 700; }
-        main section.weekender .wk-main .wk-main-content button.btn {
-          font-weight: 700;
-          padding: 10px 30px;
-          color: #221ef9;
-          border: 1px solid black;
-          text-transform: uppercase; }
-          main section.weekender .wk-main .wk-main-content button.btn i {
-            padding-left: 30px;
-            transition: 0.4s; }
-          main section.weekender .wk-main .wk-main-content button.btn:hover i {
-            transform: translateX(10px); }
-    main section.weekender .wk-sub {
-      position: relative; }
-      main section.weekender .wk-sub p {
-        width: 150px;
-        position: absolute;
-        top: 50%;
-        right: -30px;
-        transform: translateY(-50%) rotate(90deg); }
-  main section.archive {
-    margin: 0 0 200px; }
-    main section.archive .ar-main {
-      background-image: url(https://via.placeholder.com/1000x400);
-      margin: 0;
-      background-repeat: no-repeat;
-      background-size: cover; }
-      main section.archive .ar-main .ar-main-content {
-        padding: 100px 0; }
-        main section.archive .ar-main .ar-main-content h3 {
-          font-weight: 700;
-          font-size: 35px; }
-        main section.archive .ar-main .ar-main-content p span {
-          font-weight: 700; }
-        main section.archive .ar-main .ar-main-content button.btn {
-          font-weight: 700;
-          padding: 10px 30px;
-          color: #221ef9;
-          border: 1px solid black;
-          text-transform: uppercase; }
-          main section.archive .ar-main .ar-main-content button.btn i {
-            padding-left: 30px;
-            transition: 0.4s; }
-          main section.archive .ar-main .ar-main-content button.btn:hover i {
-            transform: translateX(10px); }
-    main section.archive .ar-sub {
-      position: relative; }
-      main section.archive .ar-sub p {
-        width: 150px;
-        position: absolute;
-        top: 50%;
-        right: -30px;
-        transform: translateY(-50%) rotate(90deg); }
 
 /* end main*/
+footer {
+  width: 100%; }
+  footer .subcribe {
+    width: 100%;
+    background-image: url(https://via.placeholder.com/1050x450/000000);
+    background-repeat: no-repeat;
+    background-size: cover; }
+    footer .subcribe .sub-content {
+      width: 80%;
+      margin-left: 20%;
+      padding: 50px 0; }
+      footer .subcribe .sub-content > div.row {
+        margin: 0; }
+        footer .subcribe .sub-content > div.row > div.row {
+          margin: 0;
+          padding: 0; }
+          footer .subcribe .sub-content > div.row > div.row > div {
+            color: white;
+            position: relative; }
+            footer .subcribe .sub-content > div.row > div.row > div p {
+              margin-bottom: 0;
+              color: white; }
+            footer .subcribe .sub-content > div.row > div.row > div input {
+              width: 100%;
+              background-color: transparent;
+              border: 1px solid white;
+              padding: 10px;
+              color: white; }
+            footer .subcribe .sub-content > div.row > div.row > div span {
+              position: absolute;
+              top: 10px;
+              right: 30px;
+              z-index: 10;
+              cursor: pointer; }
+  footer .contact {
+    width: 100%;
+    background-image: url(https://via.placeholder.com/1050x450/000000);
+    background-repeat: no-repeat;
+    background-size: cover; }
+    footer .contact .contact-content {
+      width: 80%;
+      margin-left: 20%; }
+      footer .contact .contact-content > div.row.about {
+        margin: 0;
+        padding: 50px 0; }
+        footer .contact .contact-content > div.row.about > div.row {
+          padding: 0;
+          margin: 0;
+          color: white; }
+          footer .contact .contact-content > div.row.about > div.row .list {
+            margin: 0; }
+            footer .contact .contact-content > div.row.about > div.row .list > div h5 {
+              margin-bottom: 50px; }
+            footer .contact .contact-content > div.row.about > div.row .list > div ul li {
+              padding: 3px 0; }
+              footer .contact .contact-content > div.row.about > div.row .list > div ul li a {
+                color: white; }
+          footer .contact .contact-content > div.row.about > div.row .about-us h5 {
+            margin-bottom: 50px; }
+          footer .contact .contact-content > div.row.about > div.row .about-us a {
+            color: white;
+            text-decoration: underline; }
+        footer .contact .contact-content > div.row.about .contact-sub {
+          position: relative; }
+          footer .contact .contact-content > div.row.about .contact-sub p {
+            width: 150px;
+            position: absolute;
+            top: 50%;
+            right: -25px;
+            transform: translateY(-50%) rotate(90deg); }
+      footer .contact .contact-content > div.row.footer {
+        margin: 0;
+        padding: 20px 0; }
+        footer .contact .contact-content > div.row.footer > div.row {
+          margin: 0; }
+          footer .contact .contact-content > div.row.footer > div.row div {
+            color: white; }
+            footer .contact .contact-content > div.row.footer > div.row div h1 a {
+              color: white;
+              text-decoration: none; }
+            footer .contact .contact-content > div.row.footer > div.row div > a {
+              color: white;
+              line-height: 48px;
+              padding: 0 5px;
+              text-decoration: none;
+              font-size: 14px; }
+            footer .contact .contact-content > div.row.footer > div.row div > p {
+              line-height: 48px;
+              font-size: 14px; }
+
 @keyframes item1 {
   0% {
     transform: translateX(0%); }
@@ -658,7 +786,13 @@ main {
             opacity: 1;
             visibility: visible; }
 
-  /* end main*/ }
+  /* end main*/
+  footer .subcribe .sub-content {
+    width: 100%;
+    margin-left: 0; }
+  footer .contact .contact-content {
+    width: 100%;
+    margin-left: 0; } }
 @media screen and (max-width: 768px) {
   div.fixed-left {
     height: auto;
@@ -695,7 +829,16 @@ main {
           div.fixed-left nav ul li:hover a {
             border: none; }
 
-  /*end div fixed left*/ }
+  /*end div fixed left*/
+  section.image .img-main > div.row {
+    display: flex; }
+    section.image .img-main > div.row > div.row.thum.ac {
+      display: flex; }
+      section.image .img-main > div.row > div.row.thum.ac img {
+        min-width: 250px;
+        max-height: 250px; }
+      section.image .img-main > div.row > div.row.thum.ac img.active {
+        border: none; } }
 /*end media*/
 @media screen and (max-width: 576px) {
   main {
