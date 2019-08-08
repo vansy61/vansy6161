@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get WaterMark Image</title>
+    <script src="https://kit.fontawesome.com/13a55ec36b.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./range.css" />
+    <link rel="stylesheet" href="./css.css" />
+</head>
+<body>
+        <h1 class="title">Project Javascript: Watermark Image Use Image Or Text</h1>
+        <div class="top-block">
+            <div class="list-image" id="list-image-w">
+                <div id="list-image"></div>
+                <div class="done-image-preview" id="list-done">
+                </div>
+                <input type='file' onchange="readURL(this);" multiple id="sy" />
+                <div class="action-view-image">
+                    <label for="sy" class="btn btn-secondary btn-lg"><i class="fas fa-cloud-upload-alt"></i>Choose file</label>
+                    <button class="btn btn-info btn-lg"  type="button" id="view-full">View full</button>
+                    <button class="btn btn-dark btn-lg" type="button" id="view-choose">List Choose</button>
+                    <button class="btn btn-success btn-lg" type="button" id="download-all">Dowload All</button>
+                    <button id="action-submit" class="btn btn-success btn-lg">Tiến hành
+                    </button>
+                </div>
+            </div>
+            <div class="group-option">
+                <h5>Choose type watermark</h5>
+                <div class="action-type-watermark">
+                    <div class="input-use">
+                        <div>
+                            <input type="file" onchange="readURLK(this);" id="image-choose">
+                            <img src="" class="choose-image">
+                        </div>
+                        <input type="text" id="text-choose" maxlength="20" placeholder="Nhập vào text">
+                    </div>
+                    <div class="choose-type">
+                        <label class="btn btn-primary">
+                            Image
+                        </label>
+                        <label class="btn btn-primary">
+                            Text
+                        </label>
+                    </div>
+                </div>
+                <h5>Option</h5>
+                <div class="option">
+                    <div class="option-content">
+                        <div class="opacity">
+                            <p>Opacity</p>
+                            <input id="choose-opacity" type="range" value="0.5" step="0.1" min="0.1" max="1.0" role="input-range">
+                        </div>
+                        <div class="position">
+                            <p>Position</p>
+                            <label>
+                                <input type="radio" name="position" value="1" checked>
+                                Top-right
+                            </label>
+                            <label>
+                                <input type="radio" name="position" value="2">
+                                Top-left
+                            </label>
+                            <label>
+                                <input type="radio" name="position" value="3">
+                                Bottom-right
+                            </label>
+                            <label>
+                                <input type="radio" name="position" value="4">
+                                Bottom-left
+                            </label>
+                            <label>
+                                <input type="radio" name="position" value="5">
+                                Center
+                            </label>
+                        </div>
+                        <div class="keep">
+                            <p>Keep</p>
+                            <label>
+                            <input type="checkbox" id="dele-cu">
+                            Keep image</label>
+                        </div>
+                        <div class="scale">
+                            <p>Scale</p>
+                            <label>
+                                <input id="choose-scale" type="range" value="10" step="10" min="0.1" max="100" role="input-range">
+                            </label>
+                        </div>    
+                        
+                    </div>
+
+                    <div id="option-preview">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <script src="./watermark.js"></script>
+        <script src="./range.js"></script>
+      
+        <script src="./js.js"></script>
+</body>
+
+</html>
