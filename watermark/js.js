@@ -35,7 +35,7 @@ $(document).ready(function(){
 	$("#choose-scale").rangeslider({
 		 polyfill: false
 	});
-	$("#action-submit").click(function(){
+	function callDraw(){
 		var val3 = "";
 		$(".position label input").each(function(index, value){
 			if ($(value).is(":checked"))
@@ -76,7 +76,7 @@ $(document).ready(function(){
 				i.src = value;
 	        });
 	    });
-	})
+	}
 	function resizeImageA(base64Str, a, b) {
 
       var img = new Image();
@@ -132,58 +132,13 @@ $(document).ready(function(){
 		    
 		}
 	}
-	function drawDemoImage(val1, val2, val3, val4){
-	    switch(val3) {
-		  case "1":
-		    watermark([val1, val2])
-		    .image(watermark.image.upperLeft(val4))
-		    .then(function (img) {
-		      $("#option-preview").html(img);
-		    });
-		    break;
-		  case "2":
-		    watermark([val1, val2])
-		    .image(watermark.image.upperRight(val4))
-		    .then(function (img) {
-		      $("#option-preview").html(img);
-		    });
-		    break;
-		  case "3":
-		    watermark([val1, val2])
-		    .image(watermark.image.lowerRight(val4))
-		    .then(function (img) {
-		      $("#option-preview").html(img);
-		    });
-		    break;
-		  case "4":
-		    watermark([val1, val2])
-		    .image(watermark.image.lowerLeft(val4))
-		    .then(function (img) {
-		      $("#option-preview").html(img);
-		    });
-		    break;
-		  default:
-		  	watermark([val1, val2])
-		    .image(watermark.image.center(val4))
-		    .then(function (img) {
-		      $("#option-preview").html(img);
-		    });
-		    
-		}
-	}
-	drawDemoImage( demoImage, demoLogo, "1", 0.5);
 	$("#choose-opacity").change(function(){
-		var val3 = "";
-		$(".position label input").each(function(index, value){
-			if ($(value).is(":checked"))
-			{
-			 	val3 = $(value).val();
-			  	return false
-			}
-		});
-		drawDemoImage( demoImage, demoLogo, val3, $(this).val());
+		callDraw();
 	})
 	$(".option-content .position label input").change(function(){
-		drawDemoImage( demoImage, demoLogo, $(this).val(), $("#choose-opacity").val());
+		callDraw();
+	})
+	$("#choose-scale").change(function(){
+		callDraw();
 	})
 })

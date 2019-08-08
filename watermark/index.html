@@ -13,12 +13,15 @@
         <h1 class="title">Project Javascript: Watermark Image Use Image Or Text</h1>
         <div class="top-block">
             <div class="list-image" id="list-image-w">
-                <div id="list-image"></div>
+                <div class="modala">
+                    <div id="list-image">
+                        <label for="sy"><i class="fas fa-cloud-upload-alt"></i>Choose file</label>
+                    </div>
+                </div>
                 <div class="done-image-preview" id="list-done">
                 </div>
                 <input type='file' onchange="readURL(this);" multiple id="sy" />
                 <div class="action-view-image">
-                    <label for="sy" class="btn btn-secondary btn-lg"><i class="fas fa-cloud-upload-alt"></i>Choose file</label>
                     <button class="btn btn-info btn-lg"  type="button" id="view-full">View full</button>
                     <button class="btn btn-dark btn-lg" type="button" id="view-choose">List Choose</button>
                     <button class="btn btn-success btn-lg" type="button" id="download-all">Dowload All</button>
@@ -80,18 +83,17 @@
                             <label>
                             <input type="checkbox" id="dele-cu">
                             Keep image</label>
-                        </div>
-                        <div class="scale">
-                            <p>Scale</p>
-                            <label>
-                                <input id="choose-scale" type="range" value="10" step="10" min="0.1" max="100" role="input-range">
-                            </label>
-                        </div>    
+                        </div>  
                         
                     </div>
 
                     <div id="option-preview">
-                        
+                        <div class="scale">
+                            <p>Scale</p>
+                            <label>
+                                <input id="choose-scale" type="range" value="20" step="10" min="10" max="100" role="input-range">
+                            </label>
+                        </div>  
                     </div>
                 </div>
             </div>

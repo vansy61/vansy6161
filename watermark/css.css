@@ -29,6 +29,29 @@ h1.title{
     background-color: white;
     box-shadow: 0 0px 30px rgba(0,0,0,.5);
 }
+.list-image .modala{
+    position: relative;
+    width: 100%;
+    height: 555px;
+}
+.list-image .modala #list-image{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#list-image >label{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;;
+}
+#list-image >label >i{
+  display: block;
+  font-size: 100px;
+  color: gray;
+}
 .top-block .group-option{
     width: 40%;
     border: 1px solid gray;
@@ -123,6 +146,9 @@ h1.title{
 
 #option-preview{
   width: 48%;
+  border: 2px solid gray;
+  padding: 5px;
+  border-radius: 10px;
 
 }
 #option-preview img{
@@ -158,7 +184,6 @@ h1.title{
 }
 .done-image-preview{
     width: 98%;
-    margin: 20px auto;
 }
 
 .list-image#list-image-w .action-view-image{
@@ -188,19 +213,19 @@ h1.title{
   left: 2px;
 
 }
-.list-image#list-image-w .action-view-image label{
-  transform: translate(0);
-  text-align:center;
-  cursor: pointer;
-  margin-bottom: 0;
-  margin-left: 20px;
-  color: white;
-  box-shadow: 0 0px 30px rgba(0,0,0,.5);
+.item-iamge-preview{
+  position: relative;
 }
-.list-image#list-image-w .action-view-image label i{
-  display: inline;
-  font-size: 20px;
-  color: white;
+.item-iamge-preview:before{
+  content: "dabjdwkdh";
+  display: block;
+  position: absolute;
+  background-color: blue;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
 }
 
 
