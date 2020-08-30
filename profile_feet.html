@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home - Hello DaiHoc</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Css here -->
+    <link rel="stylesheet" href="./assets/css/re_css.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body id="university">
+
+    <!-- modal file -->
+    <div class="modal fade" id="modal-file" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content border-0">
+                <div class="modal-body modal-register-content">
+                    <h5>Đăng Ký Hồ Sơ</h5>
+                    <div>
+                        <form action="#" class="d-block" style="max-width: unset;">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group input-field">
+                                        <input class="input-material">
+                                        <label>Trường</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group input-field">
+                                        <select class="input-material select-material">
+                                            <option>Kỹ Thuật Điện</option>
+                                        </select>
+                                        <label>Ngành</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group input-field">
+                                        <input class="input-material">
+                                        <label>Họ và tên</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group input-field">
+                                        <input class="input-material">
+                                        <label>Trường THPT</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group input-field">
+                                        <textarea class="input-material" rows="8"></textarea>
+                                        <label>Thành tích các nhân</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-label-profile">
+                                        <span>Bảng điểm THPT</span>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-flex align-items-center">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="customFile">
+                                            <label class="custom-file-label" for="customFile">Choose file</label>
+                                        </div>
+                                        <div class="ml-24px">
+                                            <button class="btn btn-secondary">Tải Lên</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-label-profile">
+                                        <span>ĐƠN xét tuyển</span>
+                                        <a href="#">(Tải mẫu của Bộ GD&ĐT)</a>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-flex align-items-center">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="customFile2">
+                                            <label class="custom-file-label" for="customFile2">Choose file</label>
+                                        </div>
+                                        <div class="ml-24px">
+                                            <button class="btn btn-secondary">Tải Lên</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group input-field">
+                                        <textarea class="input-material" rows="14" placeholder="Bài luận (Vì sao bạn chọn trường này và ngành học này?)"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-label-profile">
+                                        <span>ĐƠN xIn HỌC BỔNG</span>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-flex align-items-center">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="customFile3">
+                                            <label class="custom-file-label" for="customFile3">Choose file</label>
+                                        </div>
+                                        <div class="ml-24px">
+                                            <button class="btn btn-secondary">Tải Lên</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 text-center submit-form-file">
+                                    <div><button class="btn btn-primary">Đăng Ký</button></div>
+                                    <div><a href="#" class="d-inline-block">Lưu lại nộp sau</a></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal -->
+
+
+    <!-- modal error -->
+    <div class="modal fade" id="modal-error" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content border-0">
+                <div class="modal-body modal-register-content text-center">
+                    <p>Rất tiếc nhà trường chưa mở cổng nhận hồ sơ online.
+                        Bạn vui lòng quay lại sau. Xin cảm ơn!</p>
+                    <div><button class="btn btn-primary" data-dismiss="modal">Ok</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal -->
+
+    <!-- modal done -->
+    <div class="modal fade" id="modal-done" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content border-0">
+                <div class="modal-body modal-register-content text-center">
+                    <img src="./assets/img/ic_check.svg" alt="done" class="img-fluid">
+                    <h2>Đăng ký thành công</h2>
+                    <p>Chúc mừng bạn đã đăng ký hồ sơ thành công.<br />
+                        Kết quả sơ bộ của trường <strong>Đại học Bách Khoa</strong> sẽ được công bố vào ngày 31/07/2020.</p>
+                    <div class="text-center"><button class="btn btn-primary" data-dismiss="modal">Đóng</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Header Start-->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg px-0">
+                <!--  Header Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/logo.svg" alt="logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+
+                <div class="collapse navbar-collapse ml-0 ml-lg-3 text-center text-lg-left" id="navbarSupportedContent">
+                    <!-- Main menu -->
+                    <ul class="navbar-nav mr-auto" id="navigation">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Khám Phá</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Thảo Luận</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Về Chúng Tôi</a>
+                        </li>
+                    </ul>
+
+                    <div class="mt-2 mt-lg-0">
+                        <button class="btn btn-link btn-border-bottom">Trang cá nhân</button>
+                    </div>
+
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <!-- Header End -->
+
+
+    <!-- Main Start-->
+    <main class="mt-4" id="main">
+        <!-- header profile -->
+        <div class="header-profile">
+            <div class="container">
+                <div id="flex-only-md" class="d-flex align-items-center justify-content-between">
+                    <div class="header-profile-left d-flex align-items-center">
+                        <img src="./assets/img/logo-user.png" class="img-fluid">
+                        <div class="profile-info">
+                            <h6>Xin chào</h6>
+                            <h4>Duc Tran</h4>
+                        </div>
+                    </div>
+                    <div class="header-profile-right">
+                        <a href="#" class="btn-primary btn btn-white" data-toggle="modal" data-target="#modal-file">Sửa thông tin</a>
+                        <a href="#" class="btn-secondary btn btn-white">Đăng xuất</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- suggestion -->
+        <div class="suggestion">
+            <div class="container">
+                <h4>Gợi ý cho bạn</h4>
+                <!-- list -->
+                <div class="row">
+
+                    <!-- item -->
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <a href="#" class="tag-item d-block"
+                            style="background-image: url(./assets/img/tag_content_01.png);">
+                            <div class="tag-item-title d-flex flex-column-reverse">
+                                <h5 class="card-title">Chuyên Viên Marketing</h5>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- item -->
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <a href="#" class="tag-item d-block"
+                            style="background-image: url(./assets/img/tag_content_02.png);">
+                            <div class="tag-item-title d-flex flex-column-reverse">
+                                <h5 class="card-title">Bác Sỹ <br /> Nha Khoa</h5>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- saved -->
+        <div class="saved">
+            <div class="container">
+                <h4>Đã lưu</h4>
+                <!-- list -->
+                <div class="row">
+
+                    <!-- university item -->
+                    <div class="col-12 col-lg-6 col-xl-4 ">
+                        <a href="#" class="university-item d-block position-relative">
+                            <!-- bookmark -->
+                            <div class="favorite active"><i class="fa fa-bookmark" aria-hidden="true"></i></div>
+                            <!-- flex image and title  -->
+                            <div class="d-flex align-items-center university-image-title">
+                                <img src="./assets/img/logo.png" class="img-fluid">
+                                <h5>Khoa Học Máy Tính</h5>
+                            </div>
+                            <div class="university-info">
+                                <h6>Đại học Bách khoa TP.HCM</h6>
+                                <div><img src="./assets/img/ic_location.svg"><span>Hồ Chí Minh</span></div>
+                                <div><img src="./assets/img/ic_money.svg"><span>Hồ Chí Minh</span></div>
+
+
+                            </div>
+                        </a>
+                    </div>
+                    <!-- university item -->
+                    <div class="col-12 col-lg-6 col-xl-4 ">
+                        <a href="#" class="university-item d-block position-relative">
+                            <!-- bookmark -->
+                            <div class="favorite"><i class="fa fa-bookmark" aria-hidden="true"></i></div>
+                            <!-- flex image and title  -->
+                            <div class="d-flex align-items-center university-image-title">
+                                <img src="./assets/img/logo.png" class="img-fluid">
+                                <h5>Khoa Học Máy Tính</h5>
+                            </div>
+                            <div class="university-info">
+                                <h6>Đại học Bách khoa TP.HCM</h6>
+                                <div><img src="./assets/img/ic_location.svg"><span>Hồ Chí Minh</span></div>
+                                <div><img src="./assets/img/ic_money.svg"><span>Hồ Chí Minh</span></div>
+
+
+                            </div>
+                        </a>
+                    </div>
+                    <!-- university item -->
+                    <div class="col-12 col-lg-6 col-xl-4 ">
+                        <a href="#" class="university-item d-block position-relative">
+                            <!-- bookmark -->
+                            <div class="favorite"><i class="fa fa-bookmark" aria-hidden="true"></i></div>
+                            <!-- flex image and title  -->
+                            <div class="d-flex align-items-center university-image-title">
+                                <img src="./assets/img/logo.png" class="img-fluid">
+                                <h5>Khoa Học Máy Tính</h5>
+                            </div>
+                            <div class="university-info">
+                                <h6>Đại học Bách khoa TP.HCM</h6>
+                                <div><img src="./assets/img/ic_location.svg"><span>Hồ Chí Minh</span></div>
+                                <div><img src="./assets/img/ic_money.svg"><span>Hồ Chí Minh</span></div>
+
+
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <a href="#" class="view-more-tag">
+                    Xem Thêm
+                    <i class="fa fa-long-arrow-right ml-1" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- registered -->
+        <div class="registered">
+            <div class="container">
+                <h4>Đã đăng ký</h4>
+                <!-- list -->
+                <div class="row">
+
+                    <!-- university item -->
+                    <div class="col-12 col-lg-6 col-xl-4 ">
+                        <a href="#" class="university-item d-block position-relative">
+                            <!-- bookmark -->
+                            <div class="favorite active"><i class="fa fa-bookmark" aria-hidden="true"></i></div>
+                            <!-- flex image and title  -->
+                            <div class="d-flex align-items-center university-image-title">
+                                <img src="./assets/img/logo.png" class="img-fluid">
+                                <h5>Khoa Học Máy Tính</h5>
+                            </div>
+                            <div class="university-info">
+                                <h6>Đại học Bách khoa TP.HCM</h6>
+                                <div><img src="./assets/img/ic_location.svg"><span>Hồ Chí Minh</span></div>
+                                <div><img src="./assets/img/ic_money.svg"><span>Hồ Chí Minh</span></div>
+
+
+                            </div>
+                        </a>
+                    </div>
+                    <!-- university item -->
+                    <div class="col-12 col-lg-6 col-xl-4 ">
+                        <a href="#" class="university-item d-block position-relative">
+                            <!-- bookmark -->
+                            <div class="favorite"><i class="fa fa-bookmark" aria-hidden="true"></i></div>
+                            <!-- flex image and title  -->
+                            <div class="d-flex align-items-center university-image-title">
+                                <img src="./assets/img/logo.png" class="img-fluid">
+                                <h5>Khoa Học Máy Tính</h5>
+                            </div>
+                            <div class="university-info">
+                                <h6>Đại học Bách khoa TP.HCM</h6>
+                                <div><img src="./assets/img/ic_location.svg"><span>Hồ Chí Minh</span></div>
+                                <div><img src="./assets/img/ic_money.svg"><span>Hồ Chí Minh</span></div>
+
+
+                            </div>
+                        </a>
+                    </div>
+                    <!-- university item -->
+                    <div class="col-12 col-lg-6 col-xl-4 ">
+                        <a href="#" class="university-item d-block position-relative">
+                            <!-- bookmark -->
+                            <div class="favorite"><i class="fa fa-bookmark" aria-hidden="true"></i></div>
+                            <!-- flex image and title  -->
+                            <div class="d-flex align-items-center university-image-title">
+                                <img src="./assets/img/logo.png" class="img-fluid">
+                                <h5>Khoa Học Máy Tính</h5>
+                            </div>
+                            <div class="university-info">
+                                <h6>Đại học Bách khoa TP.HCM</h6>
+                                <div><img src="./assets/img/ic_location.svg"><span>Hồ Chí Minh</span></div>
+                                <div><img src="./assets/img/ic_money.svg"><span>Hồ Chí Minh</span></div>
+
+
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <a href="#" class="view-more-tag">
+                    Xem Thêm
+                    <i class="fa fa-long-arrow-right ml-1" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Action Area Start -->
+        <section id="action">
+            <div class="container text-center">
+                <div>
+                    <h2 class="action-title">“Khi bạn khao khát một điều gì đó, cả vũ trụ sẽ hợp lực giúp bạn đạt được
+                        điều đó.”</h2>
+                    <p> - Paulo Ceolho</p>
+                    <a href="#" class="btn btn-primary mt-64px">Đổi trích dẫn</a>
+
+                </div>
+            </div>
+        </section>
+        <!-- Action Area End -->
+    </main>
+    <!-- Main End -->
+
+
+    <!-- Footer Start -->
+    <footer id="footer">
+        <div class="container">
+            <!-- footer top -->
+            <div class="row footer-top">
+                <!-- list link item -->
+                <div class="text-center text-sm-left col-lg-3 col-sm-6 list-link-footer">
+                    <h5>Về chúng tôi</h5>
+                    <ul>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Tham gia <a></li>
+                        <li><a href="#">Liên hệ </a></li>
+                        <li><a href="#">Điều khoản sử dụng </a></li>
+                        <li><a href="#">Chính sách bảo mật </a></li>
+                    </ul>
+                </div>
+                <!-- list link item -->
+                <div class="text-center text-sm-left col-lg-3 col-sm-6 list-link-footer">
+                    <h5>Trường đại học</h5>
+                    <ul>
+                        <li><a href="#">Miền Nam</a></li>
+                        <li><a href="#">Miền Bắc <a></li>
+                        <li><a href="#">Miền Trung </a></li>
+                        <li><a href="#">Miền Tây </a></li>
+                        <li><a href="#">Tây Nguyên </a></li>
+                        <li><a href="#">Tất Cả Các Trường Đại Học </a></li>
+                    </ul>
+                </div>
+                <!-- list link item -->
+                <div class="text-center text-sm-left col-lg-3 col-sm-6 list-link-footer">
+                    <h5>Trường cao đẳng</h5>
+                    <ul>
+                        <li><a href="#">Miền Nam</a></li>
+                        <li><a href="#">Miền Bắc <a></li>
+                        <li><a href="#">Miền Trung </a></li>
+                        <li><a href="#">Miền Tây </a></li>
+                        <li><a href="#">Tây Nguyên </a></li>
+                        <li><a href="#">Tất Cả Các Trường Đại Học </a></li>
+                    </ul>
+                </div>
+                <!-- list link item -->
+                <div class="text-center text-sm-left col-lg-3 col-sm-6 list-link-footer">
+                    <h5>Trung tâm đào tạo</h5>
+                    <ul>
+                        <li><a href="#">Miền Nam</a></li>
+                        <li><a href="#">Miền Bắc <a></li>
+                        <li><a href="#">Miền Trung </a></li>
+                        <li><a href="#">Miền Tây </a></li>
+                        <li><a href="#">Tây Nguyên </a></li>
+                        <li><a href="#">Tất Cả Các Trường Đại Học </a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- footer bottom -->
+            <div
+                class="footer-bottom d-flex flex-sm-row flex-column-reverse text-center text-sm-left jus align-item-center justify-content-between">
+                <div class="footer-reserved">
+                    <p>
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                        Wisetrack. All rights reserved.
+                    </p>
+
+                </div>
+                <div class="footer-social">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+
+    </footer>
+    <!-- Footer End -->
+
+    <!-- JS -->
+    <!-- Jquery 3.3.1 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <!-- Popper 1.14.3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <!-- Slick -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Bootstrap 4.1.3 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+    <!-- Main Js -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
