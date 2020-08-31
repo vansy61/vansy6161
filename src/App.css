@@ -1,16 +1,1 @@
-.text-center{
-  text-align: center;
-}
-.py-5{
-  padding-top: 100px !important;
-  padding-bottom: 50px !important;
-
-}
-.text-size-50{
-  font-size: 100px;
-  font-weight: bolder;
-}
-
-.text-primary{
-  color: rebeccapurple;
-}
+@import '~antd/dist/antd.css';
