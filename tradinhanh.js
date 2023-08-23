@@ -26,26 +26,27 @@
     let maxSize = 10500000;
       //read image
       function readURL(input) {
-        if($('#list-done img').length >= 4) {
-            return true;
-        }
 
         if (input.files && input.files[0]) {
             if (input.files) {
                 var filesAmount = input.files.length;
                 var abc = [];
                 for (i = 0; i < filesAmount; i++) {
-                  if(input.files[i].size <= 3000000 && (maxSize - input.files[i].size) >= 0){
-                    maxSize -= input.files[i].size
-                    var reader = new FileReader();
-                    reader.onload = function(event) {
-                      abc.push(event.target.result);
+                    if(($('#list-done img').length + abc.length) < 4) {
+                        if(input.files[i].size <= 3000000 && (maxSize - input.files[i].size) >= 0){
+                            maxSize -= input.files[i].size
+                            var reader = new FileReader();
+                            reader.onload = function(event) {
+                              abc.push(event.target.result);
+                            }
+                            reader.readAsDataURL(input.files[i]);
+                          }else{
+                            alert("Vui lÃ²ng chá»‰ chá»n cÃ¡c áº£nh cÃ³ dung lÆ°á»£ng dÆ°á»›i 3MB. Tá»•ng dung lÆ°á»£ng cá»§a cÃ¡c áº£nh dÆ°á»›i 10MB");
+                            return false;
+                          }
                     }
-                    reader.readAsDataURL(input.files[i]);
-                  }else{
-                    alert("Vui lÃ²ng chá»‰ chá»n cÃ¡c áº£nh cÃ³ dung lÆ°á»£ng dÆ°á»›i 3MB. Tá»•ng dung lÆ°á»£ng cá»§a cÃ¡c áº£nh dÆ°á»›i 10MB");
-                    return false;
-                  }
+
+
                 }
                 setTimeout(function(){
                   $("#fixed").removeClass("d-none");
