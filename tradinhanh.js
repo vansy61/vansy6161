@@ -26,6 +26,10 @@
     let maxSize = 10500000;
       //read image
       function readURL(input) {
+        if($('#list-done img').length >= 4) {
+            return true;
+        }
+
         if (input.files && input.files[0]) {
             if (input.files) {
                 var filesAmount = input.files.length;
